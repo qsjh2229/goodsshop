@@ -5,6 +5,7 @@ import MainSlide from "../component/MainSlide";
 import Magazine from "../component/Magazine";
 import Magazine1 from "../component/Magazine2";
 import MdPick from "../component/MdPick";
+import {API_URL} from '../config/constans'
 
 
  import axios from "axios"; 
@@ -13,12 +14,12 @@ import { Link } from "react-router-dom";
 const MainPage = () => {
   const [products, setProduct] = useState([]);
  useEffect(() => {
-    let url = "https://d99143a1-8f38-4232-aa8d-c4845b1d3853.mock.pstmn.io/products";
+    let url = `${API_URL}/products`;
      
     axios
       .get(url)
       .then((result) => {
-        const products = result.data.products;
+        const products = result.data.product;
         setProduct(products);
       })
       .catch((error) => {
@@ -41,14 +42,14 @@ const MainPage = () => {
      
   {products.map((product, idx) => {
                         return (
-                           <Link to={`/productPage/${idx}`} className="product-link">
-                              <div className="product-card" key={idx}>
+                           <Link to={`/productPage/${product.id}`} className="product-link">
+                              <div className="product-card" key={product.id}>
                                   <div>
-                                      <img src={product.imageUrl} alt="sdf" className="product-img" />
+                                      <img src={`${API_URL}/${product.imageUrl}`} alt="sdf" className="product-img" />
                                   </div>
                                   <div className="product-contents">
                                       <span className="product-name">{product.name}</span>
-                                      <span className="product-price">{product.pirce}</span>
+                                      <span className="product-price">{product.price}</span>
                                       <div className="product-seller">
                                           <IoMdFlower  className="product-avatar" />
                                           <span className="seller">{product.seller}</span>
