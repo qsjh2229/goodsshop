@@ -1,21 +1,20 @@
 import { IoMdFlower } from "react-icons/io";
-import React, { useState, useEffect } from "react"; 
+import React, { useState, useEffect } from "react";
 
 import MainSlide from "../component/MainSlide";
 import Magazine from "../component/Magazine";
 import Magazine1 from "../component/Magazine2";
 import MdPick from "../component/MdPick";
-import {API_URL} from '../config/constans'
+import { API_URL } from "../config/constans";
 
-
- import axios from "axios"; 
+import axios from "axios";
 import { Link } from "react-router-dom";
 
 const MainPage = () => {
   const [products, setProduct] = useState([]);
- useEffect(() => {
+  useEffect(() => {
     let url = `${API_URL}/products`;
-     
+
     axios
       .get(url)
       .then((result) => {
@@ -25,45 +24,50 @@ const MainPage = () => {
       .catch((error) => {
         console.log(error);
       });
-  }, []); 
-  console.log(products); 
+  }, []);
+  console.log(products);
   return (
     <div>
       {/* <Header></Header> */}
       <MainSlide />
       <MdPick />
       <div className="banner">
-          <p>세일세일세일세일세일세일세일세일세일세일세일세일세일</p>
+        <p>세일세일세일세일세일세일세일세일세일세일세일세일세일</p>
       </div>
       <div className="products">
         <h2>Product</h2>
         <div id="productList" className="p-list">
-            
-     
-  {products.map((product, idx) => {
-                        return (
-                           <Link to={`/productPage/${product.id}`} className="product-link">
-                              <div className="product-card" key={product.id}>
-                                  <div>
-                                      <img src={`${API_URL}/${product.imageUrl}`} alt="sdf" className="product-img" />
-                                  </div>
-                                  <div className="product-contents">
-                                      <span className="product-name">{product.name}</span>
-                                      <span className="product-price">{product.price}</span>
-                                      <div className="product-seller">
-                                          <IoMdFlower  className="product-avatar" />
-                                          <span className="seller">{product.seller}</span>
-                                      </div>
-                                  </div>
-                              </div>
-                           </Link>
-                        )
-                    }) } 
+          {products.map((product, idx) => {
+            return (
+              <div className="product-card" key={product.id}>
+               { product.soldout === 1? <div className="product-blur"> <span> soldout</span></div> : null}
+                <Link
+                  to={`/productPage/${product.id}`}
+                  className="product-link"
+                >
+                  <div>
+                    <img
+                      src={`${API_URL}/${product.imageUrl}`}
+                      alt="sdf"
+                      className="product-img"
+                    />
+                  </div>
+                  <div className="product-contents">
+                    <span className="product-name">{product.name}</span>
+                    <span className="product-price">{product.price}</span>
+                    <div className="product-seller">
+                      <IoMdFlower className="product-avatar" />
+                      <span className="seller">{product.seller}</span>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            );
+          })}
         </div>
       </div>
       <Magazine />
       <Magazine1></Magazine1>
-   
     </div>
   );
 };
