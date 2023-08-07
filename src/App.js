@@ -1,11 +1,11 @@
 
 import './App.scss';
-import Interior from './pages/Interior';
+
 import MainPage from './pages/MainPage';
 import All from './pages/All';
-import Tool from './pages/Tool';
-import Acc from './pages/Acc';
-import Small from './pages/Small';
+import Tool from './pages/Lighting';
+import Acc from './pages/HomeAcc';
+import Small from './pages/Funiture';
 import { Route , Routes } from 'react-router-dom';
 import Header from './component/Header';
 import Footer from './component/Footer';
@@ -20,7 +20,7 @@ function App() {
   <Header/>
     <Routes>
       <Route path='/' element={<MainPage/>}></Route>
-      <Route path='/interior' element={<Interior/>}></Route>
+     
       <Route path='/all' element={<All/>}></Route>
       <Route path='/tool' element={<Tool/>}></Route>
       <Route path='/acc' element={<Acc/>}></Route>

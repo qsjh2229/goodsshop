@@ -1,9 +1,8 @@
 import { IoMdFlower } from "react-icons/io";
 import React, { useState, useEffect } from "react";
-
+import IntBrand from "../component/IntBrand";
 import MainSlide from "../component/MainSlide";
-import Magazine from "../component/Magazine";
-import Magazine1 from "../component/Magazine2";
+import LastPiece from "../component/LastPiece"
 import MdPick from "../component/MdPick";
 import { API_URL } from "../config/constans";
 
@@ -28,12 +27,10 @@ const MainPage = () => {
   console.log(products);
   return (
     <div>
-      {/* <Header></Header> */}
+     
       <MainSlide />
       <MdPick />
-      <div className="banner">
-        <p>세일세일세일세일세일세일세일세일세일세일세일세일세일</p>
-      </div>
+      <IntBrand></IntBrand>
       <div className="products">
         <h2>Product</h2>
         <div id="productList" className="p-list">
@@ -66,8 +63,7 @@ const MainPage = () => {
           })}
         </div>
       </div>
-      <Magazine />
-      <Magazine1></Magazine1>
+     <LastPiece></LastPiece>
     </div>
   );
 };

@@ -104,23 +104,60 @@ $desktop-min: 1440px;
         background: rgb(161, 226, 131);
       }
     }
-    .mdList{
-      ul{ display: flex; width: 100%; padding: 0; margin: 0; justify-content: space-around;
-        li{ list-style: none; display: flex; flex-direction: column; position: relative;flex-basis: 28%; transition: .5s;
-         /*  &:not(:last-child){ margin-right: 20px; } */
-          &:hover .bg { opacity: 1;}
-          .md-img{width: 100%;
-          img{width: 100%;}}
-          .md-name{ font-size: 1.2rem;}
-          .md-price{}
-          .bg{ position: absolute; top: 0 ; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.479); opacity: 0; box-sizing: border-box; padding: 30px;}
-
+    .mdList {
+      ul {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        justify-content: space-around;
+        li { cursor: pointer;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+         
+          flex-basis: 28%;
+          transition: 0.5s;
+          /*  &:not(:last-child){ margin-right: 20px; } */
+         
+          .md-img { position: relative;
+            width: 100%;
+            &:hover .bg {
+              opacity: 1;
+            }
+            img {
+              width: 100%;
+            }
+            .bg {
+              transition: .3s;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(255, 255, 255, 0.479);
+              opacity: 0;
+              box-sizing: border-box;
+              padding: 30px;
+            }
+          }
+          .md-name {
+            font-size: 1.2rem;
+          }
+          .md-price {
+          }
         }
       }
     }
   }
-.banner{width: 100%; background: teal; height: 200px;
-display: flex; justify-content:  center; align-items: center;}
+  .banner {
+    width: 100%;
+    background: teal;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .products {
     max-width: 1440px;
     margin: 0 auto;
@@ -142,231 +179,172 @@ display: flex; justify-content:  center; align-items: center;}
     }
     .p-list {
       box-sizing: border-box;
-      display: flex; flex-wrap: wrap;
+      display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-   
-       .product-card { text-decoration: none;
-        width: 23.5%; position: relative;
-        .product-blur{ position: absolute;  background: rgba(255, 255, 255, 0.699); bottom: 0; right: 0;  top: 0; left: 0;  pointer-events: none; display:  flex; align-items: center; justify-content: center; 
-        span{ font-size: 1.7rem;}}
-        .product-link{ 
-          color: black;
-        .product-img {
-          width: 100%;
-        }
-        .product-contents {
+
+      .product-card {
+        text-decoration: none;
+        width: 23.5%;
+        position: relative;
+        .product-blur {
+          position: absolute;
+          background: rgba(255, 255, 255, 0.699);
+          bottom: 0;
+          right: 0;
+          top: 0;
+          left: 0;
+          pointer-events: none;
           display: flex;
-          flex-direction: column;
-          .product-name {
-            font-size: 20px;
+          align-items: center;
+          justify-content: center;
+          span {
+            font-size: 1.7rem;
           }
-          .product-price {
-            font-size: 14px;
+        }
+        .product-link {
+          color: black;
+          .product-img {
+            width: 100%;
           }
-          .product-seller {
-            margin-top: 20px;
+          .product-contents {
             display: flex;
-            justify-content: space-between;
-            .product-avatar {
-              color: #058018;
-              font-size: 18px;
+            flex-direction: column;
+            .product-name {
+              font-size: 20px;
             }
-            .seller {
+            .product-price {
+              font-size: 14px;
+            }
+            .product-seller {
+              margin-top: 20px;
+              display: flex;
+              justify-content: space-between;
+              .product-avatar {
+                color: #058018;
+                font-size: 18px;
+              }
+              .seller {
+              }
             }
           }
         }
-      }}
-    }
-  } 
-
-
-  //Magazine
-  .magazine{
-    width: 100%;
-    overflow: hidden;
-    padding-top: 100px;
-    margin-bottom: 30px;
-    .container{
-      width: 1440px; margin: 0 auto;
-     .titleWrap{
-    
-        h2{
-          position: relative;
-          z-index: 1;
-          &:after{
-            content:"";
-            width: 50px;
-            height: 15px;
-            background: #baf3c2;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            z-index: -1;
-            }
-        }
-      }
-      .magazineList{
-        position: relative;
-        height: 300px;
-        display: flex;
-            .magazine-box{
-              box-sizing: border-box;
-              padding: 20px;
-              font-size: 50px;
-              width: 200px;
-              height: 15%;
-              position: absolute;
-              left: 0;
-              background: #272727;
-              &::after {
-                content: "";
-                display: block;
-                position: absolute;
-                top: 5%;
-                right: 10%;
-                width: 30%;
-                height: 100%;
-                background: url(img/typomag_logo_630.png) no-repeat center center;
-                background-size: 100%;
-                background-position: center;
-              }
-             
-            }
-            .swiper-wrap{
-              width:100%;
-             
-              position: absolute;
-              left:230px; 
-              display: flex;
-              .mg-img{
-                height: 100%;
-                display: flex;
-                margin: 0; padding: 0;
-                
-                img{ width: 50%;
-                  
-               
-                }
-              }
-            }
-          
-        }
-      }
-    }
-
-
-   .magazine1 {
-    width: 100%;
-    overflow: hidden;
-    padding-top: 30px;
-    margin-bottom: 30px;
-    .container{
-      width: 1440px; margin: 0 auto;
-     .titleWrap{
-    
-        h2{
-          position: relative;
-          z-index: 1;
-          &:after{
-            content:"";
-            width: 50px;
-            height: 15px;
-            background: #baf3c2;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            z-index: -1;
-            }
-        }
-      }
-      .magazine-List{
-        position: relative;
-        height: 300px;
-        display: flex;
-        width: 1440px;
-            
-            .swiper-wrap{
-              width:100%;
-             
-              position: absolute;
-              right:230px; 
-              display: flex;
-              .mg-img{
-                height: 100%;
-                display: flex;
-                margin: 0; padding: 0;
-                
-                img{ width: 50%;
-                  
-               
-                }
-              }
-            }
-            .magazine-box{  
-              box-sizing: border-box;
-              padding: 20px;
-              font-size: 50px;
-              width: 200px;
-              height: 15%;
-              position: absolute;
-              right: 0;
-              background: #272727;
-              &::after {
-                content: "";
-                display: block;
-                position: absolute;
-                top: 5%;
-                right: 10%;
-                width: 30%;
-                height: 100%;
-                background: url(img/typomag_logo_630.png) no-repeat center center;
-                background-size: 100%;
-                background-position: center;
-              }
-            /*   span{position: absolute; top:0px; left: 0px;  color: white; margin-left: 10%; }
-              .m  {top:calc(73px * 0); left: 10px}
-              .al {top:calc(73px * 1); left: 60px;  }
-              .g  {top:calc(73px * 2); left: 60px;  }
-              .a2 {top:calc(73px * 3); left: 70px;  }
-              .z  {top:calc(73px * 4); left: 50px;  }
-              .i  {top:calc(73px * 5); left: 60px;  }
-              .n  {top:calc(73px * 6); left: 60px;  }
-              .e  {top:calc(73px * 7); left: 30px;  } */
-            }
-          
-        }
-
-      }
-    }
-
-
-.foot-bg{ 
-  width: 100%; height: 300px;background: rgb(184, 182, 173);
-  .container{ width: 1400px; margin: 0 auto; padding: 50px 0; display: flex; 
-    .footer-addr{ 
-      .foot-logo{ width: 150px; margin-bottom: 50px; margin-right: 100px;
-        span{}
-        
-      }
-      address{font-style: normal; margin-right: 100px; width: 100%;}
-        .copy{}
-    }
-    .footer-menu{ width: 100%;
-      >ul{display: flex; width: 100%; box-sizing: border-box;
-          >li{ list-style: none;  flex-basis: 33.3%;
-            >a{text-decoration: none; color:  black;  display: block; margin-bottom: 20px;}
-            ul{ padding: 0;
-              li{ list-style: none;
-                a{text-decoration: none;color:  black; font-size: 14px; }
-              }
-            }
-          }
       }
     }
   }
-}
 
+  //라스트피스
 
+  .lastpiece {
+    width: 100%;
+    .lastwrap {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      .txtbox {
+        width: 40%;
+        box-sizing: border-box;
+        padding: 5%;
+        padding-top: 0;
+        padding-left: 0;
+        h2 {
+          margin-bottom: 18%;
+        }
+        span {
+          display: block;
+        }
+        .last-title {
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 1.5%;
+        }
+        .last-price {
+          margin-bottom: 5%;
+        }
+        .last-des {
+          line-height: 1.6;
+          margin-bottom: 20%;
+        }
+        button {
+          width: 90%;
+          padding: 10px 0;
+          background: none;
+          border: 1px solid rgb(131, 131, 131);
+          transition: 0.3s;
+          &:hover {
+            background: rgba(240, 231, 220, 0.678);
+            border-color: rgba(107, 100, 90, 0.678);
+          }
+        }
+      }
+      .imgbox {
+        width: 60%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .foot-bg {
+    width: 100%;
+    height: 300px;
+    background: rgb(184, 182, 173);
+    .container {
+      width: 1400px;
+      margin: 0 auto;
+      padding: 50px 0;
+      display: flex;
+      .footer-addr {
+        .foot-logo {
+          width: 150px;
+          margin-bottom: 50px;
+          margin-right: 100px;
+          span {
+          }
+        }
+        address {
+          font-style: normal;
+          margin-right: 100px;
+          width: 100%;
+        }
+        .copy {
+        }
+      }
+      .footer-menu {
+        width: 100%;
+        > ul {
+          display: flex;
+          width: 100%;
+          box-sizing: border-box;
+          > li {
+            list-style: none;
+            flex-basis: 33.3%;
+            > a {
+              text-decoration: none;
+              color: black;
+              display: block;
+              margin-bottom: 20px;
+            }
+            ul {
+              padding: 0;
+              li {
+                list-style: none;
+                a {
+                  text-decoration: none;
+                  color: black;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
   @include desktop {
     .header {
@@ -385,23 +363,28 @@ display: flex; justify-content:  center; align-items: center;}
       margin: 0 auto;
       padding: 80px 20px;
       box-sizing: border-box;
-      .banner{
-        p{font-size: 150%; transition: .5s;}
+      .banner {
+        p {
+          font-size: 150%;
+          transition: 0.5s;
+        }
       }
-  
-  
     }
     .products {
       width: 100%;
       box-sizing: border-box;
       padding: 100px 20px;
-   
     }
-    .foot-bg{width: 100%;
-  
-    .container {margin: 0; width: 100%; box-sizing: border-box; padding: 50px 20px;}
-   
-  }
+    .foot-bg {
+      width: 100%;
+
+      .container {
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 50px 20px;
+      }
+    }
   }
 
   @include tablet {
