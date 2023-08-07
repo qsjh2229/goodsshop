@@ -66,7 +66,7 @@ const ProductPage = () => {
                 <span id='price'>{product.price}</span>
                 <span id='craetAt'>{dayjs(product.createdAt).format('YYYY년MM월DD일')}</span>
                 <Button type="primary" danger className='delete' onClick={onClickDelete}>상품 삭제</Button>
-                <Button type="primary" danger className='payment' onClick={onClickPerchase} disabled={product.soldout === 1}>결제하기</Button>
+                <Button type="primary" danger className='payment' onClick={onClickPerchase} disabled={product.soldout === 1}>결제하기1</Button>
                 <span id='des'>{product.des}</span>
             </div>
         </div>
