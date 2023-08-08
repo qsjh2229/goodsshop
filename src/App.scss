@@ -91,19 +91,7 @@ $desktop-min: 1440px;
     margin: 0 auto;
     padding: 100px 0;
 
-    h2 {
-      position: relative;
-      &::after {
-        content: "";
-        width: 30px;
-        height: 25px;
-        position: absolute;
-        top: -10px;
-        left: -10px;
-        z-index: -1;
-        background: rgb(161, 226, 131);
-      }
-    }
+   
     .mdList {
       ul {
         display: flex;
@@ -150,14 +138,39 @@ $desktop-min: 1440px;
       }
     }
   }
-  .banner {
-    width: 100%;
-    background: teal;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
+  //IntBrand
+
+  .trend-title{width: 1440px; margin: 0 auto; margin-bottom: 50px;}
+  .brand-wrap{max-width: 1400px; width: 100%; display: flex; margin: 0 auto; box-sizing: border-box; align-items: center;  justify-content: space-between;
+    
+    .brand-main{width: 50%;  display: flex; flex-direction: column;box-sizing: border-box;   justify-content: space-between; img{width: 100%;} 
+      .bmain{ width: 80%; margin: 0 auto; box-sizing: border-box;
+       
+      }
+      .main-txt{display: flex; flex-direction: column;box-sizing: border-box;
+        .m-brand{font-weight: bold; font-size: 1.2rem;}
+        .m-title{font-size: 1rem;}
+        .m-des{font-size: 0.8rem}
+      }
+    }
+    .brand-side{width: 47%; display: flex; flex-direction: column;  height: 100%; 
+      .small-item{display: flex; justify-content: space-between; align-items: center;  margin: 2% 0;
+        .s-img{ width: 30%;
+          img{width: 100%;}
+        }
+      }
+      .s-textbox{ font-size: 10px; width: 65%; display: flex; flex-direction: column;
+        .brand{ font-weight: bold; font-size: 13px;}
+        .s-title{font-weight: bold; font-size: 11px}
+        .s-des{}
+        .m-des{}
+      }
+    }
   }
+
+
+
   .products {
     max-width: 1440px;
     margin: 0 auto;
@@ -166,16 +179,7 @@ $desktop-min: 1440px;
     h2 {
       box-sizing: border-box;
       position: relative;
-      &::after {
-        content: "";
-        width: 30px;
-        height: 25px;
-        position: absolute;
-        top: -10px;
-        left: -10px;
-        z-index: -1;
-        background: rgb(161, 226, 131);
-      }
+      
     }
     .p-list {
       box-sizing: border-box;
