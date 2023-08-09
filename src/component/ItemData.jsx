@@ -1,19 +1,22 @@
+
 const feedsList = [
+ 
     {
      title:'PH 5 Hues of Orange', 
      maindes:'덴마크 디자인 조명의 대표적인 아이콘이라고 할 수 있는 Louis Poulsen의 PH5입니다.', 
      des:'덴마크 디자인 조명의 대표적인 아이콘이라고 할 수 있는 Louis Poulsen의 PH5입니다. PH 5는 1925-1926 three shade을 디자인한 폴 헤닝 센이 1958년에 디자인해 최다 판매를 기록한 베스트셀러 조명입니다. 전 세계적으로 가장 인기 있고 대중적이며 콜렉터와 수많은 디자인 애호가들을 매혹시킨 조명입니다. 최다 판매된 조명인 만큼 다양한 공간 어디에나 자연스럽게 어울리는 매력적인 조명입니다. 다양한 컬러로 만나보실 수 있으며 서로 다른 컬러를 믹스&매치하면 공간을 보다 더 감각적인 분위기로 연출 할 수 있는 조명입니다.', 
      brand:'LOUIS POULSEN', 
-     img:'./img/light/s-light1.jpg', 
+/*      img:{` ${process.env.PUBLIC_URL} +/img/light/s-light1.jpg'}`,  */
+     img:` ${process.env.PUBLIC_URL}/img/light/s-light1.jpg`, 
      price:'2,135,000',
      category:'light',
-     subimg1:'./img/light/s-light1-1.jpg',
-     subimg2:'./img/light/s-light1-2.jpg',
+     subimg1:'img/light/s-light1-1.jpg',
+     subimg2:'/img/light/s-light1-2.jpg',
      subimg3:'./img/light/s-light1-3.jpg',
      
      made:'덴마크'
      
-    },
+    }, 
     {
      title:' AJ 플로어', 
      maindes:'아르네 야콥센은 1957년 코펜하겐의 SAS Royal Hotel(Radisson 컬렉션)을 위해 AJ Lamp를 설계했습니다. 오늘날 AJ 제품군은 덴마크 건축가로서 그를 전 세계적으로 유명하게 만든 디자인으로 간주됩니다.', 
@@ -386,5 +389,86 @@ const feedsList = [
       
       made:'중국'
      },
+    {
+      title:'OD_테누토 커트러리 한식기 2인조', 
+      maindes:'테누토는 음표의 길이보다 길게 하는 기분으로 하난하나의 음으 길게 눌러주며 분명하게 연주함을 의미합니다.',
+       
+      des:`테누토는 음표의 길이보다 길게 하는 기분으로 하난하나의 음으 길게 눌러주며 분명하게 연주함을 의미합니다. 서두르지 않고 충분히 요리한 음식을 즐기는 것처럼 차분히 집중하는 삶. 일상과 주변을 되돌아보는 여유를 오덴세 테누트를 통해 느껴보세요
+      `, 
+      brand:'ODSSENS', 
+      img:'./img/light/s-kic7.jpg', 
+      price:'25,300',
+      category:'kitchen',
+      subimg1:'./img/cup/s-kic7-1.jpg',
+      subimg2:'./img/cup/s-kic7-2.jpg',
+      subimg3:'./img/cup/s-kic7-3jpg',
+      
+      made:'한국'
+     },
+    {
+      title:'루시카스 BORDFOLK 덴마크 에그홀더', 
+      maindes:'BordFolk컬렉션의 독창적인 디자인',
+       
+      des:`BordFolk컬렉션은 독창적인 디자인과 새로운 패턴 및 색상으로 우리의 주방을 보다 감각적으로 변화시켜 줍니다.
+      `, 
+      brand:'루시카스', 
+      img:'./img/light/s-kic8.jpg', 
+      price:'91,900',
+      category:'kitchen',
+      subimg1:'./img/cup/s-kic8-1.jpg',
+      subimg2:'./img/cup/s-kic8-2.jpg',
+      subimg3:'./img/cup/s-kic8-3jpg',
+      
+      made:'한국'
+     },
+    {
+      title:'르네상스 그레이 커피잔 세트', 
+      maindes:'웨지우드의 베스트 디자인인 르네상스 그레이 라인 입니다',
+       
+      des:`르네상스 그레이는 웨지우드의 베스트 디자인인 르네상스 골드의 새로운 컬러웨이로서, 웨지우드 자스퍼 카메오의 쿨 그레이 컬로로 베리에이션한 도시적은 감성이 모던 클래식 디자인 입니다.
+      `, 
+      brand:'wedgwood', 
+      img:'./img/light/s-kic9.jpg', 
+      price:'234,900',
+      category:'kitchen',
+      subimg1:'./img/cup/s-kic9-1.jpg',
+      subimg2:'./img/cup/s-kic9-2.jpg',
+      subimg3:'./img/cup/s-kic9-3jpg',
+      
+      made:'스웨덴'
+     },
+    {
+      title:'르네상스 레드 18츠 접시', 
+      maindes:'우아한 레드와 골드 액센트의 기품',
+       
+      des:`고풍스런 타원형 링 모양의 카메오 쉐잎에 우아한 레드 컬러와 골드 액센트를 더한 르네상스 레드는 디너, 티타임 어느 테이블 세팅에도 잘 어울리는 컬렉션으로 매일 저녁식사에 빠질 수 없는 테이블 웨어 입니다. 르네상스 레드의 상징적이 아카이브 패텅대접시에 레드 컬러 중접시를 레이어드 세팅하면 특별한 연출 없이 기품있는 완벽한 테이블을 완성할 수 있습니다..
+      `, 
+      brand:'wedgwood', 
+      img:'./img/light/s-kic10.jpg', 
+      price:'64,900',
+      category:'kitchen',
+      subimg1:'./img/cup/s-kic10-1.jpg',
+      subimg2:'./img/cup/s-kic10-2.jpg',
+      subimg3:'./img/cup/s-kic10-3jpg',
+      
+      made:'스웨덴'
+     },
+    {
+      title:'르네상스 레드 18츠 접시', 
+      maindes:'우아한 레드와 골드 액센트의 기품',
+       
+      des:`고풍스런 타원형 링 모양의 카메오 쉐잎에 우아한 레드 컬러와 골드 액센트를 더한 르네상스 레드는 디너, 티타임 어느 테이블 세팅에도 잘 어울리는 컬렉션으로 매일 저녁식사에 빠질 수 없는 테이블 웨어 입니다. 르네상스 레드의 상징적이 아카이브 패텅대접시에 레드 컬러 중접시를 레이어드 세팅하면 특별한 연출 없이 기품있는 완벽한 테이블을 완성할 수 있습니다..
+      `, 
+      brand:'wedgwood', 
+      img:'./img/light/s-kic10.jpg', 
+      price:'64,900',
+      category:'kitchen',
+      subimg1:'./img/cup/s-kic10-1.jpg',
+      subimg2:'./img/cup/s-kic10-2.jpg',
+      subimg3:'./img/cup/s-kic10-3jpg',
+      
+      made:'스웨덴'
+     },
 
   ];
+  export default feedsList

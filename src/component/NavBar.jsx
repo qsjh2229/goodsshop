@@ -12,10 +12,10 @@ const NavBar = () => {
             <ul className='listWrap'>
                 <li ><NavLink  Link to="/"    style={({isActive})=>(isActive ? activeStyle : undefined)}>HOME </NavLink></li>
                 <li ><NavLink  Link to="/All" style={({isActive})=>(isActive ? activeStyle : undefined)}> All </NavLink></li>
-                <li ><NavLink  Link to="/Acc" style={({isActive})=>(isActive ? activeStyle : undefined)}> ACC </NavLink></li>
-                <li ><NavLink  Link to="/Tool" style={({isActive})=>(isActive ? activeStyle : undefined)}> Tool </NavLink></li>
-                <li ><NavLink  Link to="/Small" style={({isActive})=>(isActive ? activeStyle : undefined)}> SmallGoods </NavLink></li>
-                <li ><NavLink  Link to="/Interior" style={({isActive})=>(isActive ? activeStyle : undefined)}> interior props </NavLink></li>
+                <li ><NavLink  Link to="/Lighting" style={({isActive})=>(isActive ? activeStyle : undefined)}> Lighting </NavLink></li>
+                <li ><NavLink  Link to="/HomeAcc" style={({isActive})=>(isActive ? activeStyle : undefined)}> HomeAcc </NavLink></li>
+                <li ><NavLink  Link to="/Funiture" style={({isActive})=>(isActive ? activeStyle : undefined)}> Funiture </NavLink></li>
+
             </ul>
         </nav>
     );
