@@ -1,9 +1,9 @@
-body {
-  margin: 0;
-  font-family: 'Hahmlet', serif;
+body {margin: 0; padding : 0; }
 
-}
-
+a{text-decoration: none; }
+img{object-fit: fill; border: none; margin: 0;}
+div, ul, li, a{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

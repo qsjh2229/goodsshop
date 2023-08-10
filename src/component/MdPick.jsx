@@ -1,11 +1,30 @@
 import React from "react";
-
+import ScrollPosition from '../specail/ScrollPosition';
 const MdPick = () => {
+  const scrollPosition = ScrollPosition()
+  let targetHeight;
+  const windowWidth = window.innerWidth;
+
+
+  if (windowWidth >= 1200) {
+    targetHeight = 150;
+  } else if (windowWidth >= 768) {
+    targetHeight = 100;
+  } else if(windowWidth >= 468) {
+    targetHeight = 30;
+  }else{
+    targetHeight = 10;
+  }
   return (
     <div>
-      <div className="mdPick">
+      <div className= 'mdPick'>
         <h2>MD PICK</h2>
-        <div className="mdList">
+      <div
+          className={`mdList ${
+            scrollPosition >= targetHeight ? "originPosition" : ""
+          }`}
+        >
+      
           <ul>
             <li>
               <div className="md-img">

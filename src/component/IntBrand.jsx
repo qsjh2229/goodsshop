@@ -1,10 +1,26 @@
 import React from 'react';
-
+import ScrollPosition from '../specail/ScrollPosition';
 const IntBrand = () => {
+  const scrollPosition = ScrollPosition()
+  let targetHeight;
+  const windowWidth = window.innerWidth;
+
+
+  if (windowWidth >= 1200) {
+    targetHeight = 700;
+  } else if (windowWidth >= 768) {
+    targetHeight = 500;
+  } else if(windowWidth >= 468){
+    targetHeight = 400;
+  }else{
+    targetHeight = 200;
+  }
   return (
-    <>
+    <div div className='int-brand'>
       <h2 className='trend-title'>TRENDY BRAND</h2>
-      <div className='brand-wrap'>
+   <div className={`brand-wrap ${
+            scrollPosition >= targetHeight ? "originPosition" : ""
+          }`}>
         <div className='brand-main'>
          <div className='bmain'>
          <img src='./img/light/s-light1.jpg' alt="루이스 폴센" />
@@ -56,7 +72,7 @@ const IntBrand = () => {
   
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -12,10 +12,10 @@ $desktop-min: 1440px;
   }
 }
 
+*{margin: 0; padding: 0;}
 
-
-.light-se{width: 100%;
-    .light-banner{ width: 100%; position: relative;
+.light-se{width: 100%;height: fit-content;
+    .light-banner{ width: 100%; position: relative;  height: fit-content;
         img{width: 100%;}
         .banner-info{ height: auto;
             display: flex; flex-direction: column; color: white; position: absolute; top: 20%; left: 17%;
@@ -25,7 +25,7 @@ $desktop-min: 1440px;
             &:hover{background: rgb(204, 204, 204); color: black; font-weight: bold;} }
         }
     }
-    .light-main{box-sizing: border-box; width: 90%; margin: 150px auto; 
+    .light-main{box-sizing: border-box; width: 90%; margin: 0 auto; margin-bottom: 50px;
         
         .lmain-img{ max-width: 100%; margin: 0 auto; display: flex; flex-direction: row; justify-content: space-between; 
             
@@ -74,7 +74,7 @@ $desktop-min: 1440px;
          .fol{background: url('../img/light/s-light6-1.jpg') no-repeat top /cover;}
         button{ margin-bottom: 50px; cursor: pointer; transition: .3s;
            &:hover{opacity: .7;}
-            width: calc(100% / 4.05); border: none; height: 170px; position: relative;
+            width: calc(100% / 4.05); border: none; height: 300px; position: relative;
             span{position: absolute; top: 20px; right: 20px; font-size: 1.3rem; font-weight: bold; color: white;}
 
            

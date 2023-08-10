@@ -9,7 +9,9 @@ import { API_URL } from "../config/constans";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
+
 const MainPage = () => {
+
   const [products, setProduct] = useState([]);
   useEffect(() => {
     let url = `${API_URL}/products`;
@@ -29,7 +31,7 @@ const MainPage = () => {
     <div>
      
       <MainSlide />
-      <MdPick />
+      <MdPick  />
       <IntBrand></IntBrand>
       <div className="products">
         <h2>Product</h2>

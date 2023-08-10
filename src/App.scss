@@ -11,14 +11,23 @@ $desktop-min: 1440px;
     @content;
   }
 }
+.originPosition{  opacity: 1 !important;}
+ .transPosition{ opacity: 0; transition: .5s;}
+
+
 .App {
+  
+
+
   .header {
     width: 100%;
     height: 100px;
     border-bottom: 1px solid #ccc;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8) ; box-sizing: border-box;
     .container {
-      width: 1440px;
+      box-sizing: border-box;
+      max-width:  1440px;
+      width: 100%;
       margin: 0 auto;
       display: flex;
       align-items: center;
@@ -87,12 +96,16 @@ $desktop-min: 1440px;
   }
 
   .mdPick {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
     margin: 0 auto;
     padding: 100px 0;
-
    
-    .mdList {
+    
+h2{margin-bottom: 50px;}
+   
+    .mdList {opacity: 0;transition: .5s;
       ul {
         display: flex;
         width: 100%;
@@ -141,8 +154,11 @@ $desktop-min: 1440px;
   
   //IntBrand
 
-  .trend-title{width: 1440px; margin: 0 auto; margin-bottom: 50px;}
-  .brand-wrap{max-width: 1400px; width: 100%; display: flex; margin: 0 auto; box-sizing: border-box; align-items: center;  justify-content: space-between;
+  .int-brand{ 
+    height: fit-content;
+    .trend-title{max-width: 1440px; width: 100%; margin: 0 auto; margin-bottom: 50px; box-sizing: border-box;}
+  .brand-wrap{opacity: 0;  max-width: 1400px; width: 100%; display: flex; margin: 0 auto; box-sizing: border-box; align-items: center;
+      justify-content: space-between; transition: .5s;
     
     .brand-main{width: 50%;  display: flex; flex-direction: column;box-sizing: border-box;   justify-content: space-between; img{width: 100%;} 
       .bmain{ width: 80%; margin: 0 auto; box-sizing: border-box;
@@ -167,12 +183,13 @@ $desktop-min: 1440px;
         .m-des{}
       }
     }
-  }
+  }}
 
 
 
   .products {
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     padding: 100px 0;
     box-sizing: border-box;

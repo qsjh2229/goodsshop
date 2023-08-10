@@ -1,5 +1,5 @@
 import React from 'react';
-import LightItem from '../component/light/LightItem';
+
 import './Lighting.scss'
 import LightBanner from '../component/light/LightBanner';
 import LinghtMain from '../component/light/LinghtMain';
