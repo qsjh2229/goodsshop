@@ -6,10 +6,10 @@ const IntBrand = () => {
   const windowWidth = window.innerWidth;
  
   if (windowWidth >= 1400) {
-    targetHeight = 850;
+    targetHeight = 1100;
   }
   else if (windowWidth >= 1200) {
-    targetHeight = 700;
+    targetHeight = 850;
   } else if (windowWidth >= 768) {
     targetHeight = 500;
   } else if(windowWidth >= 468){
@@ -23,8 +23,8 @@ const IntBrand = () => {
     <div div className='int-brand'>
       <h1 className='trend-title'>TRENDY BRAND</h1>
    <div className={`brand-wrap ${
-            scrollPosition >= targetHeight ? "originPosition" : ""
-           
+             scrollPosition >= targetHeight ? "originPosition" : ""
+
           } `
           }>
         <div className='brand-main'>

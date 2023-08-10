@@ -22,7 +22,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="container">
-                <h1><Link to="/">로고</Link></h1>
+                <h1><Link to="/">M U E</Link></h1>
                 <Navbar />
                 <div className="mobileBar">
                   {icon ? ( <GiHamburgerMenu className="hamburgerIcon" onClick={toggleMenu} /> ) : (<AiOutlineClose className="closeIcon" onClick={toggleMenu} /> )}

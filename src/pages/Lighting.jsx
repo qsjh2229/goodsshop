@@ -14,11 +14,13 @@ const Lighting = () => {
          <LightBanner></LightBanner>
          <LinghtMain></LinghtMain>
          <LightTop></LightTop>
-         
-         
          <LightTab></LightTab>
+         <div className='light-add'>
+            <div className='light-add1'></div>
+            <div className='light-add2'></div>
+         </div>
 
-           {/*  <LightItem></LightItem> */}
+        
         </main>
     );
 };

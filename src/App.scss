@@ -24,6 +24,7 @@ $desktop-min: 1440px;
     height: 100px;
     border-bottom: 1px solid #ccc;
     background: rgba(255, 255, 255, 0.8) ; box-sizing: border-box;
+    h1{a{color: black; font-family: 'Times New Roman', Times, serif;}}
     .container {
       box-sizing: border-box;
       max-width:  1440px;
@@ -199,7 +200,7 @@ $desktop-min: 1440px;
       margin-bottom: 50px;
     }
     .p-list {
-      opacity: 0;
+     
       transition: .5s;
       box-sizing: border-box;
       display: flex;
@@ -311,6 +312,15 @@ $desktop-min: 1440px;
       }
     }
   }
+  .mp-video{ width: 100%; ; display: flex; margin-top: 120px; margin-bottom: 0px; justify-content: space-between;  opacity: 0; transition: .5s;
+    .mp-vbox{ width: 60%; ;
+      video{width: 100%;}}
+    .mp-tbox{ width: 40%; position: relative; 
+    .mp-intxt{position: absolute; top: 30%; right: 10%; display: flex; flex-direction: column; align-items: end; text-align: right;
+      span{margin-bottom: 50px; font-size: 1.5rem;}
+      button{ width: 150px; padding: 5px 10px; background: white; border:  1px solid black;}} }
+ }
+
 
   .foot-bg {
     width: 100%;

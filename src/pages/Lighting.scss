@@ -40,7 +40,7 @@ $desktop-min: 1440px;
         .lmain-img2{margin-top: 100px;}
         
     }
-    .light-top{ max-width: 1400px; margin: 0 auto; margin-top: 100px;
+    .light-top{ max-width: 1400px; width: 100%; margin: 0 auto; margin-top: 100px;
         h1{margin-bottom: 50px;}
         .light-top-itembox{width: 100%; display:  flex; flex-direction: row; justify-content: space-between; align-items: center;
            
@@ -64,7 +64,7 @@ $desktop-min: 1440px;
     }
     .light-tab-wrap{
         max-width: 100%; margin: 0 auto; margin-top: 100px; 
-        h1{ width: 1400px; margin: 0 auto; margin-bottom: 50px;}
+        h1{ max-width: 1400px; width: 100%; margin: 0 auto; margin-bottom: 50px;}
         
         .light-tab-btn{ 
          box-sizing: border-box; display: flex; justify-content: space-between;
@@ -74,6 +74,7 @@ $desktop-min: 1440px;
          .fol{background: url('../img/light/s-light6-1.jpg') no-repeat top /cover;}
         button{ margin-bottom: 50px; cursor: pointer; transition: .3s;
            &:hover{opacity: .7;}
+           &.active{opacity: .7;}
             width: calc(100% / 4.05); border: none; height: 300px; position: relative;
             span{position: absolute; top: 20px; right: 20px; font-size: 1.3rem; font-weight: bold; color: white;}
 
@@ -82,10 +83,11 @@ $desktop-min: 1440px;
         }
     }
     .l-tab-item{
-        max-width: 1400px; margin: 0 auto; margin-top: 50px;
+        max-width: 1400px; width: 100%; margin: 0 auto; margin-top: 50px;
         .l-tab-itembox{width: 100%; display:  flex; flex-direction: row; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;
            
-            .light-tab-item{width: 22%;  margin-bottom: 30px;
+            .light-tab-item{width: 22%;  margin-bottom: 30px;   opacity: 1; /* 초기 투명도를 1로 설정 */
+                transition: opacity 0.5s; 
                 
                 .l-tab-imgbox{width: 100%;
                 img{width: 100%; transition: .2s;} }
@@ -105,13 +107,20 @@ $desktop-min: 1440px;
         
     }
 
-}
+    
+    }
+    .light-add{
+    width: 100%; height: 300px; display: flex; margin-top: 100px;
+    .light-add1{width: 50%; height: 100%; background: #888585;}
+    .light-add2{width: 50%; height: 100%; background: #ddd;}
+    }
+
   
    
 }
 @include desktop {
     .light-se{
-        
+        box-sizing: border-box;
         .light-banner { .banner-info{ height: auto;
             position: absolute; top: 13%; left: 13%;
             .bmain-txt{font-size: 1.8rem; margin-bottom: 2%;}
@@ -119,7 +128,7 @@ $desktop-min: 1440px;
             button{color: white; border: 1px solid white; background: none; width: 150px; padding: 10px 0; transition: .3s;
             &:hover{background: rgb(204, 204, 204); color: black; font-weight: bold;} }
         }}
-        .light-top{ padding: 0 100px; box-sizing: border-box;
+        .light-top{ padding: 0 13%; box-sizing: border-box;
             h1{margin-bottom: 50px;}
             .light-top-itembox{ 
                
@@ -137,6 +146,28 @@ $desktop-min: 1440px;
     
     
                     &:hover {.l-top-imgbox{img{opacity: .5;}}}
+                }
+    
+            }
+        }
+        .l-tab-item{ padding: 0 13%; box-sizing: border-box;
+            .l-tab-itembox{width: 100%; display:  flex; flex-direction: row; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;
+           
+                .light-tab-item{width: 20%;  margin-bottom: 30px;   opacity: 1; /* 초기 투명도를 1로 설정 */
+                    transition: opacity 0.5s; 
+                    
+                    .l-tab-imgbox{width: 100%;
+                    img{width: 100%; transition: .2s;} }
+    
+                    .l-tab-txtbox{display: flex; flex-direction: column; 
+                        span{ padding: 3px 0;}
+                     .l-t-title{font-size: 1.2rem;font-weight: bolder;}   
+                     .l-t-price{font-size: 1rem; font-weight: bold;}   
+                     .l-t-maindes{font-size: .9rem;}   
+                    }
+    
+    
+                    &:hover {.l-tab-imgbox{img{opacity: .5;}}}
                 }
     
             }
