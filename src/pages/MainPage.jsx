@@ -5,12 +5,23 @@ import MainSlide from "../component/MainSlide";
 import LastPiece from "../component/LastPiece"
 import MdPick from "../component/MdPick";
 import { API_URL } from "../config/constans";
-
+import ScrollPosition from '../specail/ScrollPosition';
 import axios from "axios";
 import { Link } from "react-router-dom";
-
-
+let targetHeight;
+const scrollPosition = ScrollPosition()
+const windowWidth = window.innerWidth;
 const MainPage = () => {
+  if (windowWidth >= 1200) {
+    targetHeight = 900;
+  } else if (windowWidth >= 768) {
+    targetHeight = 800;
+  } else if(windowWidth >= 468){
+    targetHeight = 600;
+  }else{
+    targetHeight = 500;
+  }
+
 
   const [products, setProduct] = useState([]);
   useEffect(() => {
@@ -34,8 +45,12 @@ const MainPage = () => {
       <MdPick  />
       <IntBrand></IntBrand>
       <div className="products">
-        <h2>Product</h2>
-        <div id="productList" className="p-list">
+        <h1>Product</h1>
+        <div id="productList"  className={`p-list ${
+            scrollPosition >= targetHeight ? "originPosition" : ""
+           
+          } `
+          }>
           {products.map((product, idx) => {
             return (
               <div className="product-card" key={product.id}>

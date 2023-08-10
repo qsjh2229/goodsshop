@@ -7,7 +7,7 @@ const LastPiece = () => {
      <div className='lastwrap'>
         <div className='txtbox'>
           <div>
-          <h2>LAST PIECE</h2>
+          <h1>LAST PIECE</h1>
             <span className='last-title'>공간 구성 기억</span>
             <span className='last-price'><strong>유인영 </strong>  _ 2,350,000</span>
             <span className='last-des'>1984년 유김화란 작가의  작품 '기억'을 모티보로 현대적으로 재해석한 유김화란 작가의 딸 유인영 작가의 유인영 작가의 헌정작 같은 작품

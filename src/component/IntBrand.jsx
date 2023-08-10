@@ -4,9 +4,11 @@ const IntBrand = () => {
   const scrollPosition = ScrollPosition()
   let targetHeight;
   const windowWidth = window.innerWidth;
-
-
-  if (windowWidth >= 1200) {
+ 
+  if (windowWidth >= 1400) {
+    targetHeight = 850;
+  }
+  else if (windowWidth >= 1200) {
     targetHeight = 700;
   } else if (windowWidth >= 768) {
     targetHeight = 500;
@@ -15,12 +17,16 @@ const IntBrand = () => {
   }else{
     targetHeight = 200;
   }
+
+
   return (
     <div div className='int-brand'>
-      <h2 className='trend-title'>TRENDY BRAND</h2>
+      <h1 className='trend-title'>TRENDY BRAND</h1>
    <div className={`brand-wrap ${
             scrollPosition >= targetHeight ? "originPosition" : ""
-          }`}>
+           
+          } `
+          }>
         <div className='brand-main'>
          <div className='bmain'>
          <img src='./img/light/s-light1.jpg' alt="루이스 폴센" />

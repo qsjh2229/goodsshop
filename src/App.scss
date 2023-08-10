@@ -13,7 +13,7 @@ $desktop-min: 1440px;
 }
 .originPosition{  opacity: 1 !important;}
  .transPosition{ opacity: 0; transition: .5s;}
-
+.newClass{opacity: 1 !important;; }
 
 .App {
   
@@ -103,7 +103,7 @@ $desktop-min: 1440px;
     padding: 100px 0;
    
     
-h2{margin-bottom: 50px;}
+    h1{margin-bottom: 50px;}
    
     .mdList {opacity: 0;transition: .5s;
       ul {
@@ -193,12 +193,14 @@ h2{margin-bottom: 50px;}
     margin: 0 auto;
     padding: 100px 0;
     box-sizing: border-box;
-    h2 {
+    h1 {
       box-sizing: border-box;
       position: relative;
-      
+      margin-bottom: 50px;
     }
     .p-list {
+      opacity: 0;
+      transition: .5s;
       box-sizing: border-box;
       display: flex;
       flex-wrap: wrap;
@@ -271,7 +273,7 @@ h2{margin-bottom: 50px;}
         padding: 5%;
         padding-top: 0;
         padding-left: 0;
-        h2 {
+        h1 {
           margin-bottom: 18%;
         }
         span {
@@ -377,12 +379,13 @@ h2{margin-bottom: 50px;}
         width: 100%;
         padding: 0 2rem;
         box-sizing: border-box;
+
       }
     }
     .mdPick {
       width: 100%;
       margin: 0 auto;
-      padding: 80px 20px;
+      padding: 80px 10%;
       box-sizing: border-box;
       .banner {
         p {
@@ -394,8 +397,10 @@ h2{margin-bottom: 50px;}
     .products {
       width: 100%;
       box-sizing: border-box;
-      padding: 100px 20px;
+      padding: 100px 10% !important;
     }
+    .int-brand{padding: 0 10%;}
+    .lastpiece{padding: 0 3%;}
     .foot-bg {
       width: 100%;
 

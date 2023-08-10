@@ -4,7 +4,9 @@ const MdPick = () => {
   const scrollPosition = ScrollPosition()
   let targetHeight;
   const windowWidth = window.innerWidth;
+  const windoHeight= window.innerHeight;
 
+  const additionalClass = windoHeight > windowWidth ? "newClass" : "";
 
   if (windowWidth >= 1200) {
     targetHeight = 150;
@@ -18,11 +20,11 @@ const MdPick = () => {
   return (
     <div>
       <div className= 'mdPick'>
-        <h2>MD PICK</h2>
+        <h1>MD PICK</h1>
       <div
           className={`mdList ${
             scrollPosition >= targetHeight ? "originPosition" : ""
-          }`}
+          } ${additionalClass}`}
         >
       
           <ul>
