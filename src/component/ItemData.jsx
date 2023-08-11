@@ -300,12 +300,12 @@ const feedsList = [
       des:`프랑스 장인 John Derian의 핸드메이드 접시 입니다.
       `, 
       brand:'LIMAS', 
-      img:'./img/light/s-kic1.jpg', 
+      img:'./img/cup/s-kic1.jpg', 
       price:'280,400',
-      category:'kitchen',
-      subimg1:'./img/cup/s-kic-1.jpg',
-      subimg2:'./img/cup/s-kic-2.jpg',
-      subimg3:'./img/cup/s-kic-3.jpg',
+      category:'kitchendish',
+      subimg1:'img/cup/s-kic-1.jpg',
+      subimg2:'img/cup/s-kic-2.jpg',
+      subimg3:'img/cup/s-kic-3.jpg',
       
       made:'프랑스'
      },
@@ -316,9 +316,9 @@ const feedsList = [
       des:`세라믹 제품들은 아스티에 드 빌라트을 상징하면서 가장 다양한 제품들로 구성된 라인입니다. 전통적인 방식을 고집하는 아스티에 드 빌라트는 총 150여개가 넘는 다양한 디자인을 보여주며, 한 사람이 처음부터 끝까지 한 제품의 전 공정과정을 책임지는 원칙 하에 예쁜 작품들이 탄생됩니다.
       `, 
       brand:'LIMAS', 
-      img:'./img/light/s-kic2.jpg', 
+      img:'./img/cup/s-kic2.jpg', 
       price:'259,400',
-      category:'kitchen',
+      category:'kitchendish',
       subimg1:'./img/cup/s-kic2-1.jpg',
       subimg2:'./img/cup/s-kic2-2.jpg',
       subimg3:'./img/cup/s-kic2-3jpg',
@@ -332,12 +332,12 @@ const feedsList = [
       des:`Jochen Holz가 제작한 HAY의 Jug 시리즈는 붕규산 유리로 제작되었으며, 다른 이들의 시선을 끌어당기는 화려한 색상으로 테이블에 새로운 멋을 꾸미는데 매우 알맞습니다
       `, 
       brand:'HAY', 
-      img:'./img/light/s-kic3.jpg', 
+      img:'./img/cup/s-kic3.jpg', 
       price:'80,500',
-      category:'kitchen',
+      category:'kitchenetc',
       subimg1:'./img/cup/s-kic3-1.jpg',
       subimg2:'./img/cup/s-kic3-2.jpg',
-      subimg3:'./img/cup/s-kic3-3jpg',
+      subimg3:'./img/cup/s-kic3-3.jpg',
       
       made:'프랑스'
      },
@@ -348,13 +348,13 @@ const feedsList = [
       des:`가볍고 내구성이 뛰어난 애나멜 소재로 제작된 HAY의 애나멜 컬렉션은 머그, 텀블러, 플레이트, 트레이 등으로 구성됩니다. HAY만의 감성으로 디자인된 제품으로 모든 공간에서 사용하기에 이상적인 식기 세트입니다.
       `, 
       brand:'HAY', 
-      img:'./img/light/s-kic4.jpg', 
+      img:'./img/cup/s-kic-4.jpg', 
       price:'23,500',
-      category:'kitchen',
-      subimg1:'./img/cup/s-kic4-1.jpg',
-      subimg2:'./img/cup/s-kic4-2.jpg',
-      subimg3:'./img/cup/s-kic4-3jpg',
-      
+      category:'kitchendish',
+      subimg1:'./img/cup/s-kic-4-1.jpg',
+      subimg2:'./img/cup/s-kic-4-2.jpg',
+      subimg3:'./img/cup/s-kic-4-3jpg',
+      sell:'top3',
       made:'프랑스'
      },
     {
@@ -364,29 +364,28 @@ const feedsList = [
       des:`마이티 저그는 핸디형 워터저그로 휴대가 간편하고 일상과 아웃도어 라이프를 아우르는, 캠핑에 최적화된 워터 저그입니다.
       `, 
       brand:'SABOU', 
-      img:'./img/light/s-kic5.jpg', 
+      img:'./img/cup/s-kic-5.jpg', 
       price:'98,900',
-      category:'kitchen',
-      subimg1:'./img/cup/s-kic5-1.jpg',
-      subimg2:'./img/cup/s-kic5-2.jpg',
-      subimg3:'./img/cup/s-kic5-3jpg',
+      category:'kitchenetc',
+      subimg1:'./img/cup/s-kic-5-1.jpg',
+      subimg2:'./img/cup/s-kic-5-2.jpg',
+      subimg3:'./img/cup/s-kic-5-3.jpg',
       
       made:'중국'
      },
     {
       title:'Basic Enamel Mug 250ml', 
       maindes:'북유럽 감성의 에나멜 머그컵',
-       
       des:`Muula의 베이직 에나멜 머그는 심플한 디자인으로 주방에 깔끔함을 더해줍니다..
       `, 
       brand:'Muula', 
-      img:'./img/light/s-kic6.jpg', 
+      img:'./img/cup/s-kic-6.jpg', 
       price:'98,900',
-      category:'kitchen',
-      subimg1:'./img/cup/s-kic6-1.jpg',
-      subimg2:'./img/cup/s-kic6-2.jpg',
-      subimg3:'./img/cup/s-kic6-3jpg',
-      
+      category:'kitchencup',
+      subimg1:'./img/cup/s-kic-6-1.jpg',
+      subimg2:'./img/cup/s-kic-6-2.jpg',
+      subimg3:'./img/cup/s-kic-6-3.jpg',
+      sell:'top3',
       made:'중국'
      },
     {
@@ -396,12 +395,12 @@ const feedsList = [
       des:`테누토는 음표의 길이보다 길게 하는 기분으로 하난하나의 음으 길게 눌러주며 분명하게 연주함을 의미합니다. 서두르지 않고 충분히 요리한 음식을 즐기는 것처럼 차분히 집중하는 삶. 일상과 주변을 되돌아보는 여유를 오덴세 테누트를 통해 느껴보세요
       `, 
       brand:'ODSSENS', 
-      img:'./img/light/s-kic7.jpg', 
+      img:'./img/cup/s-kic-7.jpg', 
       price:'25,300',
-      category:'kitchen',
+      category:'kitchenetc',
       subimg1:'./img/cup/s-kic7-1.jpg',
       subimg2:'./img/cup/s-kic7-2.jpg',
-      subimg3:'./img/cup/s-kic7-3jpg',
+      subimg3:'./img/cup/s-kic7-.3jpg',
       
       made:'한국'
      },
@@ -412,12 +411,12 @@ const feedsList = [
       des:`BordFolk컬렉션은 독창적인 디자인과 새로운 패턴 및 색상으로 우리의 주방을 보다 감각적으로 변화시켜 줍니다.
       `, 
       brand:'루시카스', 
-      img:'./img/light/s-kic8.jpg', 
+      img:'./img/cup/s-kic-8.jpg', 
       price:'91,900',
-      category:'kitchen',
-      subimg1:'./img/cup/s-kic8-1.jpg',
-      subimg2:'./img/cup/s-kic8-2.jpg',
-      subimg3:'./img/cup/s-kic8-3jpg',
+      category:'kitchendish',
+      subimg1:'./img/cup/s-kic-8-1.jpg',
+      subimg2:'./img/cup/s-kic-8-2.jpg',
+      subimg3:'./img/cup/s-kic-8-3.jpg',
       
       made:'한국'
      },
@@ -428,13 +427,13 @@ const feedsList = [
       des:`르네상스 그레이는 웨지우드의 베스트 디자인인 르네상스 골드의 새로운 컬러웨이로서, 웨지우드 자스퍼 카메오의 쿨 그레이 컬로로 베리에이션한 도시적은 감성이 모던 클래식 디자인 입니다.
       `, 
       brand:'wedgwood', 
-      img:'./img/light/s-kic9.jpg', 
+      img:'./img/cup/s-kic-9.jpg', 
       price:'234,900',
-      category:'kitchen',
-      subimg1:'./img/cup/s-kic9-1.jpg',
-      subimg2:'./img/cup/s-kic9-2.jpg',
-      subimg3:'./img/cup/s-kic9-3jpg',
-      
+      category:'kitchencup',
+      subimg1:'./img/cup/s-kic-9-1.jpg',
+      subimg2:'./img/cup/s-kic-9-2.jpg',
+      subimg3:'./img/cup/s-kic-9-3.jpg',
+      sell:'top3',
       made:'스웨덴'
      },
     {
@@ -444,12 +443,12 @@ const feedsList = [
       des:`고풍스런 타원형 링 모양의 카메오 쉐잎에 우아한 레드 컬러와 골드 액센트를 더한 르네상스 레드는 디너, 티타임 어느 테이블 세팅에도 잘 어울리는 컬렉션으로 매일 저녁식사에 빠질 수 없는 테이블 웨어 입니다. 르네상스 레드의 상징적이 아카이브 패텅대접시에 레드 컬러 중접시를 레이어드 세팅하면 특별한 연출 없이 기품있는 완벽한 테이블을 완성할 수 있습니다..
       `, 
       brand:'wedgwood', 
-      img:'./img/light/s-kic10.jpg', 
+      img:'./img/cup/s-kic-10.jpg', 
       price:'64,900',
-      category:'kitchen',
+      category:'kitchendish',
       subimg1:'./img/cup/s-kic10-1.jpg',
       subimg2:'./img/cup/s-kic10-2.jpg',
-      subimg3:'./img/cup/s-kic10-3jpg',
+      subimg3:'./img/cup/s-kic10-3.jpg',
       
       made:'스웨덴'
      },
@@ -461,12 +460,12 @@ const feedsList = [
       des:`고풍스런 타원형 링 모양의 카메오 쉐잎에 코발트블루와 빛나는 액센트를  더한 르네상스 골드는 모던 패턴의 화려함과 클래식 패턴의 고급스러움이 동시에 느껴집니다. 코발트블루 컬러의 중접시와 르네상스 골드의 상징적인 아카이브 패턴 대접시를 레이어드 세팅하면 특별한 연출 없이 완벽한 테이블을 완성 할 수 있습니다
       `, 
       brand:'wedgwood', 
-      img:'./img/light/s-kic11.jpg', 
+      img:'./img/cup/s-kic-11.jpg', 
       price:'64,900',
-      category:'kitchen',
-      subimg1:'./img/cup/s-kic11-1.jpg',
-      subimg2:'./img/cup/s-kic11-2.jpg',
-      subimg3:'./img/cup/s-kic11-3jpg',
+      category:'kitchencup',
+      subimg1:'./img/cup/s-kic-11-1.jpg',
+      subimg2:'./img/cup/s-kic-11-2.jpg',
+      subimg3:'./img/cup/s-kic-11-3.jpg',
       
       made:'스웨덴'
      },
@@ -477,12 +476,12 @@ const feedsList = [
       des:`고풍스런 타원형 링 모양의 카메오 쉐잎에 코발트블루와 빛나는 액센트를  더한 르네상스 골드는 모던 패턴의 화려함과 클래식 패턴의 고급스러움이 동시에 느껴집니다. 코발트블루 컬러의 중접시와 르네상스 골드의 상징적인 아카이브 패턴 대접시를 레이어드 세팅하면 특별한 연출 없이 완벽한 테이블을 완성 할 수 있습니다
       `, 
       brand:'wedgwood', 
-      img:'./img/light/s-kic12.jpg', 
+      img:'./img/cup/s-kic-12.jpg', 
       price:'64,900',
-      category:'kitchen',
-      subimg1:'./img/cup/s-kic12-1.jpg',
-      subimg2:'./img/cup/s-kic12-2.jpg',
-      subimg3:'./img/cup/s-kic12-3jpg',
+      category:'kitchendish',
+      subimg1:'./img/cup/s-kic-12-1.jpg',
+      subimg2:'./img/cup/s-kic-12-2.jpg',
+      subimg3:'./img/cup/s-kic-12-3.jpg',
       
       made:'스웨덴'
      },
@@ -503,12 +502,12 @@ const feedsList = [
       머그컵 단품으로도 사용 가능하지만 ‘뉴웨이브까페 파티접시M 20*14cm’ 나 ‘뉴웨이브까페 파티접시L 22*17cm’와 함께 사용하여 디저트 플레이팅 하는 것도 좋습니다.
       `, 
       brand:'Villeroy&Boch', 
-      img:'./img/light/s-kic13.jpg', 
+      img:'./img/cup/s-kic-13.jpg', 
       price:'64,900',
-      category:'kitchen',
-      subimg1:'./img/cup/s-kic13-1.jpg',
-      subimg2:'./img/cup/s-kic13-2.jpg',
-      subimg3:'./img/cup/s-kic13-3jpg',
+      category:'kitchencup',
+      subimg1:'./img/cup/s-kic-13-1.jpg',
+      subimg2:'./img/cup/s-kic-13-2.jpg',
+      subimg3:'./img/cup/s-kic-13-3.jpg',
       
       made:'스웨덴'
      },
@@ -519,10 +518,10 @@ const feedsList = [
       des:`빌레로이앤보흐 250주년 기념 패턴인 아우든 컬렉션은 1748년 장프랑수아 보흐와 그의 세 아들들에 의해 도자기 제조소를 세운 작은 프랑스 마을의 이름인 '아우든 르 티쉬'의 이름을 따서 만들어졌습니다. 특유의 점묘법을 사용한 아우든 컬렉션은 한가롭고 평화로운 시골 농장의 일상을 마치 한 폭의 풍경화처럼 아름답게 담아내어 전통적인 유럽 패턴을 현대적인 디자인으로 재해석 하였습니다.
       `, 
       brand:'	Villeroy&Boch', 
-      img:'./img/light/s-kic14.jpg', 
+      img:'./img/cup/s-kic-14.jpg', 
       price:'54,200',
-      category:'kitchen',
-      subimg1:'./img/cup/s-kic14-1.jpg',
+      category:'kitchencup',
+      subimg1:'./img/cup/s-kic-14-1.jpg',
     
       
       made:'스웨덴'
@@ -534,10 +533,10 @@ const feedsList = [
       des:`빌레로이앤보흐 250주년 기념 패턴인 아우든 컬렉션은 1748년 장프랑수아 보흐와 그의 세 아들들에 의해 도자기 제조소를 세운 작은 프랑스 마을의 이름인 '아우든 르 티쉬'의 이름을 따서 만들어졌습니다. 특유의 점묘법을 사용한 아우든 컬렉션은 한가롭고 평화로운 시골 농장의 일상을 마치 한 폭의 풍경화처럼 아름답게 담아내어 전통적인 유럽 패턴을 현대적인 디자인으로 재해석 하였습니다.
       `, 
       brand:'	Villeroy&Boch', 
-      img:'./img/light/s-kic15.jpg', 
+      img:'./img/cup/s-kic-15.jpg', 
       price:'54,200',
-      category:'kitchen',
-      subimg1:'./img/cup/s-kic15-1.jpg',
+      category:'kitchencup',
+      subimg1:'./img/cup/s-kic-15-1.jpg',
     
       
       made:'스웨덴'
@@ -549,13 +548,13 @@ const feedsList = [
       des:`Ovid 컬렉션은 클래식하면서 절제된 쉐입의 와인잔으로 가장 기본에 충실한 와인잔입니다. 좋아하는 와인을 즐기기에 적당한 사이즈로 와인이 필요한 자리 언제든지 함께 하기 좋습니다. 
       `, 
       brand:'	Villeroy&Boch', 
-      img:'./img/light/s-kic16.jpg', 
+      img:'./img/cup/s-kic-16.jpg', 
       price:'54,200',
-      category:'kitchen',
-      subimg1:'./img/cup/s-kic16-1.jpg',
-      subimg2:'./img/cup/s-kic16-2.jpg',
-      subimg3:'./img/cup/s-kic16-3.jpg',
-    
+      category:'kitchencup',
+      subimg1:'./img/cup/s-kic-16-1.jpg',
+      subimg2:'./img/cup/s-kic-16-2.jpg',
+      subimg3:'./img/cup/s-kic-16-3.jpg',
+   
       
       made:'스웨덴'
      },
@@ -566,12 +565,12 @@ const feedsList = [
       des:`사마르칸 컬렉션은 14세기, 중국에서 유럽으로 통하는 가장 큰 무역 실크로드 길에사마르칸트이라 불리는 중동부 도시의 멋진 건축물과 고급스러운 실크의 아름다움에 영감을 받아 사마르칸 컬렉션이 제작되었습니다. 화려한 금장과 우아한 그림 그리고 동양과 중양의 화려함과 신비로움을 고급스러운 그림과 패턴으로 만들어낸 매력인 컬렉션입니다.
       `, 
       brand:'	Villeroy&Boch', 
-      img:'./img/light/s-kic17.jpg', 
+      img:'./img/cup/s-kic-17.jpg', 
       price:'235,000',
-      category:'kitchen',
-      subimg1:'./img/cup/s-kic17-1.jpg',
-      subimg2:'./img/cup/s-kic17-2.jpg',
-      subimg3:'./img/cup/s-kic17-3.jpg',
+      category:'kitchendish',
+      subimg1:'./img/cup/s-kic-17-1.jpg',
+      subimg2:'./img/cup/s-kic-17-2.jpg',
+      subimg3:'./img/cup/s-kic-17-3.jpg',
     
       
       made:'스웨덴'

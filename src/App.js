@@ -11,6 +11,7 @@ import Header from './component/Header';
 import Footer from './component/Footer';
 import UploadPage from './component/UploadPage';
 import ProductPage from './component/ProductPage';
+import Kitchen from './pages/Kitchen';
 
 
 
@@ -26,6 +27,7 @@ function App() {
      
       <Route path='/all' element={<All/>}></Route>
       <Route path='/lighting' element={<Lighting/>}></Route>
+      <Route path='/kitchen' element={<Kitchen/>}></Route>
       <Route path='/homeAcc' element={<HomeAcc/>}></Route>
       <Route path='/funiture' element={<Funiture/>}></Route>
       <Route path='/uploadPage' element={<UploadPage/>}></Route>

@@ -16,7 +16,7 @@ const Lighting = () => {
          <LightTop></LightTop>
          <LightTab></LightTab>
          <div className='light-add'>
-            <div className='light-add1'></div>
+            <div className='light-add1'><img src="../img/cup/s-kic-10-1.jpg" alt="" /></div>
             <div className='light-add2'></div>
          </div>
 

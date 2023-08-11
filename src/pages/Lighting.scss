@@ -1,5 +1,6 @@
 $tablet-max: 1023px;
 $desktop-min: 1440px;
+$moblie-min: 480px;
 
 @mixin tablet {
   @media (max-width: $tablet-max) {
@@ -7,6 +8,11 @@ $desktop-min: 1440px;
   }
 }
 @mixin desktop {
+  @media (max-width: $desktop-min) {
+    @content;
+  }
+}
+@mixin mobile {
   @media (max-width: $desktop-min) {
     @content;
   }
@@ -42,7 +48,7 @@ $desktop-min: 1440px;
     }
     .light-top{ max-width: 1400px; width: 100%; margin: 0 auto; margin-top: 100px;
         h1{margin-bottom: 50px;}
-        .light-top-itembox{width: 100%; display:  flex; flex-direction: row; justify-content: space-between; align-items: center;
+        .light-top-itembox{width: 100%; display:  flex; flex-direction: row; justify-content: space-between; align-items: start;
            
             .light-top-item{width: 30%; 
                 
@@ -109,10 +115,13 @@ $desktop-min: 1440px;
 
     
     }
-    .light-add{
-    width: 100%; height: 300px; display: flex; margin-top: 100px;
-    .light-add1{width: 50%; height: 100%; background: #888585;}
+    .light-add{ background: rgb(255, 250, 241);
+    width: 90%;  display: flex; margin: 0 auto; margin-top: 100px;
+    img{width: 100%; }
+    .light-add1{width: 30%; height: 100%; ;
+    }
     .light-add2{width: 50%; height: 100%; background: #ddd;}
+ 
     }
 
   
@@ -141,7 +150,8 @@ $desktop-min: 1440px;
                         span{ padding: 3px 0;}
                      .l-t-title{font-size: 1.1rem;font-weight: bolder;}   
                      .l-t-price{font-size: .9rem; font-weight: bold;}   
-                     .l-t-maindes{font-size: .8rem;}   
+                     .l-t-maindes{font-size: .8rem;
+                        display:-webkit-box; word-wrap:break-word; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis; height:54px; line-height:18px; color:#444; font-size:13px; text-decoration:none;}   
                     }
     
     
@@ -163,7 +173,8 @@ $desktop-min: 1440px;
                         span{ padding: 3px 0;}
                      .l-t-title{font-size: 1.2rem;font-weight: bolder;}   
                      .l-t-price{font-size: 1rem; font-weight: bold;}   
-                     .l-t-maindes{font-size: .9rem;}   
+                     .l-t-maindes{font-size: .9rem;
+                        display:-webkit-box; word-wrap:break-word; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis;  line-height:18px; color:#444; font-size:13px; text-decoration:none;}   
                     }
     
     
