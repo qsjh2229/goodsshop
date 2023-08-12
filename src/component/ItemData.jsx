@@ -13,8 +13,8 @@ const feedsList = [
      subimg1:'img/light/s-light1-1.jpg',
      subimg2:'/img/light/s-light1-2.jpg',
      subimg3:'./img/light/s-light1-3.jpg',
-     
-     made:'덴마크'
+     made:'덴마크',
+     id:'light1'
      
     }, 
     {
@@ -28,8 +28,8 @@ const feedsList = [
      subimg1:'./img/light/s-light2-1.jpg',
      subimg2:'./img/light/s-light2-2.jpg',
      subimg3:'./img/light/s-light2-3.jpg',
-     
-     made:'덴마크'
+     made:'덴마크',
+     id:'light2'
     },
     {
      title:' VL Studio Table/Floor', 
@@ -43,7 +43,7 @@ const feedsList = [
      subimg1:'./img/light/s-light3-1.jpg',
      subimg2:'./img/light/s-light3-2.jpg',
      subimg3:'./img/light/s-light3-3.jpg',
-     
+     id:'light3',
      made:'덴마크'
     },
     {
@@ -58,7 +58,7 @@ const feedsList = [
      subimg1:'./img/light/s-light4-1.jpg',
      subimg2:'./img/light/s-light4-2.jpg',
      subimg3:'./img/light/s-light4-3.jpg',
-     
+     id:'light4',
      made:'이탈리아'
     },
     {
@@ -73,7 +73,7 @@ const feedsList = [
       subimg1:'./img/light/s-light5-1.jpg',
       subimg2:'./img/light/s-light5-2.jpg',
       subimg3:'./img/light/s-light5-3.jpg',
-      
+      id:'light5',
       made:'덴마크'
      },
     {
@@ -88,7 +88,7 @@ const feedsList = [
       subimg1:'./img/light/s-light6-1.jpg',
       subimg2:'./img/light/s-light6-2.jpg',
       subimg3:'./img/light/s-light6-3.jpg',
-      
+      id:'light6',
       made:'덴마크'
      },
     {
@@ -103,7 +103,7 @@ const feedsList = [
       subimg1:'./img/light/s-light7-1.jpg',
       subimg2:'./img/light/s-light7-2.jpg',
       subimg3:'./img/light/s-light7-3.jpg',
-      
+      id:'light7',
       made:'덴마크'
      },
     {
@@ -118,7 +118,7 @@ const feedsList = [
       subimg1:'./img/light/s-light8-1.jpg',
       subimg2:'./img/light/s-light8-2.jpg',
       subimg3:'./img/light/s-light8-3.jpg',
-      
+      id:'light8',
       made:'덴마크'
      },
     {
@@ -133,7 +133,7 @@ const feedsList = [
       subimg1:'./img/light/s-light9-1.jpg',
       subimg2:'./img/light/s-light9-2.jpg',
       subimg3:'./img/light/s-light9-3.jpg',
-      
+      id:'light9',
       made:'덴마크'
      },
     {
@@ -148,7 +148,7 @@ const feedsList = [
       subimg1:'./img/light/s-light10-1.jpg',
       subimg2:'./img/light/s-light10-2.jpg',
       subimg3:'./img/light/s-light10-3.jpg',
-      
+      id:'light10',
       made:'벨기에'
      },
     {
@@ -163,7 +163,7 @@ const feedsList = [
       subimg1:'./img/light/s-light11-1.jpg',
       subimg2:'./img/light/s-light11-2.jpg',
       subimg3:'./img/light/s-light11-3.jpg',
-      
+      id:'light11',
       made:'벨기에'
      },
     {
@@ -178,7 +178,7 @@ const feedsList = [
       subimg1:'./img/light/s-light12-1.jpg',
       subimg2:'./img/light/s-light12-2.jpg',
       subimg3:'./img/light/s-light12-3.jpg',
-      
+      id:'light12',
       made:'벨기에'
      },
      {
@@ -193,7 +193,7 @@ const feedsList = [
       subimg1:'./img/light/s-light13-1.jpg',
       subimg2:'./img/light/s-light13-2.jpg',
       subimg3:'./img/light/s-light13-3.jpg',
-      
+      id:'light13',
       made:'한국'
      },
     {
@@ -212,7 +212,7 @@ const feedsList = [
       subimg1:'./img/light/s-light14-1.jpg',
       subimg2:'./img/light/s-light14-2.jpg',
       subimg3:'./img/light/s-light14-3.jpg',
-      
+      id:'light14',
       made:'한국'
      },
     {
@@ -231,7 +231,7 @@ const feedsList = [
       subimg1:'./img/light/s-light15-1.jpg',
       subimg2:'./img/light/s-light15-2.jpg',
       subimg3:'./img/light/s-light15-3.jpg',
-      
+      id:'light15',
       made:'한국'
      },
     {
@@ -250,7 +250,7 @@ const feedsList = [
       subimg1:'./img/light/s-light16-1.jpg',
       subimg2:'./img/light/s-light16-2.jpg',
       subimg3:'./img/light/s-light16-3.jpg',
-      
+      id:'light16',
       made:'한국'
      },
     {
@@ -269,7 +269,7 @@ const feedsList = [
       subimg1:'./img/light/s-light17-1.jpg',
       subimg2:'./img/light/s-light17-2.jpg',
       subimg3:'./img/light/s-light17-3.jpg',
-      
+      id:'light17',
       made:'한국'
      },
     {
@@ -290,7 +290,7 @@ const feedsList = [
       subimg1:'./img/light/s-light18-1.jpg',
       subimg2:'./img/light/s-light18-2.jpg',
       subimg3:'./img/light/s-light18-3.jpg',
-      
+      id:'light18',
       made:'한국'
      },
     {
@@ -306,7 +306,7 @@ const feedsList = [
       subimg1:'img/cup/s-kic-1.jpg',
       subimg2:'img/cup/s-kic-2.jpg',
       subimg3:'img/cup/s-kic-3.jpg',
-      
+      id:'cup1',
       made:'프랑스'
      },
     {
@@ -322,7 +322,7 @@ const feedsList = [
       subimg1:'./img/cup/s-kic2-1.jpg',
       subimg2:'./img/cup/s-kic2-2.jpg',
       subimg3:'./img/cup/s-kic2-3jpg',
-      
+      id:'cup2',
       made:'프랑스'
      },
     {
@@ -338,7 +338,7 @@ const feedsList = [
       subimg1:'./img/cup/s-kic3-1.jpg',
       subimg2:'./img/cup/s-kic3-2.jpg',
       subimg3:'./img/cup/s-kic3-3.jpg',
-      
+      id:'cup3',
       made:'프랑스'
      },
     {
@@ -355,7 +355,9 @@ const feedsList = [
       subimg2:'./img/cup/s-kic-4-2.jpg',
       subimg3:'./img/cup/s-kic-4-3jpg',
       sell:'top3',
+      id:'cup4',
       made:'프랑스'
+      
      },
     {
       title:'Mighty Water Jug 2L', 
@@ -370,7 +372,7 @@ const feedsList = [
       subimg1:'./img/cup/s-kic-5-1.jpg',
       subimg2:'./img/cup/s-kic-5-2.jpg',
       subimg3:'./img/cup/s-kic-5-3.jpg',
-      
+      id:'cup5',
       made:'중국'
      },
     {
@@ -386,6 +388,7 @@ const feedsList = [
       subimg2:'./img/cup/s-kic-6-2.jpg',
       subimg3:'./img/cup/s-kic-6-3.jpg',
       sell:'top3',
+      id:'cup6',
       made:'중국'
      },
     {
@@ -401,7 +404,7 @@ const feedsList = [
       subimg1:'./img/cup/s-kic7-1.jpg',
       subimg2:'./img/cup/s-kic7-2.jpg',
       subimg3:'./img/cup/s-kic7-.3jpg',
-      
+      id:'cup7',
       made:'한국'
      },
     {
@@ -417,7 +420,7 @@ const feedsList = [
       subimg1:'./img/cup/s-kic-8-1.jpg',
       subimg2:'./img/cup/s-kic-8-2.jpg',
       subimg3:'./img/cup/s-kic-8-3.jpg',
-      
+      id:'cup8',
       made:'한국'
      },
     {
@@ -434,7 +437,9 @@ const feedsList = [
       subimg2:'./img/cup/s-kic-9-2.jpg',
       subimg3:'./img/cup/s-kic-9-3.jpg',
       sell:'top3',
+      id:'cup9',
       made:'스웨덴'
+     
      },
     {
       title:'르네상스 레드 18츠 접시', 
@@ -449,7 +454,7 @@ const feedsList = [
       subimg1:'./img/cup/s-kic10-1.jpg',
       subimg2:'./img/cup/s-kic10-2.jpg',
       subimg3:'./img/cup/s-kic10-3.jpg',
-      
+      id:'cup10',
       made:'스웨덴'
      },
 
@@ -466,7 +471,7 @@ const feedsList = [
       subimg1:'./img/cup/s-kic-11-1.jpg',
       subimg2:'./img/cup/s-kic-11-2.jpg',
       subimg3:'./img/cup/s-kic-11-3.jpg',
-      
+      id:'cup11',
       made:'스웨덴'
      },
     {
@@ -482,7 +487,7 @@ const feedsList = [
       subimg1:'./img/cup/s-kic-12-1.jpg',
       subimg2:'./img/cup/s-kic-12-2.jpg',
       subimg3:'./img/cup/s-kic-12-3.jpg',
-      
+      id:'cup12',
       made:'스웨덴'
      },
     {
@@ -508,7 +513,7 @@ const feedsList = [
       subimg1:'./img/cup/s-kic-13-1.jpg',
       subimg2:'./img/cup/s-kic-13-2.jpg',
       subimg3:'./img/cup/s-kic-13-3.jpg',
-      
+      id:'cup13',
       made:'스웨덴'
      },
     {
@@ -522,8 +527,7 @@ const feedsList = [
       price:'54,200',
       category:'kitchencup',
       subimg1:'./img/cup/s-kic-14-1.jpg',
-    
-      
+      id:'cup14',
       made:'스웨덴'
      },
     {
@@ -537,7 +541,7 @@ const feedsList = [
       price:'54,200',
       category:'kitchencup',
       subimg1:'./img/cup/s-kic-15-1.jpg',
-    
+      id:'cup15',
       
       made:'스웨덴'
      },
@@ -555,7 +559,7 @@ const feedsList = [
       subimg2:'./img/cup/s-kic-16-2.jpg',
       subimg3:'./img/cup/s-kic-16-3.jpg',
    
-      
+      id:'cup16',
       made:'스웨덴'
      },
     {
@@ -572,9 +576,449 @@ const feedsList = [
       subimg2:'./img/cup/s-kic-17-2.jpg',
       subimg3:'./img/cup/s-kic-17-3.jpg',
     
-      
+      id:'cup17',
       made:'스웨덴'
      },
+    {
+      title:'Glass frame mirror ', 
+      maindes:'유리 프레임이 독특한 오브제 거울 ',
+      des:`2컬러로 나온 거울 오브제 입니다`, 
+      brand:'UNTIT', 
+      img:'./img/homeacc/home1.jpg', 
+      price:'15,000',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home1-1.jpg',
+      subimg2:'',
+      subimg3:'',
+      id:'home1',
+      made:'일본'
+     },
+    {
+      title:'[POSITIV] 인센스 홀더 001', 
+      maindes:'자연의 이야기를 간직한 돌의 모습에 영감을 받아 제작된 인센스 홀더 ',
+      des:`자연의 이야기를 간직한 돌의 모습에 영감을 받아 제작된 인센스 홀더입니다. 투명한 백유리와 거친 질감을 가진 트라버틴 석재의 대비가 매력적인 제품입니다. 유리와 돌이 분리되어 인센스의 재를 처리하기 용이한 장점을 지녔으며, 오브제는 물론 트레이로도 사용 가능합니다.`, 
+      brand:'POSITIV', 
+      img:'./img/homeacc/home2.jpg', 
+      price:'68,000',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home2-1.jpg',
+      subimg2:'./img/homeacc/home2-2.jpg',
+      subimg3:'./img/homeacc/home2-3.jpg',
+      id:'home2',
+      made:'한국'
+     },
+    {
+      title:'알바니 화병', 
+      maindes:'고대 기술을 자연과 조화롭게 접목시키는 디자인을 선보이는 화병입니다',
+      des:`고대 기술을 자연과 조화롭게 접목시키는 디자인을 선보이는 화병입니다. 입체적인 텍스처와 직관적인 디자인이 눈길을 끌며, 어느 공간도 모던한 인테리어로 탈바꿈 해줄 아이템입니다..`, 
+      brand:'URBAN NATURE CULTURE', 
+      img:'./img/homeacc/home3.jpg', 
+      price:'125,000',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home3-1.jpg',
+      subimg2:'./img/homeacc/home3-2.jpg',
+      subimg3:'./img/homeacc/home3-3.jpg',
+      made:'스웨덴',
+      sell:'top3',
+      id:'home3',
+
+     },
+    {
+      title:'오브제 화병', 
+      maindes:'자연스러운 텍스처와 자연물인 꽃의 형태에서 모티브를 얻은 디자인',
+      des:`자연스러운 텍스처와 자연물인 꽃의 형태에서 모티브를 얻은 디자인이 돋보이는 감각적인 화병입니다. 재활용 종이 펄프, 천연 고무 및 분필 가루가 혼합된 에코믹스로 제작되었으며, 공간에 포인트를 주는 인테리어 소품으로 사용하기 좋습니다.`, 
+      brand:'URBAN NATURE CULTURE', 
+      img:'./img/homeacc/home4.jpg', 
+      price:'150,000',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home4-1.jpg',
+      subimg2:'./img/homeacc/home4-2.jpg',
+      subimg3:'./img/homeacc/home4-3.jpg',
+      made:'스웨덴',
+      id:'home4',
+  
+
+     },
+    {
+      title:'볼 시계', 
+      maindes:'주방이나 복도를 위한 완벽한 액세서리이며 현대적인 분위기를 선사합니다',
+      des:`George Nelson가 디자인한 이 시계는 주방이나 복도를 위한 완벽한 액세서리이며 현대적인 분위기를 선사합니다. 표현력이 풍부한 1950년대 디자인으로 칙칙한 공간을 되살리는 집을 위한 트렌디한 인테리어 소품입니다.`, 
+      brand:'VITRA', 
+      img:'./img/homeacc/home5.jpg', 
+      price:'546,000',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home5-1.jpg',
+      subimg2:'./img/homeacc/home5-2.jpg',
+      subimg3:'./img/homeacc/home5-3.jpg',
+      made:'스위스',
+      id:'home5',
+  
+
+     },
+    {
+      title:'티크리 쿠션 커버', 
+      maindes:'입체적인 부클 텍스처와 감각적인 도형 패턴이 어우러진 쿠션 커버',
+      des:`1999년 프랑스에서 시작되어 현재까지 유지되고 있는 린넨 전문 브랜드인 HARMONY TEXTILE은 전통적인 방식을 고수하는 장인 정신을 바탕으로 벨기에와 프랑스에서 공수해 온 고품질의 린넨으로 만들어진 홈패브릭 컬렉션을 선보입니다. 아름답고 다채로운 컬러감과 자연스러우면서도 실용적인 스타일이 특징입니다`, 
+      brand:'VITRA', 
+      img:'./img/homeacc/home6.jpg', 
+      price:'56,000',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home6-1.jpg',
+      subimg2:'./img/homeacc/home6-2.jpg',
+      subimg3:'./img/homeacc/home6-3.jpg',
+      made:'스위스',
+      id:'home6',
+
+     },
+    {
+      title:'첸나이 쿠션 커버', 
+      maindes:'내추럴한 텍스처의 100% 린넨 소재를 사용한 쿠션 커버로 뒷면에 지퍼 클로징',
+      des:`내추럴한 텍스처의 100% 린넨 소재를 사용한 쿠션 커버로 뒷면에 지퍼 클로징이 있습니다. 깔끔한 솔리드 컬러이며, 에지를 따라 라인을 배색하여 포인트를 주었습니다. 다양한 공간에 활기를 불어 넣어 줄 아이템입니다.
+      `, 
+      brand:'HARMONY TEXTILE', 
+      img:'./img/homeacc/home7.jpg', 
+      price:'52,000',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home7-1.jpg',
+      subimg2:'./img/homeacc/home7-2.jpg',
+      subimg3:'./img/homeacc/home7-3.jpg',
+      made:'한국',
+      id:'home7',
+
+     },
+    {
+      title:'미니어처 화병 세트', 
+      maindes:'꽃봉오리를 형상화하여 제작된 드라이 플라워 미니 화병',
+      des:`꽃봉오리를 형상화하여 제작된 드라이 플라워 미니 화병입니다. 호두, 오리, 너도밤나무 세가지 수종에 다양한 사이드로 만들어 3개의 화병이 세트로 구성되어 있습니다. 오브제로써도 뛰어난 인테리어 효과를 전해줍니다.
+  
+      `, 
+      brand:'GREEDYWOODYMONKEY', 
+      img:'./img/homeacc/home8.jpg', 
+      price:'46,000',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home8-1.jpg',
+      subimg2:'./img/homeacc/home8-2.jpg',
+      subimg3:'./img/homeacc/home8-3.jpg',
+      made:'한국',
+      id:'home8',
+
+     },
+    {
+      title:'하머쇼이 화병', 
+      maindes:'Hans Christian Bauer 한스 크리스타인 바우어가 디자인한 시리즈의 화병',
+      des:`노르웨이 산업디자이너 Hans Christian Bauer 한스 크리스타인 바우어가 디자인한 시리즈의 화병입니다. 자체적으로 아름다운 실루엣과 가벼운 형태를 가지고 있으며, 동시에 무게와 안정성을 지니고 있습니다. 물결이 치는듯한 볼륨감이 특징이며, 우아하고 클래식한 디자인이 돋보이는 제품입니다.
+  
+      `, 
+      brand:'KAHLER', 
+      img:'./img/homeacc/home9.jpg', 
+      price:'46,000',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home9-1.jpg',
+      subimg2:'./img/homeacc/home9-2.jpg',
+      subimg3:'./img/homeacc/home9-3.jpg',
+      made:'노르웨이',
+      id:'home9',
+  
+
+     },
+    {
+      title:'뉴 패키지 인센스 홀더', 
+      maindes:'조각가 EMIKO MAKINO씨가 한점 한점 수작업으로 제작한 제품입니다',
+      des:`황동 인센스 홀더입니다. 서있는 모습이 아름다운, 제품의 디자인과 작업은 조각가 EMIKO MAKINO씨가 한점 한점 수작업으로 제작한 제품입니다. 황동(BRASS)의 가장 큰 특징은, 쓰다보면 색과 질감이 바뀌어가는 것입니다. 가죽 제품의 에이징처럼 경년 변화를 즐길 수 있는 점은 황동의 매력이기도 하지만, 제대로 손질하여 아름다움을 유지하면서 애용하시는 것도 즐거움 중 하나입니다.
+  
+      `, 
+      brand:'KAHLER', 
+      img:'./img/homeacc/home10.jpg', 
+      price:'389,000',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home10-1.jpg',
+      subimg2:'./img/homeacc/home10-2.jpg',
+      subimg3:'./img/homeacc/home10-3.jpg',
+      made:'덴마크',
+      sell:'top3',
+      id:'home10',
+  
+
+     },
+    {
+      title:' 인센스 홀더', 
+      maindes:'곡선형 쉐입의 인센스 홀더입니다. 브라스 소재를 사용하여 핸드메이드로 제작하였습니다.',
+      des:`일상에서의 다양한 영감을 향으로 표현하는 뉴욕을 베이스로 한 CINNAMON PROJECT입니다. 건축, 그래픽디자인, 사진, 조각. LUXURY ADVERTISING, 패션등 다양한 학위를 기반으로 한 ANDREW CINNAMON과 CHARLIE STACKHOUSE가 패션과 향 등 다양한 분야를 만족시킬 수 있는 INCENSE를 시간으로 표현한 감각적인 브랜드입니다.
+  
+      `, 
+      brand:'CINNAMON PROJECTS', 
+      img:'./img/homeacc/home11.jpg', 
+      price:'129,500',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home11-1.jpg',
+      subimg2:'./img/homeacc/home11-2.jpg',
+      subimg3:'./img/homeacc/home11-3.jpg',
+      made:'미국',
+      id:'home11',
+
+     },
+    {
+      title:' 그리드 도어매트', 
+      maindes:'곡선형 쉐입의 인센스 홀더입니다. 브라스 소재를 사용하여 핸드메이드로 제작하였습니다.',
+      des:`간편한 관리가 가능하며 촉감이 부드럽고 선명한 디자인으로 공간에 확실한 포인트를 줄 수 있는 프리미엄 디자인 도어 매트입니다. 표면감이 더 부드럽고 털날림이 없어 관리가 편리하도록 보완하였습니다. 세계 러그 시장 점유율 90% 이상의 오랜 전통과 고품질 러그로 유명한 벨기에의 전통있는 Vandewiele사의 고급 직기를 사용하여 다양한 패턴과 컬러로 표현하였습니다.
+  
+      `, 
+      brand:'CINNAMON PROJECTS', 
+      img:'./img/homeacc/home12.jpg', 
+      price:'39,200',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home12-1.jpg',
+      subimg2:'./img/homeacc/home12-2.jpg',
+      subimg3:'./img/homeacc/home12-3.jpg',
+      made:'벨기에',
+      id:'home12',
+  
+
+     },
+    {
+      title:'에어 쿠션', 
+      maindes:'입체적인 텍스처와 프레이드 라인이 돋보이는 쿠션.',
+      des:`입체적인 텍스처와 프레이드 라인이 돋보이는 쿠션으로 내추럴한 무드를 자아냅니다. 피부의 부담을 덜어주는 부드러운 촉감을 자랑하며, 지퍼 여밈이 있어 세탁이 간편합니다.
+  
+      `, 
+      brand:'LORENA CANALS', 
+      img:'./img/homeacc/home13.jpg', 
+      price:'95,500',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home13-1.jpg',
+      subimg2:'./img/homeacc/home13-2.jpg',
+      subimg3:'./img/homeacc/home13-3.jpg',
+      made:'스페인',
+ 
+      id:'home13',
+
+     },
+    {
+      title:'플로라 포스터', 
+      maindes:'포스터는 멕시코 예술가 베레니스 에르난데즈가 식물을 모티프로 한 작품.',
+      des:`베레니스 에르난데즈가 식물을 모티프로 한 작품입니다. 오렌지, 핑크, 그린, 블루의 색상으로 식물의 유기적인 활력을 생동감 넘치게 표현하여 부드러우면서도 신나는 느낌을 줍니다.
+  
+      `, 
+      brand:'PAPER COLLECTIVE', 
+      img:'./img/homeacc/home14.jpg', 
+      price:'176,000',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home14-1.jpg',
+      subimg2:'./img/homeacc/home14-2.jpg',
+      subimg3:'./img/homeacc/home14-3.jpg',
+      made:'스페인',
+ 
+      id:'home14',
+
+     },
+    {
+      title:'칼마 01 포스터', 
+      maindes:'Calma 01 포스터는 예술가 Berenice Hernandez의 고향인 멕시코에서 영감을 받은 부드럽고 구운 색상 팔레트를 특징으로 합니다.',
+      des:`Calma 01 포스터는 예술가 Berenice Hernandez의 고향인 멕시코에서 영감을 받은 부드럽고 구운 색상 팔레트를 특징으로 합니다. 질감 있는 아트 포스터의 중심에는 이국적인 과일 한 조각이 있습니다. 이 과일의 부드러운 시원한 색조는 따뜻한 배경과 흥미로운 대조를 이룹니다.
+  
+      `, 
+      brand:'PAPER COLLECTIVE', 
+      img:'./img/homeacc/home15.jpg', 
+      price:'176,000',
+      category:'homeacc',
+      subimg1:'./img/homeacc/home15-1.jpg',
+      subimg2:'./img/homeacc/home15-2.jpg',
+      subimg3:'',
+      made:'스페인',
+      sell:'top3',
+      id:'home15',
+  
+
+     },
+    {
+      title:'데코 지오디 벽 장식', 
+      maindes:'페이퍼 마쉬로 제작된 벽 장식',
+      des:`페이퍼 마쉬로 제작된 벽 장식으로, 아름다운 미색 부분은 엠보싱 처리되어 대담하고 직관적인 기하학적 형태를 나타냅니다. 오크 나무 프레임을 함께 구성하고 있으며, 어느 공간도 모던한 인테리어로 탈바꿈 해줄 아이템입니다.
+  
+      `, 
+      brand:'URBAN NATURE CULTURE', 
+      img:'./img/homeacc/home15.jpg', 
+      price:'215,000',
+     category:'homeacc',
+     subimg1:'./img/homeacc/home16-1.jpg',
+     subimg2:'./img/homeacc/home16-2.jpg',
+     subimg3:'./img/homeacc/home16-3.jpg',
+      made:'스웨덴',
+      id:'home16',
+ 
+  
+
+     },     
+     {
+      title:'로타리 트레이', 
+      maindes:'통적인 디자인에 현대적인 실루엣을 더해 새로운 형태의 트레이',
+      des:`디자이너 Jasper Morrison은 전통적인 디자인에 현대적인 실루엣을 더해 새로운 형태의 트레이를 완성했습니다. 절제된 모양과 컬러로 어느 인테리어 스타일에나 자연스럽게 녹아들며, 거실, 욕실 또는 현관, 사무실, 어린이 방등 모든 장소에 관계없이 장식할 수 있습니다.
+  
+      `, 
+      brand:'VITRA', 
+      img:'./img/homeacc/home17.jpg', 
+      price:'98,000',
+     category:'homeacc',
+     subimg1:'./img/homeacc/home17-1.jpg',
+     subimg2:'./img/homeacc/home17-2.jpg',
+     subimg3:'./img/homeacc/home17-3.jpg',
+      made:'스위스 ',
+      id:'home17',
+ 
+  
+
+     },  
+     {
+      title:'플로라 쿠션 커버', 
+      maindes:'100% 코튼 소재를 사용하여 탄탄한 조직감을 자랑하는 쿠션 커버',
+      des:`100% 코튼 소재를 사용하여 탄탄한 조직감을 자랑하는 쿠션 커버입니다. 다양한 컬러와 쉐입의 플로럴 패턴 엠브로이더리로 포인트를 더해주었으며, 다양한 공간에 활기를 불어 넣어줄 아이템입니다.
+  
+      `, 
+      brand:'BROSTE COPENHAGEN', 
+      img:'./img/homeacc/home19.jpg', 
+      price:'95,000',
+     category:'homeacc',
+     subimg1:'./img/homeacc/home19-1.jpg',
+     subimg2:'./img/homeacc/home19-2.jpg',
+     subimg3:'./img/homeacc/home19-3.jpg',
+      made:'한국 ',
+      id:'home19',
+      
+ 
+  
+
+     },  
+     {
+      title:'플로라 쿠션 커버', 
+      maindes:'100% 코튼 소재를 사용하여내 추럴한 텍스처가 돋보이는 쿠션',
+      des:`브랜드만의 아이덴티티가 돋보이는 100% 린넨 소재를 사용하여 내추럴한 텍스처가 돋보이는 쿠션입니다. 다채로운 원사를 믹스한 스트라이프 패턴이 눈길을 끌며, 푹신푹신한 솜이 포함되어 있습니다.
+  
+      `, 
+      brand:'LIBECO', 
+      img:'./img/homeacc/home20.jpg', 
+      price:'95,000',
+     category:'homeacc',
+     subimg1:'./img/homeacc/home20-1.jpg',
+     subimg2:'./img/homeacc/home20-2.jpg',
+     subimg3:'./img/homeacc/home20-3.jpg',
+      made:'한국 ',
+      id:'home20',
+ 
+  
+
+     },  
+     {
+      title:'H1 01 인센스 홀더', 
+      maindes:'1석탑의 옥개석 혹은 타워의 발코니에서 영감을 받은 인센스 홀',
+      des:`석탑의 옥개석 혹은 타워의 발코니에서 영감을 받은 인센스 홀더로 속으로 쌓아올리면 멋진 조형물이 되기도 하고, 분리하여 놓으면 하나의 단독 오브제로서도 손색이 없습니다. 인센스 홀더를 안쪽에 내장하여 안정적으로 인센스 스틱을 태우실 수 있습니다. 인센스 홀더 뿐만아니라 악세사리 트레이 등으로 활용하실 수 있습니다.
+  
+      `, 
+      brand:'TERRE ET TERRE', 
+      img:'./img/homeacc/home21.jpg', 
+      price:'33,000',
+     category:'homeacc',
+     subimg1:'./img/homeacc/home21-1.jpg',
+     subimg2:'./img/homeacc/home21-2.jpg',
+     subimg3:'./img/homeacc/home21-3.jpg',
+      made:'한국 ',
+      id:'home21',
+
+  
+
+     },  
+     {
+      title:'스툴 60 (아르텍 90주년 기념)', 
+      maindes:'L-leg 부분에 스모크드 합판을 적용하고 디자인으로 치환한 아이디어가 섬세하고도 심플한 인상입니다.',
+      des:`스툴 60은 90주년을 맞이하여 Kontrasti (콘트라스티) 스툴을 출시하였습니다. 90주년 기념 스툴로 2023년에만 생산하는 한정판 제품입니다. 콘트라스티는 밴딩 기술의 핵심인 합판을 진한 색으로 마감해 시각화한 제품입니다. 밴딩한 L-leg 부분에 스모크드 합판을 적용하고 디자인으로 치환한 아이디어가 섬세하고도 심플한 인상입니다.
+      `, 
+      brand:'ARTEK', 
+      img:'./img/funi/funi1.jpg', 
+      price:'503,000',
+     category:'funi',
+     subimg1:'./img/funi/funi1-1.jpg',
+     subimg2:'./img/funi/funi1-2.jpg',
+     subimg3:'./img/funi/funi1-3.jpg',
+      made:'한국 ',
+      id:'funi1',
+     },  
+     {
+      title:'코퍼스 선반 S', 
+      maindes:'알루미늄 소재로 제작된 다목적 선반',
+      des:`Korpus 시리즈는 알루미늄 소재로 제작된 다목적 선반으로, 선반 하단에 숨겨져 있는 후크로 추가적으로 물건들을 걸어 둘 수 있는 기능을 제공합니다. 현대적이고 심플한 디자인과 색상으로 어렵지 않게 설치할 수 있으며, 무게가 가볍고 내구성이 뛰어나 목적에 따라 다양하게 사용할 수 있습니다.
+      `, 
+      brand:'HAY', 
+      img:'./img/funi/funi2-1.jpg', 
+      price:'173,000',
+     category:'homeacc',
+     subimg1:'./img/funi/funi2-1.jpg',
+     subimg2:'./img/funi/funi2-2.jpg',
+     subimg3:'./img/funi/funi2-3.jpg',
+      made:'한국 ',
+      id:'funi2',
+     },  
+     {
+      title:'트레이 테이블', 
+      maindes:'소파나 벤치 옆에 두는 실내외용 다용도의 실용적인 테이블입니다.',
+      des:`소파나 벤치 옆에 두는 실내외용 다용도의 실용적인 테이블입니다. 트레이 상단은 탈부착이 가능하고 다리는 접이식으로 이동 및 보관이 용이합니다.
+      `, 
+      brand:'GARDEN TRADING', 
+      img:'./img/funi/funi3.jpg', 
+      price:'83,000',
+     category:'homeacc',
+     subimg1:'./img/funi/funi3-1.jpg',
+     subimg2:'./img/funi/funi3-2.jpg',
+     subimg3:'./img/funi/funi3-3.jpg',
+      made:'영국 ',
+      id:'funi3',
+     },  
+     {
+      title:'Roly Poly Armchair ', 
+      maindes:'영국 디자이너 Faye Toogood은 그녀가 임신했을 당시에 느꼈던 모성애를 형상화하여 디자인했습니다.',
+      des:`그릇 형태의 바디와 두꺼운 4개의 다리는 마치 귀여운 아기코끼리를 연상시키며
+      산뜻하고 비비드한 컬러로 인테리어에 포인트가 됩니다.
+      `, 
+      brand:'Driade', 
+      img:'./img/funi/funi4.jpg', 
+      price:'83,000',
+     category:'homeacc',
+     subimg1:'./img/funi/funi4-1.jpg',
+     subimg2:'./img/funi/funi4-2.jpg',
+     subimg3:'./img/funi/funi4-3.jpg',
+      made:'영국 ',
+      id:'funi4',
+     },  
+     {
+      title:'Roly Poly Sofa  ', 
+      maindes:'아기자기한 암소파',
+      des:`Roly Poly Sofa는 아기자기한 모양과 다양한 컬러를 가지고 있는 암체어입니다. 실내와 야외 모두에서 포인트가 됩니다.
+      `, 
+      brand:'Driade', 
+      img:'./img/funi/funi4.jpg', 
+      price:'1,903,000',
+     category:'homeacc',
+     subimg1:'./img/funi/funi5-1.jpg',
+     subimg2:'./img/funi/funi5-2.jpg',
+     subimg3:'./img/funi/funi5-3.jpg',
+      made:'영국 ',
+      id:'funi4',
+      sell:'top3',
+     },  
+     {
+      title:'Libreria Pensile Shelving Unit  ', 
+      maindes:'리브레리아 펜실 쉘빙 유닛 / 네츄럴 오크',
+      des:`네츄럴 오크의 감성을 느껴보세요
+      `, 
+      brand:'KARAKTER', 
+      img:'./img/funi/funi6.jpg', 
+      price:'812,000',
+     category:'homeacc',
+     subimg1:'./img/funi/funi6-1.jpg',
+     subimg2:'./img/funi/funi6-2.jpg',
+     subimg3:'./img/funi/funi6-3.jpg',
+      made:'독일 ',
+      id:'funi5',
+
+     },  
 
   ];
   export default feedsList

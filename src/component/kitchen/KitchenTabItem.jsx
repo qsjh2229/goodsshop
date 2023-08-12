@@ -1,7 +1,7 @@
 // LightTabItem.js
 import React from 'react';
 
-const LightTabItem = ({ data }) => {
+const KitchenTabItem = ({ data }) => {
   return (
     <div className='p-tab-item'>
       <div className='p-tab-itembox'>
@@ -20,4 +20,4 @@ const LightTabItem = ({ data }) => {
   );
 };
 
-export default LightTabItem;
+export default KitchenTabItem;

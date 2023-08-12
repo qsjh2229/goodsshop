@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import LightTabItem from './LightTabItem';
-import feedsList from '../../component/ItemData';
+import KitchenTabItem from './KitchenTabItem';
+import feedsList from '../ItemData';
 
-const LightTab = () => {
+const KitchenTab = () => {
   const [activeTab, setActiveTab] = useState('all');
   const [filteredData, setFilteredData] = useState(feedsList); // 추가: 필터링된 데이터를 상태로 관리
 
@@ -27,9 +27,9 @@ const LightTab = () => {
         <button type="button" className={`etc ${activeTab === 'kitchenetc' ? 'active' : ''}`} onClick={() => filterHandler('kitchenetc')}><span>그외</span></button>
       </div>
       {/* LightTabItem 컴포넌트로 필터링된 데이터를 전달하여 렌더링 */}
-      <LightTabItem data={filteredData} />
+      <KitchenTabItem data={filteredData} />
     </div>
   );
 };
 
-export default LightTab;
+export default KitchenTab;

@@ -1,12 +1,12 @@
 import React from 'react';
-import feedsList from '../../component/ItemData';
+import feedsList from '../ItemData';
 
-const LightTop = () => {
+const KitchenTop = () => {
     return (
         <div className='page-top'>
         <h1>TOP3</h1>
         <div className='page-top-itembox'>
-            {feedsList.filter(item => item.category.includes('light')).map((item,idx) => (
+            {feedsList.filter(item => item.category.includes('ki')).map((item,idx) => (
                 <div key={item.idx} className='page-top-item' >
                    <div className='p-top-imgbox'> <img src={item.img} alt={item.title} /></div>
                    <div className='p-top-txtbox'> 
@@ -23,4 +23,4 @@ const LightTop = () => {
     );
 };
 
-export default LightTop;
+export default KitchenTop;
