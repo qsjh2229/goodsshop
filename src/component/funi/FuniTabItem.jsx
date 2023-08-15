@@ -1,11 +1,11 @@
 // LightTabItem.js
 import React from 'react';
 
-const HomeTabItem = ({ data }) => {
+const FuniTop = ({ data }) => {
   return (
     <div className='p-tab-item'>
       <div className='p-tab-itembox'>
-        {data.filter(item => item.category.includes('home') ).map((item, idx) => (
+        {data.filter(item => item.category.includes('funi') ).map((item, idx) => (
           <div key={item.idx} className='page-tab-item'>
             <div className='p-tab-imgbox'><img src={item.img} alt={item.title} /></div>
             <div className='p-tab-txtbox'>
@@ -20,4 +20,4 @@ const HomeTabItem = ({ data }) => {
   );
 };
 
-export default HomeTabItem;
+export default FuniTop;

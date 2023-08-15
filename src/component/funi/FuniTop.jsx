@@ -2,9 +2,9 @@ import React from 'react';
 import feedsList from '../ItemData';
 
 const HomeTop = () => {
-  const filteredItems = feedsList.filter(item => item.category.includes('kit') && item.sell === 'top3');
+  const filteredItems = feedsList.filter(item => item.category.includes('funi') && item.sell === 'top3');
 
- 
+  console.log('Filtered Items:', filteredItems);
 
   return (
     <div className='page-top'>

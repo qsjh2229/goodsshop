@@ -999,7 +999,7 @@ const feedsList = [
       `, 
       brand:'Driade', 
       img:'./img/funi/funi4.jpg', 
-      price:'83,000',
+      price:'973,000',
      category:'funiChair',
      subimg1:'./img/funi/funi4-1.jpg',
      subimg2:'./img/funi/funi4-2.jpg',
@@ -1013,7 +1013,7 @@ const feedsList = [
       des:`Roly Poly Sofa는 아기자기한 모양과 다양한 컬러를 가지고 있는 암체어입니다. 실내와 야외 모두에서 포인트가 됩니다.
       `, 
       brand:'Driade', 
-      img:'./img/funi/funi4.jpg', 
+      img:'./img/funi/funi5.jpg', 
       price:'1,903,000',
      category:'funiChair',
      subimg1:'./img/funi/funi5-1.jpg',

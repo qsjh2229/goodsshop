@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import HomeTabItem from './HomeTabItem';
+import FuniTabItem from './FuniTabItem';
 import feedsList from '../ItemData';
 
-const HomeTab = () => {
+const FuniTab = () => {
   const [activeTab, setActiveTab] = useState('all');
   const [filteredData, setFilteredData] = useState(feedsList); // 추가: 필터링된 데이터를 상태로 관리
 
@@ -22,15 +22,15 @@ const HomeTab = () => {
       <h1> CATEGORY</h1>
       <div className='page-tab-btn'>
         <button type="button" className={`hoall ${activeTab === 'all' ? 'active' : ''}`}  onClick={() => filterHandler('all')}><span>전체보기</span></button>
-        <button type="button" className={`fab ${activeTab === 'homeaccFab' ? 'active' : ''}`} onClick={() => filterHandler('homeaccFab')}><span>패브랙</span></button>
-        <button type="button" className={`scent ${activeTab === 'homeaccScent' ? 'active' : ''}`} onClick={() => filterHandler('homeaccScent')}><span>향</span></button>
-        <button type="button" className={`vase ${activeTab === 'homeaccVase' ? 'active' : ''}`} onClick={() => filterHandler('homeaccVase')}><span>화병</span></button>
-        <button type="button" className={`etc ${activeTab === 'homeaccEtc' ? 'active' : ''}`} onClick={() => filterHandler('homeaccEtc')}><span>그외</span></button>
+        <button type="button" className={`shelf ${activeTab === 'funishelf' ? 'active' : ''}`} onClick={() => filterHandler('funishelf')}><span>선반/수납</span></button>
+        <button type="button" className={`table ${activeTab === 'funiTable' ? 'active' : ''}`} onClick={() => filterHandler('funiTable')}><span>테이블</span></button>
+        <button type="button" className={`chair ${activeTab === 'funiChair' ? 'active' : ''}`} onClick={() => filterHandler('funiChair')}><span>의자</span></button>
+   
       </div>
       {/* LightTabItem 컴포넌트로 필터링된 데이터를 전달하여 렌더링 */}
-      <HomeTabItem data={filteredData} />
+      <FuniTabItem data={filteredData} />
     </div>
   );
 };
 
-export default HomeTab;
+export default FuniTab;

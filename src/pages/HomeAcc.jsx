@@ -1,6 +1,6 @@
 import React from 'react';
 import './page.scss'
-import HomeBanner from '../component/homeacc/HomeTabBanner';
+import HomeBanner from '../component/homeacc/HomeBanner';
 import HomeMain from '../component/homeacc/HomeMain';
 import HomeTop from '../component/homeacc/HomeTop';
 import HomeTab from '../component/homeacc/HomeTab';
