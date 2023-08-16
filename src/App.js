@@ -2,7 +2,7 @@
 import './App.scss';
 
 import MainPage from './pages/MainPage';
-import All from './pages/All';
+import About from './pages/About';
 import Lighting from './pages/Lighting';
 import HomeAcc from './pages/HomeAcc';
 import Funiture from './pages/Funiture';
@@ -25,7 +25,7 @@ function App() {
     <Routes>
       <Route path='/' element={<MainPage/>}></Route>
      
-      <Route path='/all' element={<All/>}></Route>
+      <Route path='/About' element={<About/>}></Route>
       <Route path='/lighting' element={<Lighting/>}></Route>
       <Route path='/kitchen' element={<Kitchen/>}></Route>
       <Route path='/homeAcc' element={<HomeAcc/>}></Route>

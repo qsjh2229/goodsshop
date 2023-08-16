@@ -22,7 +22,7 @@ const Mainvideo = () => {
            
     } `}>
       <div className="mp-vbox">
-        <video loop muted autoplay controls  >
+        <video loop="true"  muted="true" autoplay ="true"   >
         <source src={video} type="video/mp4" />
         </video>
       </div>

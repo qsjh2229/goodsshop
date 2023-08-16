@@ -186,6 +186,39 @@ $moblie-min: 480px;
          .etc {
             background: url("../img/cup/s-kic-5-2.jpg") no-repeat center / cover;
          }
+         .hoall {
+            background: url("../img/homeacc/home4-3.jpg") no-repeat top /
+               cover;
+         }
+         .fab {
+            background: url("../img/homeacc/home7-2.jpg")  no-repeat top /
+               cover;
+         }
+         .scent {
+            background:  url("../img/homeacc/home21-3.jpg")  no-repeat top /
+               cover;
+         }
+         .vase {
+            background: url("../img/homeacc/home4-3.jpg") no-repeat center / cover;
+         }
+         .etc {
+            background: url("../img/homeacc/main.jpg")no-repeat center / cover;
+         }
+         .fuall {
+            background: url("../img/funi/fun5.jpg") no-repeat top /
+               cover;
+         }
+         .shelf {
+            background: url("../img/funi/funi15-1.jpg") no-repeat top /
+               cover;
+         }
+         .table {
+            background: url("../img/funi/funi3-1.jpg") no-repeat top /
+               cover;
+         }
+         .chair {
+            background: url("../img/funi/funi14-1.jpg") no-repeat center / cover;
+         }
          button {
             margin-bottom: 50px;
             cursor: pointer;
@@ -285,6 +318,19 @@ $moblie-min: 480px;
          height: 100%;
          background: #ddd;
       }
+   }
+}
+.about-banner{ width: 100%; margin: 0; padding: 0; 
+   .banner-wrap{ max-width: 1400px; margin: 0 auto; position: relative; display: flex; justify-content: space-between;height: 700px;
+      .a-pos-img{width: 200px; height: auto; position: absolute; top: 0; left: 0; z-index: -1;}
+
+      .a-img-box{width: 35%;
+         img{ width: 100%;height: 100% }
+      }
+      .a-txt-box{width: 65%; height: 100%; position: relative;
+          span{ position: absolute; top: 50%; left: 40%; }
+      }
+
    }
 }
 @include desktop {

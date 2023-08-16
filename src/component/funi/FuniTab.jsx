@@ -21,7 +21,7 @@ const FuniTab = () => {
     <div className='page-tab-wrap'>
       <h1> CATEGORY</h1>
       <div className='page-tab-btn'>
-        <button type="button" className={`hoall ${activeTab === 'all' ? 'active' : ''}`}  onClick={() => filterHandler('all')}><span>전체보기</span></button>
+        <button type="button" className={`fuall ${activeTab === 'all' ? 'active' : ''}`}  onClick={() => filterHandler('all')}><span>전체보기</span></button>
         <button type="button" className={`shelf ${activeTab === 'funishelf' ? 'active' : ''}`} onClick={() => filterHandler('funishelf')}><span>선반/수납</span></button>
         <button type="button" className={`table ${activeTab === 'funiTable' ? 'active' : ''}`} onClick={() => filterHandler('funiTable')}><span>테이블</span></button>
         <button type="button" className={`chair ${activeTab === 'funiChair' ? 'active' : ''}`} onClick={() => filterHandler('funiChair')}><span>의자</span></button>

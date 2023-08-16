@@ -22,7 +22,7 @@ const HomeTab = () => {
       <h1> CATEGORY</h1>
       <div className='page-tab-btn'>
         <button type="button" className={`hoall ${activeTab === 'all' ? 'active' : ''}`}  onClick={() => filterHandler('all')}><span>전체보기</span></button>
-        <button type="button" className={`fab ${activeTab === 'homeaccFab' ? 'active' : ''}`} onClick={() => filterHandler('homeaccFab')}><span>패브랙</span></button>
+        <button type="button" className={`fab ${activeTab === 'homeaccFab' ? 'active' : ''}`} onClick={() => filterHandler('homeaccFab')}><span>패브릭</span></button>
         <button type="button" className={`scent ${activeTab === 'homeaccScent' ? 'active' : ''}`} onClick={() => filterHandler('homeaccScent')}><span>향</span></button>
         <button type="button" className={`vase ${activeTab === 'homeaccVase' ? 'active' : ''}`} onClick={() => filterHandler('homeaccVase')}><span>화병</span></button>
         <button type="button" className={`etc ${activeTab === 'homeaccEtc' ? 'active' : ''}`} onClick={() => filterHandler('homeaccEtc')}><span>그외</span></button>
