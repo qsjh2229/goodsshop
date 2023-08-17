@@ -1,6 +1,6 @@
 import { AiOutlineClose } from "react-icons/ai"; 
 import { GiHamburgerMenu } from "react-icons/gi"; 
-import { CgSoftwareDownload } from "react-icons/cg"; 
+/* import { CgSoftwareDownload } from "react-icons/cg";  */
 import React,{useState, useEffect} from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 
@@ -34,7 +34,8 @@ const Header = () => {
                   unmountOnExit
                   ><Navbar /></CSSTransition>
                 </div>
-                <button className="btn" onClick={()=>{navigate('/UploadPage')}}><CgSoftwareDownload /></button>
+       {/*          <button className="btn" onClick={()=>{navigate('/UploadPage')}}><CgSoftwareDownload /></button> */}
+
             </div>
         </header>
     );

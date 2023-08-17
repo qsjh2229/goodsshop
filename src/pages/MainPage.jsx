@@ -7,11 +7,13 @@ import MdPick from "../component/MdPick";
 import { API_URL } from "../config/constans";
 import Mainvideo from '../component/Mainvideo'
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
+import { CgSoftwareDownload } from "react-icons/cg"; 
 
 
 
 const MainPage = () => {
+  const navigate = useNavigate();
 
 
 
@@ -38,7 +40,7 @@ const MainPage = () => {
       <IntBrand></IntBrand>
       <Mainvideo></Mainvideo>
       <div className="products">
-        <h1>Product</h1>
+        <h1>Product</h1>          <button className="btn" onClick={()=>{navigate('/UploadPage')}}><CgSoftwareDownload /></button>
         <div id="productList"  className="p-list">
           {products.map((product, idx) => {
             return (

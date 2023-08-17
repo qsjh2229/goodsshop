@@ -12,6 +12,8 @@ import Footer from './component/Footer';
 import UploadPage from './component/UploadPage';
 import ProductPage from './component/ProductPage';
 import Kitchen from './pages/Kitchen';
+import Detail from './pages/Detail';
+import ItemData from './component/ItemData'
 
 
 
@@ -32,6 +34,8 @@ function App() {
       <Route path='/funiture' element={<Funiture/>}></Route>
       <Route path='/uploadPage' element={<UploadPage/>}></Route>
       <Route path='/productPage/:id' element={<ProductPage/>}></Route>
+      <Route path='/detail/:id' element={<Detail ItemData={ItemData} />}></Route>
+
     </Routes>
     <Footer/>
     </div>

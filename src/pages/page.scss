@@ -256,11 +256,12 @@ $moblie-min: 480px;
             align-items: flex-start;
             flex-wrap: wrap;
 
-            .page-tab-item {
-               width: 22%;
+            a{  width: 22%;
                margin-bottom: 30px;
                opacity: 1; /* 초기 투명도를 1로 설정 */
-               transition: opacity 0.5s;
+               transition: opacity 0.5s; color: black; text-decoration: none;
+               .page-tab-item {
+             
 
                .p-tab-imgbox {
                   width: 100%;
@@ -296,7 +297,7 @@ $moblie-min: 480px;
                      }
                   }
                }
-            }
+            }}
          }
       }
    }
@@ -332,6 +333,9 @@ $moblie-min: 480px;
       }
 
    }
+}
+.detail-page{
+   
 }
 @include desktop {
    .section {
