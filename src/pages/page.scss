@@ -116,8 +116,10 @@ $moblie-min: 480px;
          justify-content: space-between;
          align-items: start;
 
+        a{  width: 30%; color: black;
          .page-top-item {
-            width: 30%;
+
+            width: 100%;
 
             .p-top-imgbox {
                width: 100%;
@@ -143,6 +145,7 @@ $moblie-min: 480px;
                }
                .p-t-maindes {
                   font-size: 0.9rem;
+                vertical-align: bottom;
                }
             }
 
@@ -153,7 +156,7 @@ $moblie-min: 480px;
                   }
                }
             }
-         }
+         }}
       }
    }
    .page-tab-wrap {
@@ -261,7 +264,7 @@ $moblie-min: 480px;
                opacity: 1; /* 초기 투명도를 1로 설정 */
                transition: opacity 0.5s; color: black; text-decoration: none;
                .page-tab-item {
-             
+             width: 100%;
 
                .p-tab-imgbox {
                   width: 100%;
@@ -334,7 +337,52 @@ $moblie-min: 480px;
 
    }
 }
-.detail-page{
+
+//detail-page
+//상세페이지
+
+.detail-page{width: 100%;
+   .item-section{max-width: 1400px; width: 100%; margin: 0 auto; display: flex; margin-top: 100px; 
+     .detail-img{width: 50%;
+      img{width: 100%;}
+     } 
+     .detail-txtinfo{width: 50%; box-sizing: border-box; padding-left: 5%; display: flex; flex-direction:
+       column;height: inherit;  position: relative;
+       .brand{font-weight: bold; margin-bottom: 3%;}
+       .title{ font-size: 1.5rem;margin-bottom: 2%; font-weight: bold; }
+       .des{font-size: 0.8rem; ;margin-bottom: 5%;}
+       .price{font-size: 3rem; font-weight: bold; margin-bottom: 5%;}
+      .dis-login{ width: 100%; background: #ececec; margin-bottom: 5%;
+         span{ padding: 3% 3%; display: block;}
+      }
+      .deli-box{ display: flex; flex-direction: column; margin-bottom: 8%;
+         .delivery{color: #a6a6a6; margin-bottom: 2%;}
+         .arrive-info{ margin-bottom: 3%;}
+      }
+      .item-count{ margin-bottom: 10%; display: flex; width: 130px; justify-content: space-between; align-items: center;
+         button{border-radius: 0; background: none;border: 1px solid #ddd; width: 40px; height: 40px; font-size: 20px;}
+      }
+      .totoal-price{ position: absolute; right: 5%; bottom: 20%; width: 50% ; text-align: right;
+       span{  &:first-child{font-size: 1.5rem;}
+         &:last-child{color: red; font-size: 2rem; font-weight: bold; margin-left: 2%;}}
+      }
+      .add-btnbox{ width: 90%; display: flex; justify-content: space-between; box-sizing: border-box; position: absolute; bottom: 0;
+         button{width: 49%; border-radius: 5px; padding: 20px 0; font-size: 1.2rem; font-weight: bold; cursor: pointer; box-sizing: border-box;}
+         .buy-btn{color: white; background: black;box-sizing: border-box;}
+         .cart-btn{background: white;box-sizing: border-box;}
+      }
+
+
+      } 
+      
+   }
+   .sub-im-section{
+      width: 100%; max-width: 1400px; margin: 0 auto; margin-top: 150px;
+     .sub-box{ width: 80%; margin: 0 auto; text-align: center;
+      .des-title{ display: block; font-size: 3rem; font-weight: bold; margin-bottom: 50px;}
+      .des-tides-destle{ display: block; font-size: 1.2rem; font-weight: bold; margin-bottom: 50px;}
+       img{width: 100%; margin: 80px 0;}}
+   }
    
 }
 @include desktop {
@@ -405,11 +453,11 @@ $moblie-min: 480px;
                      font-size: 0.8rem;
                      display: -webkit-box;
                      word-wrap: break-word;
-                     -webkit-line-clamp: 3;
+                     -webkit-line-clamp: 2;
                      -webkit-box-orient: vertical;
                      overflow: hidden;
                      text-overflow: ellipsis;
-                     height: 54px;
+                    
                      line-height: 18px;
                      color: #444;
                      font-size: 13px;

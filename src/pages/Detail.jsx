@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import DetailBuy from '../component/detail/DetailBuy';
+import DetailSub from '../component/detail/DetailSub';
 
 const Detail = ({ ItemData }) => {
    let { id } = useParams();
@@ -21,6 +22,8 @@ const Detail = ({ ItemData }) => {
    return (
       <main className='detail-page'>
        <DetailBuy findHandler={findHandler}/>
+       <DetailSub findHandler={findHandler}/>
+      
     
       </main>
    );

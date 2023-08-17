@@ -7,7 +7,7 @@ const FuniTop = ({ data }) => {
     <div className='p-tab-item'>
       <div className='p-tab-itembox'>
         {data.filter(item => item.category.includes('funi') ).map((item, idx) => (
-         <Link to={`/detail/${item.id}`} key={item.idx}>
+         <Link to={`/detail/${item.id}`}>
             <div className='page-tab-item'>
               <div className='p-tab-imgbox'><img src={item.img} alt={item.title} /></div>
               <div className='p-tab-txtbox'>
