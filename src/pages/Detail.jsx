@@ -1,11 +1,13 @@
-import React from 'react';
+import React , { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import DetailBuy from '../component/detail/DetailBuy';
 import DetailSub from '../component/detail/DetailSub';
 
 const Detail = ({ ItemData }) => {
    let { id } = useParams();
-   
+   useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
    
    // data 배열이 올바르게 초기화되었는지 확인
    if (!ItemData || !Array.isArray(ItemData)) {

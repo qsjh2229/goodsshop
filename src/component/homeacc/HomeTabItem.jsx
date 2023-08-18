@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 
 const HomeTabItem = ({ data }) => {
   const homeItems = data.filter(item => item.category.includes('home'));
+  const addCommasToNumber = (number) => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  };
 
   return (
     <div className='p-tab-item'>
@@ -14,7 +17,7 @@ const HomeTabItem = ({ data }) => {
               <div className='p-tab-imgbox'><img src={item.img} alt={item.title} /></div>
               <div className='p-tab-txtbox'>
                 <span className='p-t-title'>{item.title}</span>
-                <span className='p-t-price'>{item.price}</span>
+                <span className='p-t-price'>{addCommasToNumber(item.price)}</span>
                 <span className='p-t-maindes'>{item.maindes}</span>
               </div>
             </div>

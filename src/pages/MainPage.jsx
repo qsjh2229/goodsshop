@@ -11,8 +11,10 @@ import { Link ,useNavigate} from "react-router-dom";
 import { CgSoftwareDownload } from "react-icons/cg"; 
 
 
-
 const MainPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
 
 
@@ -32,6 +34,8 @@ const MainPage = () => {
       });
   }, []);
   console.log(products);
+  
+
   return (
     <div>
      

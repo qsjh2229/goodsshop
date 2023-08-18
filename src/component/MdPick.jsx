@@ -1,80 +1,75 @@
-import React from "react";
-import ScrollPosition from '../specail/ScrollPosition';
+import React, { useEffect, useState } from "react"
+import ScrollPosition from "../specail/ScrollPosition"
+import feedsList from "../component/ItemData"
+import { Link } from "react-router-dom"
+
 const MdPick = () => {
-  const scrollPosition = ScrollPosition()
-  let targetHeight;
-  const windowWidth = window.innerWidth;
-  const windoHeight= window.innerHeight;
+   const [randomItems, setRandomItems] = useState([])
 
-  const additionalClass = windoHeight > windowWidth ? "newClass" : "";
+   useEffect(() => {
+      const shuffledItems = feedsList
+         .sort(() => Math.random() - 0.5)
+         .slice(0, 3)
+      setRandomItems(shuffledItems)
+   }, [])
 
-  if (windowWidth >= 1200) {
-    targetHeight = 150;
-  } else if (windowWidth >= 768) {
-    targetHeight = 100;
-  } else if(windowWidth >= 468) {
-    targetHeight = 30;
-  }else{
-    targetHeight = 10;
-  }
-  return (
-    <div>
-      <div className= 'mdPick'>
-        <h1>MD PICK</h1>
-      <div
-          className={`mdList ${
-            scrollPosition >= targetHeight ? "originPosition" : ""
-          } ${additionalClass}`}
-        >
-      
-          <ul>
-            <li>
-              <div className="md-img">
-                <img src="img/funi/fun7.jpg" lt="모과 인센스" />
-                <span className="bg">
-                  {" "}
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Delectus provident beatae eum inventore necessitatibus nihil,
-                  qui aliquid nam, ab culpa sint earum ipsa enim officia illum
-                  deserunt! Co
-                </span>
-              </div>
-              <span className="md-name"> 모과 인센스 홀더</span>
-              <span className="md-price"> 35,500</span>
-            </li>
-            <li>
-              <div className="md-img">
-                <img src="img/light/light-3.jpg" lt="모과 인센스" />
-                <span className="bg">
-                  {" "}
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Delectus provident beatae eum inventore necessitatibus nihil,
-                  qui aliquid nam, ab culpa sint earum ipsa enim officia illum
-                  deserunt! Co
-                </span>
-              </div>
-              <span className="md-name"> 접시</span>
-              <span className="md-price"> 237,800</span>
-            </li>
-            <li>
-              <div className="md-img">
-                <img src="img/incens/incens-4.jpg" lt="모과 인센스" />
-                <span className="bg">
-                  {" "}
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Delectus provident beatae eum inventore necessitatibus nihil,
-                  qui aliquid nam, ab culpa sint earum ipsa enim officia illum
-                  deserunt! Co
-                </span>
-              </div>
-              <span className="md-name"> 접시</span>
-              <span className="md-price"> 37,000</span>
-            </li>
-          </ul>
-        </div>
+   const addCommasToNumber = (number) => {
+      return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+   }
+
+   const scrollPosition = ScrollPosition()
+   let targetHeight
+   const windowWidth = window.innerWidth
+   const windoHeight = window.innerHeight
+
+   const additionalClass = windoHeight > windowWidth ? "newClass" : ""
+
+   if (windowWidth >= 1200) {
+      targetHeight = 150
+   } else if (windowWidth >= 768) {
+      targetHeight = 100
+   } else if (windowWidth >= 468) {
+      targetHeight = 30
+   } else {
+      targetHeight = 10
+   }
+   return (
+      <div>
+         <div className='mdPick'>
+            <h1>MD PICK</h1>
+            <div
+               className={`mdList ${
+                  scrollPosition >= targetHeight ? "originPosition" : ""
+               } ${additionalClass}`}
+            >
+               <ul>
+                  {randomItems.map((item) => (
+                     <Link to={`/detail/${item.id}`} key={item.id}>
+                        <li>
+                           <div className='md-img'>
+                              <img src={item.img} alt={item.title} />
+                              <span className='bg'>{item.maindes}</span>
+                              </div>
+                              <div className='md-t-wrap'>
+                                 <span className='md-name'>{item.title}</span>
+                                 <div className='md-titlebox'>
+                                    <span className='md-price'>
+                                       {addCommasToNumber(item.price)}
+                                    </span>
+                                    <span className='md-brand'>
+                                       {item.brand}
+                                    </span>
+                                 </div>
+                              </div>
+                          
+                        </li>
+                     </Link>
+                  ))}
+               </ul>
+            </div>
+         </div>
       </div>
-    </div>
-  );
-};
+   )
+}
 
-export default MdPick;
+export default MdPick

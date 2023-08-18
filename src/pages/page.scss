@@ -13,7 +13,7 @@ $moblie-min: 480px;
    }
 }
 @mixin mobile {
-   @media (max-width: $desktop-min) {
+   @media (max-width: $moblie-min) {
       @content;
    }
 }

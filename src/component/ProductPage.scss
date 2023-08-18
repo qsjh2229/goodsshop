@@ -1,4 +1,4 @@
-.product-wrap{width: 100%; max-width: 1440px; margin: 0 auto;}
+/* .product-wrap{width: 100%; max-width: 1440px; margin: 0 auto;}
 #backBtn{ display: flex; margin: 20px auto; border-radius: 20px; padding: 10px 20px; background: rgb(54, 54, 54); color: white;}
 #imgBox{
     height: 500px; display: flex; align-items: center; justify-content: center;
@@ -16,4 +16,38 @@
     #price{font-size: 16px; font-weight: 600;}
     #craetAt{ font-size: 12px; color: black;}
     #des{ margin-top: 16px;}
-}
+} */
+.pitem-section{max-width: 1400px; width: 100%; margin: 0 auto; display: flex; margin-top: 100px; 
+    .detail-img{width: 50%;
+     img{width: 100%;}
+    } 
+    .detail-txtinfo{width: 50%; box-sizing: border-box; padding-left: 5%; display: flex; flex-direction:
+      column;height: inherit;  position: relative;
+      .brand{font-weight: bold; margin-bottom: 3%;}
+      .title{ font-size: 1.5rem;margin-bottom: 2%; font-weight: bold; }
+      .des{font-size: 0.8rem; ;margin-bottom: 5%;}
+      .price{font-size: 3rem; font-weight: bold; margin-bottom: 5%;}
+     .dis-login{ width: 100%; background: #ececec; margin-bottom: 5%;
+        span{ padding: 3% 3%; display: block;}
+     }
+     .deli-box{ display: flex; flex-direction: column; margin-bottom: 8%;
+        .delivery{color: #a6a6a6; margin-bottom: 2%;}
+        .arrive-info{ margin-bottom: 3%;}
+     }
+     .item-count{ margin-bottom: 10%; display: flex; width: 130px; justify-content: space-between; align-items: center;
+        button{border-radius: 0; background: none;border: 1px solid #ddd; width: 40px; height: 40px; font-size: 20px;}
+     }
+     .totoal-price{ position: absolute; right: 5%; bottom: 20%; width: 50% ; text-align: right;
+      span{  &:first-child{font-size: 1.5rem;}
+        &:last-child{color: red; font-size: 2rem; font-weight: bold; margin-left: 2%;}}
+     }
+     .add-btnbox{ width: 90%; display: flex; justify-content: space-between; box-sizing: border-box; position: absolute; bottom: 0;
+        button{width: 49%; border-radius: 5px; padding: 20px 0; font-size: 1.2rem; font-weight: bold; cursor: pointer; box-sizing: border-box;}
+        .buy-btn{color: white; background: black;box-sizing: border-box;}
+        .cart-btn{background: white;box-sizing: border-box;}
+     }
+
+
+     } 
+     
+  }

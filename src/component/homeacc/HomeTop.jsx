@@ -4,6 +4,10 @@ import feedsList from '../ItemData';
 
 const HomeTop = () => {
   const filteredItems = feedsList.filter(item => item.category.includes('home') && item.sell === 'top3');
+  const addCommasToNumber = (number) => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  };
+
 
   console.log('Filtered Items:', filteredItems);
 
@@ -17,7 +21,7 @@ const HomeTop = () => {
               <div className='p-top-imgbox'><img src={item.img} alt={item.title} /></div>
               <div className='p-top-txtbox'>
                 <span className='p-t-title'>{item.title}</span>
-                <span className='p-t-price'>{item.price}</span>
+                <span className='p-t-price'>{addCommasToNumber(item.price)}</span>
                 <span className='p-t-maindes'>{item.maindes}</span>
               </div>
             </div>

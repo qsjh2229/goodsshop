@@ -1,6 +1,10 @@
 // LightTabItem.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+const addCommasToNumber = (number) => {
+  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
+
 
 const FuniTop = ({ data }) => {
   return (
@@ -12,7 +16,7 @@ const FuniTop = ({ data }) => {
               <div className='p-tab-imgbox'><img src={item.img} alt={item.title} /></div>
               <div className='p-tab-txtbox'>
                 <span className='p-t-title'>{item.title}</span>
-                <span className='p-t-price'>{item.price}</span>
+                <span className='p-t-price'>{ addCommasToNumber(item.price)}</span>
                 <span className='p-t-maindes'>{item.maindes}</span>
               </div>
             </div>
