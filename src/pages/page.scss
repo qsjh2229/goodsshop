@@ -1,6 +1,8 @@
 $tablet-max: 1023px;
 $desktop-min: 1440px;
+$tablet-min: 750px;
 $moblie-min: 480px;
+
 
 @mixin tablet {
    @media (max-width: $tablet-max) {
@@ -12,11 +14,18 @@ $moblie-min: 480px;
       @content;
    }
 }
+@mixin tablet-min {
+   @media (max-width: $tablet-min) {
+      @content;
+   }
+}
+
 @mixin mobile {
    @media (max-width: $moblie-min) {
       @content;
    }
 }
+
 
 * {
    margin: 0;
@@ -541,32 +550,79 @@ $moblie-min: 480px;
       }
    }
 }
+
+
+
 @include tablet {
    .section {
-      .page-info {
-         height: auto;
-         position: absolute;
-         top: 15%;
-         left: 11%;
-         .pmain-txt {
-            font-size: 1.4rem;
-            margin-bottom: 1.5%;
+      //태블릿 배너
+      .page-banner {
+         .page-info {
+         
+            .pmain-txt {
+               font-size: 1.4rem;
+               margin-bottom: 2%;
+            }
+            .psub-txt {
+               font-size: 1.1rem;
+               margin-bottom: 9%;
+            }
+            button {
+           
+               padding: 7px 0;
+
+            }
          }
-         .psub-txt {
-            font-size: 1.1rem;
-            margin-bottom: 8%;
+      }
+   }
+}
+
+
+// max-750px
+@include tablet-min {
+   .section {
+      //태블릿 배너
+      .page-banner {
+         .page-info {
+         
+            .pmain-txt {
+               font-size: 1.1rem;
+               margin-bottom: .5%;
+            }
+            .psub-txt {
+               font-size: .8rem;
+               margin-bottom: 7%;
+            }
+            button {
+               font-size: .6rem;
+               padding: 5px 0;
+               width: 100px;
+
+            }
          }
-         button {
-            color: white;
-            border: 1px solid white;
-            background: none;
-            width: 150px;
-            padding: 7px 0;
-            transition: 0.3s;
-            &:hover {
-               background: rgb(204, 204, 204);
-               color: black;
-               font-weight: bold;
+      }
+   }
+}
+// max-480px
+@include mobile {
+   .section {
+      //태블릿 배너
+      .page-banner {
+         .page-info {
+         
+            .pmain-txt {
+               font-size:12px;
+               margin-bottom: .5%;
+            }
+            .psub-txt {
+               font-size: 8px;
+               margin-bottom: 3%;
+            }
+            button {
+               font-size: 5px;
+               padding: 1px 0;
+               width: 80px;
+
             }
          }
       }
