@@ -896,7 +896,44 @@ $moblie-min: 520px;
             }
          }
       }
-
+      .mp-video {
+        width: 100%;
+        display: flex;
+        margin-top: 120px;
+        margin-bottom: 0px;
+        justify-content: space-between;
+        opacity: 0;
+        transition: 0.5s;
+        .mp-vbox {
+           width: 60%;
+           video {
+              width: 100%;
+           }
+        }
+        .mp-tbox {
+           width: 40%;
+           position: relative;
+           .mp-intxt {
+              position: absolute;
+              top: 20%;
+              right: 5%;
+              display: flex;
+              flex-direction: column;
+              align-items: end;
+              text-align: right;
+              span {
+                 margin-bottom: 50px;
+                 font-size: 1rem;
+              }
+              button {
+                 width: 150px;
+                 padding: 5px 10px;
+                 background: white;
+                 border: 1px solid black;
+              }
+           }
+        }
+     }
       .products {
          width: 100%;
          margin: 0 auto;
