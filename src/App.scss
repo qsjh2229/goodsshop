@@ -1,6 +1,7 @@
 $tablet-max: 1023px;
 $desktop-min: 1440px;
-$moblie-min: 520px;
+$tablet-min: 750px;
+$moblie-min: 480px;
 @mixin tablet {
    @media (max-width: $tablet-max) {
       @content;
@@ -13,6 +14,11 @@ $moblie-min: 520px;
 }
 @mixin mobile {
    @media (max-width: $moblie-min) {
+      @content;
+   }
+}
+@mixin tablet-min {
+   @media (max-width: $tablet-min) {
       @content;
    }
 }
@@ -461,19 +467,21 @@ $moblie-min: 520px;
       height: 300px;
       background: rgb(184, 182, 173);
       .container {
-         width: 1400px;
+         max-width: 1400px;
+         box-sizing: border-box;
          margin: 0 auto;
          padding: 50px 0;
          display: flex;
          .footer-addr {
             .foot-logo {
+               box-sizing: border-box;
                width: 40%;
                margin-bottom: 50px;
                margin-right: 100px;
                span {
                }
             }
-            address {
+            .address {
                font-style: normal;
                margin-right: 100px;
                width: 100%;
@@ -482,11 +490,11 @@ $moblie-min: 520px;
             }
          }
          .footer-menu {
-            width: 100%;
+            width: 100%;  box-sizing: border-box;
             > ul {
                display: flex;
                width: 100%;
-               box-sizing: border-box;
+             
                > li {
                   list-style: none;
                   flex-basis: 33.3%;
@@ -640,12 +648,13 @@ $moblie-min: 520px;
          .container {
             margin: 0;
             width: 100%;
-            box-sizing: border-box;
             padding: 50px 20px;
+            box-sizing: border-box;
+          
          }
       }
    }
-
+  
    @include tablet {
       .header {
          .container {
@@ -824,6 +833,8 @@ $moblie-min: 520px;
             }
          }
       } */
+
+      //트랜디 브랜드 태블릿
       .int-brand {
          padding: 0 10%;
          .trend-title {
@@ -897,50 +908,169 @@ $moblie-min: 520px;
          }
       }
       .mp-video {
-        width: 100%;
-        display: flex;
-        margin-top: 120px;
-        margin-bottom: 0px;
-        justify-content: space-between;
-        opacity: 0;
-        transition: 0.5s;
-        .mp-vbox {
-           width: 60%;
-           video {
-              width: 100%;
-           }
-        }
-        .mp-tbox {
-           width: 40%;
-           position: relative;
-           .mp-intxt {
-              position: absolute;
-              top: 20%;
-              right: 5%;
-              display: flex;
-              flex-direction: column;
-              align-items: end;
-              text-align: right;
-              span {
-                 margin-bottom: 50px;
-                 font-size: 1rem;
-              }
-              button {
-                 width: 150px;
-                 padding: 5px 10px;
-                 background: white;
-                 border: 1px solid black;
-              }
-           }
-        }
-     }
+         width: 100%;
+         margin-top: 100px;
+       
+         .mp-vbox {
+            width: 60%;
+            video {
+               width: 100%;
+            }
+         }
+         .mp-tbox {
+            width: 40%;
+            position: relative;
+            .mp-intxt {
+               position: absolute;
+               top: 20%;
+               right: 5%;
+               display: flex;
+               flex-direction: column;
+               align-items: end;
+               text-align: right;
+               span {
+                  margin-bottom: 50px;
+                  font-size: 1rem;
+               }
+               button {
+                  width: 150px;
+                  padding: 5px 10px;
+                  background: white;
+                  border: 1px solid black;
+               }
+            }
+         }
+      }
       .products {
          width: 100%;
          margin: 0 auto;
          padding: 20px 20px;
       }
+
+      //태블릿 라스트 피스
+      .lastpiece {
+      
+         .lastwrap {
+        position: relative;
+
+            .txtbox {
+               width: 40%;
+               box-sizing: border-box;
+               
+               box-sizing: border-box;
+            
+               h1 {
+                  margin-bottom: 8%;
+                  font-size: 1.5rem;
+               }
+              
+               .last-title {
+                  font-size: 18px;
+                  
+               }
+              
+               .last-des {
+                  font-size: .8rem;
+                  line-height: 1.3;
+                  
+               }
+               button { position: absolute;bottom: 5px; width: 30%;
+
+                  
+               }
+            }
+            .imgbox {
+               width: 60%;
+               img {
+                  width: 100%;
+               }
+            }
+         }
+      }
    }
 
+   //tablet-min
+   //750px-max
+   @include tablet-min{
+
+      .mp-video {
+         width: 100%;
+         margin-top: 100px;
+       
+         .mp-vbox {
+            width: 59%;
+            video {
+               width: 100%;
+            }
+         }
+         .mp-tbox {
+            width: 40%;
+            position: relative;
+            .mp-intxt {
+               position: absolute;
+               top: 20%;
+               right: 5%;
+               display: flex;
+               flex-direction: column;
+               align-items: end;
+               text-align: right;
+               span {
+                  margin-bottom: 30px;
+                  font-size: .8rem;
+               }
+               button {
+                  width: 130px;
+                  padding: 3px 8px;
+                  background: white;
+                  border: 1px solid black;
+                  font-size: .8rem;
+               }
+            }
+         }
+      }
+      .lastpiece {
+      
+         .lastwrap {
+       
+            .txtbox {
+    
+            
+              
+            
+               h1 {
+                  margin-bottom: 7%;
+                  font-size: 1.3rem;
+               }
+              
+               .last-title {
+                  font-size: .9rem;
+                  
+               }
+               .last-price{
+                  font-size: .9rem;
+               }
+              
+               .last-des {
+               font-size: .6rem;
+               display: -webkit-box;
+               word-wrap: break-word;
+               -webkit-line-clamp: 4;
+               -webkit-box-orient: vertical;
+               overflow: hidden;
+               text-overflow: ellipsis;
+
+               }
+               button { position: absolute;bottom: 5%; width: 30%;
+                  padding: 3px 10px;
+                  
+               }
+            }
+
+         }
+      }
+
+
+   }
    //모바일
    //480px-max
    @include mobile {
@@ -1121,7 +1251,7 @@ $moblie-min: 520px;
       .int-brand {
         padding:  0;
         width: 100%;
-        padding: 0 3%;
+       
         .trend-title {
           width: 100%;
           margin-bottom: 30px;
@@ -1131,7 +1261,7 @@ $moblie-min: 520px;
         .brand-wrap {
        display: flex; flex-direction: column;
   
-           a {
+           a { padding: 0 3%;
               color: black;
               width: 100%;
               display: flex;
@@ -1168,9 +1298,9 @@ $moblie-min: 520px;
            }
            .brand-side {
              display: flex; flex-direction: row; margin-top: 30px;
-             width: 100%;
-              a {
-                 width: 100%;
+             width: 100%; justify-content: space-between; padding: 0 3%;
+              a { 
+                 width: 30%;
                  .small-item {
                     width: 100%;
                     display: flex;
@@ -1214,8 +1344,45 @@ $moblie-min: 520px;
            }
         }
      }
-     
 
+     // 모바일 비디오
+     .mp-video {
+      width: 100%;
+      margin-top: 70px;
+      position: relative;
+    
+      .mp-vbox {  
+         width:100%;
+
+      }
+      .mp-tbox {
+         width:100%;
+         position: absolute;
+         top: 10%;
+            right: 1%;
+         .mp-intxt {
+           
+            color: white;
+         
+            span {
+               margin-bottom: 20px;
+               font-size: .9rem;
+
+            }
+            button {
+               color: rgb(255, 255, 255);
+               width: 100px;
+               padding: 3px 8px;
+               background:rgba(255, 255, 255, 0.241);
+               border: none;
+               font-size: .65rem;
+               
+            }
+         }
+      }
+   }
+
+// 모바일 프로덕트
       .products {
          max-width: 1440px;
          width: 100%;
@@ -1284,100 +1451,48 @@ $moblie-min: 520px;
          }
       }
 
-      //라스트피스
+      // 모바일 라스트피스
 
       .lastpiece {
-         width: 100%;
+      
          .lastwrap {
-            max-width: 1440px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-start;
+       
             .txtbox {
-               width: 40%;
-               box-sizing: border-box;
-               padding: 5%;
-               padding-top: 0;
-               padding-left: 0;
+    
+            
+              padding: 2%;
+            
                h1 {
-                  margin-bottom: 18%;
+                  margin-bottom: 4%;
+                  font-size: .8rem;
                }
-               span {
-                  display: block;
-               }
+              
                .last-title {
-                  font-size: 20px;
-                  font-weight: bold;
-                  margin-bottom: 1.5%;
+                  font-size: .6rem;
+                  
                }
-               .last-price {
-                  margin-bottom: 5%;
+               .last-price{
+                  font-size: .6rem;
                }
+              
                .last-des {
-                  line-height: 1.6;
-                  margin-bottom: 20%;
-               }
-               button {
-                  width: 90%;
-                  padding: 10px 0;
-                  background: none;
-                  border: 1px solid rgb(131, 131, 131);
-                  transition: 0.3s;
-                  &:hover {
-                     background: rgba(240, 231, 220, 0.678);
-                     border-color: rgba(107, 100, 90, 0.678);
-                  }
-               }
-            }
-            .imgbox {
-               width: 60%;
-               img {
-                  width: 100%;
-               }
-            }
-         }
-      }
-      .mp-video {
-         width: 100%;
-         display: flex;
-         margin-top: 120px;
-         margin-bottom: 0px;
-         justify-content: space-between;
-         opacity: 0;
-         transition: 0.5s;
-         .mp-vbox {
-            width: 60%;
-            video {
-               width: 100%;
-            }
-         }
-         .mp-tbox {
-            width: 40%;
-            position: relative;
-            .mp-intxt {
-               position: absolute;
-               top: 30%;
-               right: 10%;
-               display: flex;
-               flex-direction: column;
-               align-items: end;
-               text-align: right;
-               span {
-                  margin-bottom: 50px;
-                  font-size: 1.5rem;
-               }
-               button {
-                  width: 150px;
-                  padding: 5px 10px;
-                  background: white;
-                  border: 1px solid black;
-               }
-            }
-         }
-      }
+               font-size: 5px;
+               display: -webkit-box;
+               word-wrap: break-word;
+               -webkit-line-clamp: 3;
+               -webkit-box-orient: vertical;
+               overflow: hidden;
+               text-overflow: ellipsis;
 
+               }
+               button { position: absolute;bottom: 5%; width: 30%;
+                  padding: 3px 10px;
+                  
+               }
+            }
+
+         }
+      }
       /*  .foot-bg {
          width: 100%;
          height: 300px;
