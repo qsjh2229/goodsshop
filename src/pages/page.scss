@@ -348,8 +348,8 @@ $moblie-min: 480px;
 }
 
 //detail-page
-//상세페이지
 
+//상세페이지
 .detail-page{width: 100%;
    .item-section{max-width: 1400px; width: 100%; margin: 0 auto; display: flex; margin-top: 100px; 
      .detail-img{width: 50%;
@@ -395,10 +395,20 @@ $moblie-min: 480px;
    
 }
 
+
+
+
+
+
+//반응형 페이지
+
 //데스크탑 1440-max
 @include desktop {
+
+   //네비 카테고리 페이지
    .section {
       box-sizing: border-box;
+      //데스크탑 배너
       .page-banner {
          .page-info {
             height: auto;
@@ -428,6 +438,7 @@ $moblie-min: 480px;
             }
          }
       }
+      //데스크탑 메인
        .page-main {
       
          .pmain-img {
@@ -505,6 +516,7 @@ $moblie-min: 480px;
             }
          }
       }
+        //데스크탑 카테고리
       .page-tab-wrap {
 
          h1 {
@@ -523,6 +535,44 @@ $moblie-min: 480px;
          }
       }
    }
+
+   //상세 주문페이지 데스크탑
+  .detail-page{
+    .item-section{
+      .detail-img{
+    
+      } 
+      .detail-txtinfo{
+         .brand{}
+         .title{ }
+         .des{font-size: 0.8rem; ;margin-bottom: 5%;}
+         .price{}
+        .dis-login{
+           span{ }
+        }
+        .deli-box{ 
+           .delivery{}
+           .arrive-info{ }
+        }
+        .item-count{ 
+           button{}
+        }
+        .totoal-price{
+         span{  &:first-child{}
+           &:last-child{}}
+        }
+        .add-btnbox{ 
+           button{padding: 15px 0;}
+           .buy-btn{color: white; background: black;box-sizing: border-box;}
+           .cart-btn{background: white;box-sizing: border-box;}
+        }
+  
+  
+        } 
+        
+     
+    }}
+
 }
 
 
@@ -705,6 +755,22 @@ $moblie-min: 480px;
             }
          }
       }
+      //태블릿 푸터 위 광고
+      .page-add {
+   
+       
+         margin-top: 50px;
+         img {
+        
+         }
+         .page-add1 {
+
+         }
+         .page-add2 {
+
+
+         }
+      }
      
    }
 }
@@ -764,6 +830,7 @@ $moblie-min: 480px;
          }
         
       }
+       //태블릿 탑 750
       .page-top {
          padding: 0 5%;
          margin-top: 0;
@@ -814,9 +881,9 @@ $moblie-min: 480px;
             }}
          }
       }
-      //태블릿 카테고리
+      //태블릿 카테고리 750
       .page-tab-wrap {
-
+margin-top: 50px;
             h1 {
              padding: 0 5%;
            
@@ -832,8 +899,8 @@ $moblie-min: 480px;
                   }
                }
             }
-             .p-tab-item {
-       
+             .p-tab-item { 
+       margin-top: 30px;
          .p-tab-itembox {
          
             a{ width: 31%;
@@ -876,6 +943,22 @@ $moblie-min: 480px;
          }
       }
       }
+         //태블릿 푸터 위 광고 750
+         .page-add {
+   
+       
+            margin-top: 30px;
+            img {
+           
+            }
+            .page-add1 {
+   
+            }
+            .page-add2 {
+   
+   
+            }
+         }
    }
 }
 // max-480px
@@ -901,6 +984,7 @@ $moblie-min: 480px;
             }
          }
       }
+       //태블릿 메인
       .page-main {
          margin-bottom: 30px;
          width: 95%;
@@ -933,6 +1017,7 @@ $moblie-min: 480px;
          }
         
       }
+       //태블릿 탑
       .page-top {
          
          padding: 0 5%;
@@ -990,7 +1075,7 @@ $moblie-min: 480px;
             }}
          }
       }
-         //태블릿 카테고리
+      //태블릿 카테고리
          .page-tab-wrap {
  margin-top: 30px;
             h1 {
@@ -1005,7 +1090,7 @@ $moblie-min: 480px;
                button {
                 height: 120px; margin-bottom: 0;
                   span {
-                     font-size: 1.1rem;
+                     font-size: .8rem; right: 10px; color: rgb(251, 255, 245); 
                   }
                }
             }
@@ -1053,5 +1138,21 @@ $moblie-min: 480px;
          }
       }
       }
+               //태블릿 푸터 위 광고 750
+               .page-add {
+   
+       width: 100%; padding: 0 8%;
+                  margin-top: 10px;
+                  img {
+                 
+                  }
+                  .page-add1 {
+         width: 40%;
+                  }
+                  .page-add2 {
+         
+         
+                  }
+               }
    }
 }
