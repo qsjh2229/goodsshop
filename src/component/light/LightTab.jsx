@@ -18,9 +18,9 @@ const LightTab = () => {
   };
 
   return (
-    <div className='light-tab-wrap'>
+    <div className='page-tab-wrap'>
       <h1> CATEGORY</h1>
-      <div className='light-tab-btn'>
+      <div className='page-tab-btn'>
         <button type="button" className={`ligall ${activeTab === 'all' ? 'active' : ''}`}  onClick={() => filterHandler('all')}><span>전체보기</span></button>
         <button type="button" className={`pan ${activeTab === 'lightpandunt' ? 'active' : ''}`} onClick={() => filterHandler('lightpandunt')}><span>팬던트</span></button>
         <button type="button" className={`tab ${activeTab === 'lighttable' ? 'active' : ''}`} onClick={() => filterHandler('lighttable')}><span>테이블</span></button>

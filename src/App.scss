@@ -319,6 +319,7 @@ $moblie-min: 480px;
          justify-content: space-between;
 
          .product-card {
+            margin-bottom: 30px;
             text-decoration: none;
             width: 23.5%;
             position: relative;
@@ -942,9 +943,52 @@ $moblie-min: 480px;
          }
       }
       .products {
-         width: 100%;
-         margin: 0 auto;
-         padding: 20px 20px;
+      
+         h1 {
+          
+            margin-bottom: 40px;
+         }
+         .p-list {
+         
+   
+            .product-card {
+             width: 23%;
+               .product-blur {
+               
+                  span {
+                     font-size: 1.3rem;
+                  }
+               }
+               .product-link {
+            
+                  .product-img {
+                 
+                  }
+                  .product-contents {
+              
+                     .product-name {
+                        font-size: 15px;
+                     }
+                     .product-price {
+                        font-size: 13px;
+                     }
+                     .product-seller {
+                        margin-top: 15px;
+                        display: flex;
+                        align-items: center;
+                       
+                        .product-avatar {
+                           color: #c9c9c9;
+                           font-size: 15px;
+                        }
+                        .seller {
+                           font-size: 10px;
+                        }
+                     }
+                  }
+               }
+            }
+         }
       }
 
       //태블릿 라스트 피스
@@ -1068,6 +1112,55 @@ $moblie-min: 480px;
 
          }
       }
+      .products {
+      
+         h1 {
+          
+            margin-bottom: 40px;
+         }
+         .p-list {
+         
+   
+            .product-card {
+             width: 30%;
+               .product-blur {
+               
+                  span {
+                     font-size: 1.3rem;
+                  }
+               }
+               .product-link {
+            
+                  .product-img {
+                 
+                  }
+                  .product-contents {
+              
+                     .product-name {
+                        font-size: 14px; margin-bottom: 5px;
+                     }
+                     .product-price {
+                        font-size: 10px; font-size: 15px;
+                     }
+                     .product-seller {
+                        margin-top: 15px;
+                        display: flex;
+                        align-items: center;
+                       
+                        .product-avatar {
+                           color: #c9c9c9;
+                           font-size: 15px;
+                        }
+                        .seller {
+                           font-size: 10px;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+
 
 
    }
@@ -1383,73 +1476,62 @@ $moblie-min: 480px;
    }
 
 // 모바일 프로덕트
-      .products {
-         max-width: 1440px;
-         width: 100%;
-         margin: 0 auto;
-         padding: 100px 0;
-         box-sizing: border-box;
-         h1 {
-            box-sizing: border-box;
-            position: relative;
-            margin-bottom: 50px;
-         }
-         .p-list {
-            transition: 0.5s;
-            box-sizing: border-box;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+.products {
+   padding: 50px 10% !important;
+      
+   h1 {
+    
+      margin-bottom: 30px;
+   }
+   .p-list {
+   
 
-            .product-card {
-               text-decoration: none;
-               width: 23.5%;
-               position: relative;
-               .product-blur {
-                  position: absolute;
-                  background: rgba(255, 255, 255, 0.699);
-                  bottom: 0;
-                  right: 0;
-                  top: 0;
-                  left: 0;
-                  pointer-events: none;
+      .product-card {
+       width: 30%;
+         .product-blur {
+         
+            span {
+               font-size: 1rem;
+            }
+         }
+         .product-link {
+      
+            .product-img {
+           
+            }
+            .product-contents {
+        
+               .product-name {
+                  font-size: 10px; margin-bottom: 5px;
+                  display: -webkit-box;
+                  word-wrap: break-word;
+                  -webkit-line-clamp: 2;
+                  -webkit-box-orient: vertical;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+   
+               }
+               .product-price {
+                  font-size: 12px; font-weight: bold;
+               }
+               .product-seller {
+                  margin-top: 15px;
                   display: flex;
                   align-items: center;
-                  justify-content: center;
-                  span {
-                     font-size: 1.7rem;
+                 
+                  .product-avatar {
+                     color: #c9c9c9;
+                     font-size: 15px;
                   }
-               }
-               .product-link {
-                  color: black;
-                  .product-img {
-                     width: 100%;
-                  }
-                  .product-contents {
-                     display: flex;
-                     flex-direction: column;
-                     .product-name {
-                        font-size: 20px;
-                     }
-                     .product-price {
-                        font-size: 14px;
-                     }
-                     .product-seller {
-                        margin-top: 20px;
-                        display: flex;
-                        justify-content: space-between;
-                        .product-avatar {
-                           color: #058018;
-                           font-size: 18px;
-                        }
-                        .seller {
-                        }
-                     }
+                  .seller {
+                     font-size: 10px;
                   }
                }
             }
          }
       }
+   }
+}
 
       // 모바일 라스트피스
 
@@ -1493,61 +1575,6 @@ $moblie-min: 480px;
 
          }
       }
-      /*  .foot-bg {
-         width: 100%;
-         height: 300px;
-         background: rgb(184, 182, 173);
-         .container {
-            width: 1400px;
-            margin: 0 auto;
-            padding: 50px 0;
-            display: flex;
-            .footer-addr {
-               .foot-logo {
-                  width: 40%;
-                  margin-bottom: 50px;
-                  margin-right: 100px;
-                  span {
-                  }
-               }
-               address {
-                  font-style: normal;
-                  margin-right: 100px;
-                  width: 100%;
-               }
-               .copy {
-               }
-            }
-            .footer-menu {
-               width: 100%;
-               > ul {
-                  display: flex;
-                  width: 100%;
-                  box-sizing: border-box;
-                  > li {
-                     list-style: none;
-                     flex-basis: 33.3%;
-                     > a {
-                        text-decoration: none;
-                        color: black;
-                        display: block;
-                        margin-bottom: 20px;
-                     }
-                     ul {
-                        padding: 0;
-                        li {
-                           list-style: none;
-                           a {
-                              text-decoration: none;
-                              color: black;
-                              font-size: 14px;
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-      } */
+   
    }
 }

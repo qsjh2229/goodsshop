@@ -1,28 +1,36 @@
-/* .product-wrap{width: 100%; max-width: 1440px; margin: 0 auto;}
-#backBtn{ display: flex; margin: 20px auto; border-radius: 20px; padding: 10px 20px; background: rgb(54, 54, 54); color: white;}
-#imgBox{
-    height: 500px; display: flex; align-items: center; justify-content: center;
-    img{height: 100%;}
+$tablet-max: 1023px;
+$desktop-min: 1440px;
+$tablet-min: 750px;
+$moblie-min: 480px;
+@mixin tablet {
+   @media (max-width: $tablet-max) {
+      @content;
+   }
 }
-#profileBox{
-    padding: 16px; margin: 8px 0 0 0; border: 1px solid gray;
-    display: flex; align-items: center;
-    div{width: 30px; height: 30px; border-radius: 50%; background: gray;}
-    .product-seller{ font-size: 15px ; margin-left: 8px ; font-weight: 600;}
+@mixin desktop {
+   @media (max-width: $desktop-min) {
+      @content;
+   }
 }
-#contentBox{
-    padding: 16px;
-    #name{font-size: 20px;}
-    #price{font-size: 16px; font-weight: 600;}
-    #craetAt{ font-size: 12px; color: black;}
-    #des{ margin-top: 16px;}
-} */
+@mixin mobile {
+   @media (max-width: $moblie-min) {
+      @content;
+   }
+}
+@mixin tablet-min {
+   @media (max-width: $tablet-min) {
+      @content;
+   }
+}
+
+
+
 .pitem-section{max-width: 1400px; width: 100%; margin: 0 auto; display: flex; margin-top: 100px; 
     .detail-img{width: 50%;
      img{width: 100%;}
     } 
     .detail-txtinfo{width: 50%; box-sizing: border-box; padding-left: 5%; display: flex; flex-direction:
-      column;height: inherit;  position: relative;
+      column;height: inherit;  position: relative; box-sizing: border-box;
       .brand{font-weight: bold; margin-bottom: 3%;}
       .title{ font-size: 1.5rem;margin-bottom: 2%; font-weight: bold; }
       .des{font-size: 0.8rem; ;margin-bottom: 5%;}
@@ -49,5 +57,314 @@
 
 
      } 
+
+
+
+
+
+
+
+
+     
      
   }
+  .pitem-info{ max-width: 1440px;box-sizing: border-box;
+   width: 100%;  margin: 0 auto;  margin-top: 100px;text-align: center;padding: 0px 10%;
+   h2{margin-bottom: 30px;}
+   span{margin-bottom:50px ; display: block;}
+   div{width: 100%; box-sizing: border-box; margin-bottom: 100px;
+      img{width: 100%;}
+   }
+    
+  }
+  
+     
+//데스크탑 1440-max
+@include desktop {
+   //네비 카테고리 페이지
+
+   //상세 주문페이지 데스크탑
+   
+      .pitem-section {
+         .detail-img {
+         }
+         .detail-txtinfo {
+      
+            .title {
+            }
+            .des {
+               font-size: 0.8rem;
+               margin-bottom: 5%;
+            }
+            .price {
+            }
+            .dis-login {
+               span {
+               }
+            }
+            .deli-box {
+               .delivery {
+               }
+               .arrive-info {
+               }
+            }
+            .item-count {
+               button {
+               }
+            }
+            .totoal-price {
+               span {
+                  &:first-child {
+                  }
+                  &:last-child {
+                  }
+               }
+            }
+            .add-btnbox { display: flex;  padding:  0 10px; justify-content: space-between; box-sizing: border-box;
+               button { width: 32%;
+                  padding: 15px 0; box-sizing: border-box;
+               }
+               .buy-btn {
+                  color: white;
+                  background: black;
+                  box-sizing: border-box;
+               }
+               .cart-btn {
+                  background: white;
+                  box-sizing: border-box;
+               }
+            }
+         }
+      }
+ 
+}
+
+//1023px - max
+@include tablet {
+
+   //상세 주문페이지 태블릿
+ 
+   .pitem-section {
+      .detail-img {
+      }
+      .detail-txtinfo {
+   
+         .title {
+         }
+         .des {
+            font-size: 0.8rem;
+            margin-bottom: 5%;
+         }
+         .price {
+         }
+         .dis-login {
+            span {
+            }
+         }
+         .deli-box {
+            .delivery {
+            }
+            .arrive-info {
+            }
+         }
+         .item-count {
+            button {
+            }
+         }
+         .totoal-price {
+            span {
+               &:first-child {
+               }
+               &:last-child {
+               }
+            }
+         }
+         .add-btnbox {
+            button {
+               padding: 15px 0;
+            }
+            .buy-btn {
+               color: white;
+               background: black;
+               box-sizing: border-box;
+            }
+            .cart-btn {
+               background: white;
+               box-sizing: border-box;
+            }
+         }
+      }
+   }
+}
+
+// max-750px
+@include tablet-min {
+ 
+
+      .pitem-section {
+         padding-right: 10px;
+         display: flex;
+         box-sizing: border-box;
+         flex-direction: column;
+         .detail-img {
+            width: 100%;
+            padding: 0 10%;
+            margin-bottom: 5%;
+            img {
+               width: 100%;
+            }
+         }
+
+         .detail-txtinfo {
+            width: 100%;
+            .brand {
+               font-weight: bold;
+               margin-bottom: 1%;
+            }
+            .title {
+               font-size: 1.2rem;
+               margin-bottom: 2%;
+            }
+            .des {
+               font-size: 0.7rem;
+               margin-bottom: 1%;
+            }
+            .price {
+               font-size: 2.5rem;
+               font-weight: bold;
+               margin-bottom: 3%;
+            }
+            .dis-login {
+               margin-bottom: 3%;
+               span {
+                  padding: 3% 3%;
+                  display: block;
+               }
+            }
+            .deli-box {
+               margin-bottom: 5%;
+               .delivery {
+                  margin-bottom: 2%;
+               }
+               .arrive-info {
+                  margin-bottom: 3%;
+               }
+            }
+            .item-count {
+              margin-bottom: 90px;
+               width: 100px;
+               button {
+                  width: 30px;
+                  height: 30px;
+                  font-size: 25px;
+               }
+            }
+            .totoal-price {
+               right: 5%;
+               bottom: 26%;
+               width: 50%;
+               span {
+                  &:first-child {
+                     font-size: 1.2rem;
+                  }
+                  &:last-child {
+                     color: red;
+                     font-size: 1.5rem;
+                     font-weight: bold;
+                     margin-left: 2%;
+                  }
+               }
+            }
+            .add-btnbox {
+               button { padding: 10px 0; width: 30%;
+                  font-size: 1rem;
+                  font-weight: bold;
+                  cursor: pointer;
+               }
+            }
+         }
+      }
+   }
+
+
+// max-480px
+@include mobile {
+ 
+   .pitem-section {
+     
+      .detail-img {
+       
+         img {
+           
+         }
+      }
+
+      .detail-txtinfo {
+      
+       
+         .title {
+            font-size: 1.2rem;
+            margin-bottom: 2%;
+         }
+         .des {
+            font-size: 0.6rem;
+            margin-bottom: 1%;
+         }
+         .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 3%;
+         }
+         .dis-login {
+            font-size: .5rem;
+            margin-bottom: 1%;
+            span {
+            
+            }
+         }
+         .deli-box {
+            font-size: .5rem;
+            margin-bottom: 5%;
+            .delivery {
+               margin-bottom: 2%;
+            }
+            .arrive-info {
+               margin-bottom: 3%;
+            }
+         }
+         .item-count {
+           margin-bottom: 60px;
+            width: 100px;
+            button {
+               width: 30px;
+               height: 30px;
+               font-size: 25px;
+            }
+         }
+         .totoal-price {
+            right: 5%;
+            bottom: 24.5%;
+            width: 50%;
+            span {
+               &:first-child {
+                  font-size: 1.2rem;
+               }
+               &:last-child {
+                  color: red;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                  margin-left: 2%;
+               }
+            }
+         }
+         .add-btnbox {padding: 0; 
+            button { padding: 7px 0; width: 30%;
+               font-size: .7rem;
+               font-weight: bold;
+               cursor: pointer;
+            }
+         }
+      }
+   }
+}
+

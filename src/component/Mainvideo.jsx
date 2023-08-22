@@ -10,7 +10,7 @@ const Mainvideo = () => {
    } else if (windowWidth >= 1200) {
       targetHeight = 1500
    } else if (windowWidth >= 768) {
-      targetHeight = 1300
+      targetHeight = 900
    } else if (windowWidth >= 468) {
       targetHeight = 600
    } else {

@@ -76,82 +76,74 @@ const ProductPage = () => {
        setShopItem(shopItem + 1)
     }
  
-  /*   const addCommasToNumber = (number) => {
-       return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-    } */
     return (
-      /*   <div className='product-wrap'>
-            <button onClick={() => navigate(-1)} id='backBtn'>이전페이지</button>
-            <div id='imgBox'>
-                <img src={`${API_URL}/${product.imageUrl}`} alt={product.name} />
-            </div>
-            <div id='profileBox'>
-                <div></div>
-                <span className='product-seller'>{product.seller}</span>
-            </div>
-            <div id="contentBox">
-                <span id='name'>{product.name}</span>
-                <span id='price'>{product.price}</span>
-                <span id='craetAt'>{dayjs(product.createdAt).format('YYYY년MM월DD일')}</span>
-                <Button type="primary" danger className='delete' onClick={onClickDelete}>상품 삭제</Button>
-                <Button type="primary" danger className='payment' onClick={onClickPerchase} disabled={product.soldout === 1}>결제하기1</Button>
-                <span id='des'>{product.des}</span>
-            </div>
-        </div> */
-        <section className='pitem-section'>
-         <div className='detail-img'>
-            
-               <img src={`${API_URL}/${product.imageUrl}`} alt={product.name} />
-           
-         </div>
-         <div className='detail-txtinfo'>
-           
-            <span className='title'>{product.name}</span>
-            <span className='des'>{product.des}</span>
-            <span className='price'>
-               {/* {(product.price)} */}
-            </span>
-            <div className='dis-login'>
-               <span>
-                  <strong>로그인</strong> 하고 혜택가 획인하기
-               </span>
-            </div>
-            <div className='deli-box'>
-               <span className='delivery'>
-                  무료배송 / cj대한통운 또는 한진택배
-               </span>
-               <span className='arrive-info'>
-                  <strong>{arriveDay}</strong> 도착 확률 98%
-               </span>
-            </div>
-            <div className='item-count'>
-               <button
-                  onClick={() => {
-                     mCount()
-                  }}
-               >
-                  -
-               </button>
-               <span>{shopItem}</span>
-               <button
-                  onClick={() => {
-                     pCount()
-                  }}
-               >
-                  +
-               </button>
-            </div>
-            <div className='totoal-price'>
-               <span>총 금액</span> <span>{/* addCommasToNumber */(tPrice)}</span>
-            </div>
-            <div className='add-btnbox'>
+    <>
+       
+           <section className='pitem-section'>
+            <div className='detail-img'>
                
-               <button className='cart-btn'>장바구니</button>
-               <Button type="primary" danger className='delete' onClick={onClickDelete}>상품 삭제</Button>
-                <Button type="primary" danger className='buy-btn' onClick={onClickPerchase} disabled={product.soldout === 1}>결제하기</Button>
+                  <img src={`${API_URL}/${product.imageUrl}`} alt={product.name} />
+              
             </div>
-         </div>
-      </section>
+            <div className='detail-txtinfo'>
+              
+               <span className='title'>{product.name}</span>
+               <span className='des'>{product.des}</span>
+               <span className='price'>
+               
+               </span>
+               <div className='dis-login'>
+                  <span>
+                     <strong>로그인</strong> 하고 혜택가 획인하기
+                  </span>
+               </div>
+               <div className='deli-box'>
+                  <span className='delivery'>
+                     무료배송 / cj대한통운 또는 한진택배
+                  </span>
+                  <span className='arrive-info'>
+                     <strong>{arriveDay}</strong> 도착 확률 98%
+                  </span>
+               </div>
+               <div className='item-count'>
+                  <button
+                     onClick={() => {
+                        mCount()
+                     }}
+                  >
+                     -
+                  </button>
+                  <span>{shopItem}</span>
+                  <button
+                     onClick={() => {
+                        pCount()
+                     }}
+                  >
+                     +
+                  </button>
+               </div>
+               <div className='totoal-price'>
+                  <span>총 금액</span> <span>{/* addCommasToNumber */(tPrice)}</span>
+               </div>
+               <div className='add-btnbox'>
+                  
+                  <button className='cart-btn'>장바구니</button>
+                  <button type="primary" danger className='delete' onClick={onClickDelete}>상품 삭제</button>
+                   <button type="primary" danger className='buy-btn' onClick={onClickPerchase} disabled={product.soldout === 1}>결제하기</button>
+               </div>
+            </div>
+         </section>
+         <section className='pitem-info'>
+            <h2> {product.name}</h2>
+            <span className='des'>{product.des}</span>
+<div>
+<img src={`${API_URL}/${product.imageUrl}`} alt={product.name} />
+
+</div>
+
+
+         </section>
+    </>
     )
 };
 

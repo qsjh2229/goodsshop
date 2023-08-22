@@ -53,11 +53,11 @@ const feedsList = [
      des:`1959년 아르떼미데를 세상에 알린 첫번째 램프이자 가장 우아한 라인을 가진 테이블 램프입니다. 타임리스 클래식 디자인의 정수입니다.`, 
      brand:'ARTEMIDE', 
      img:`${process.env.PUBLIC_URL}/img/light/s-light4.jpg`, 
-     price:'1,530,000',
+     price:'1530000',
      category:'lighttable',
-     subimg1:`${process.env.PUBLIC_URL}/img/light/s-light4-1.jpg`,
-     subimg2:`${process.env.PUBLIC_URL}/img/light/s-light4-2.jpg`,
-     subimg3:`${process.env.PUBLIC_URL}/img/light/s-light4-3.jpg`,
+     subimg1:`${process.env.PUBLIC_URL}/img/light/s-light4.-1.jpg`,
+     subimg2:`${process.env.PUBLIC_URL}/img/light/s-light4.-2.jpg`,
+     subimg3:`${process.env.PUBLIC_URL}/img/light/s-light4.-3.jpg`,
      id:'light4',
      made:'이탈리아'
     },
@@ -98,7 +98,7 @@ const feedsList = [
       des:`디자이너이자 건축가인 Verner Panton(1926-1998)은 1971년 루이스폴센과 함께 판텔라를 만들었습니다. Panton의 상징적이고 장난기 넘치는 디자인은 그의 과장스러운 성격을 잘 나타냅니다. 세계적으로 유명한 Dane은 품질이나 기능성을 훼손하지 않으면서 매력적인 디자인으로부터 화려하고 고혹적인 공간을 창조하기 위해 새로운 재료를 계속해서 개발했습니다. Panthella는 Panton의 대표적인 디자인 중 하나로서, 가장 부드러운 빛을 반사하는 유기적인 모양을 자랑합니다. 덴마크 출신의 디자이너인 Panton은 스탠드와 전등갓이 모두 반사갓 역할을 하는 조명을 만들면서 그를 유명하게 만든 유기적인 모양을 사용하고자 했습니다. 눈부심이 없는 Panthella는 Verner Panton의 화려한 분위기의 조명을 아름답게 표현한 작품으로 볼 수 있습니다. Panthella MINI 램프는 Verner Panton의 인기 있는 Panthella 테이블 램프를 축소한 버전입니다. 판텔라 미니의 메탈 전등갓은 황동 메탈라이징, 브라이트 크롬, 블랙, 화이트, 오렌지 중에서 선택할 수 있습니다. Panthella MINI의 활기찬 오렌지 색상은 1998년 덴마크 Kolding의 트랩홀트 현대 미술관에서 열린 “빛과 색”이라고 불리우는 Panton의 마지막 전시회를 바탕으로 합니다. 2022년에는 현대적인 인테리어에 완벽하게 어울리는 세 가지 새로운 컬러로 범위가 확장되었습니다. 이 세 가지 컬러는 페일 로즈, 페일 블루, 코랄입니다. 또한 Panthella MINI는 화이트 오팔 아크릴 전등갓과 화이트 트럼펫 모양의 스템으로 제공되거나, 1971년에 나온 더 큰 Panthella 디자인에서 Panton의 오리지널 마감처럼 그레이 오팔 아크릴 전등갓 및 브라이트 크롬 트럼펫으로 제공될 수 있습니다. 반투명 오팔 전등갓은 빛을 확산하여 주변을 부드럽고 매력적으로 비춥니다. 눈부심이 없는 Panthella MINI는 Verner Panton의 화려한 분위기의 조명을 아름답게 표현한 작품으로 볼 수 있습니다. 직경 250mm, 높이 335mm로 콤팩트하게 디자인된 이 제품은 창틀, 선반, 테이블이나 기타 제한된 공간에 쉽게 배치할 수 있습니다. 재료, 색상 및 사이즈, 플로어 또는 테이블에 관계없이 Panthella는 가정, 직장, 공공 전시회, 호텔, 칵테일바 등 많은 곳에서 쾌활한 대시와 부드러운 곡선으로 인테리어를 한층 더 세련되게 만들어 줍니다.`, 
       brand:'LOUIS POULSEN', 
       img:`${process.env.PUBLIC_URL}/img/light/s-light7.jpg`, 
-      price:'1,110,800',
+      price:'1110800',
       category:'lighttable',
       subimg1:`${process.env.PUBLIC_URL}/img/light/s-light7-1.jpg`,
       subimg2:`${process.env.PUBLIC_URL}/img/light/s-light7-2.jpg`,
@@ -158,7 +158,7 @@ const feedsList = [
       des:`아르테미데의 다른 많은 조명들처럼 라구나 시리즈도 수많은 디자인 어워드에서 수상하였고 Moma(뉴욕현대미술관), 뉴욕메트로폴리탄 뮤지엄등에 전시된 의미있는 조명입니다.`, 
       brand:'ARTEMIDE', 
       img:`${process.env.PUBLIC_URL}/img/light/s-light11.jpg`, 
-      price:'530,000',
+      price:'530000',
       category:'lighttable',
       subimg1:`${process.env.PUBLIC_URL}/img/light/s-light11-1.jpg`,
       subimg2:`${process.env.PUBLIC_URL}/img/light/s-light11-2.jpg`,
@@ -304,8 +304,8 @@ const feedsList = [
       price:'280400',
       category:'kitchendish',
       subimg1:`${process.env.PUBLIC_URL}/img/cup/s-kic-1.jpg`,
-      subimg2:`${process.env.PUBLIC_URL}/img/cup/s-kic-2.jpg`,
-      subimg3:`${process.env.PUBLIC_URL}/img/cup/s-kic-3.jpg`,
+      subimg2:`${process.env.PUBLIC_URL}/img/cup/kic1-2.jpg`,
+      subimg3:`${process.env.PUBLIC_URL}/img/cup/s-kic1-3.jpg`,
       id:'cup1',
       made:'프랑스'
      },
@@ -321,7 +321,7 @@ const feedsList = [
       category:'kitchendish',
       subimg1:`${process.env.PUBLIC_URL}/img/cup/s-kic2-1.jpg`,
       subimg2:`${process.env.PUBLIC_URL}/img/cup/s-kic2-2.jpg`,
-      subimg3:`${process.env.PUBLIC_URL}/img/cup/s-kic2-3.jpg`,
+
       id:'cup2',
       made:'프랑스'
      },
@@ -400,9 +400,9 @@ const feedsList = [
       img:`${process.env.PUBLIC_URL}/img/cup/s-kic-7.jpg`, 
       price:'25300',
       category:'kitchenetc',
-      subimg1:`${process.env.PUBLIC_URL}/img/cup/s-kic7-1.jpg`,
-      subimg2:`${process.env.PUBLIC_URL}/img/cup/s-kic7-2.jpg`,
-      subimg3:`${process.env.PUBLIC_URL}/img/cup/s-kic7-3.jpg`,
+      subimg1:`${process.env.PUBLIC_URL}/img/cup/s-kic-7-1.jpg`,
+      subimg2:`${process.env.PUBLIC_URL}/img/cup/s-kic-7-2.jpg`,
+      subimg3:`${process.env.PUBLIC_URL}/img/cup/s-kic-7-3.jpg`,
       id:'cup7',
       made:'한국'
      },
@@ -441,7 +441,7 @@ const feedsList = [
      
      },
     {
-      title:'르네상스 레드 18츠 접시', 
+      title:'르네상스 레드 18cm 접시', 
       maindes:'우아한 레드와 골드 액센트의 기품',
        
       des:`고풍스런 타원형 링 모양의 카메오 쉐잎에 우아한 레드 컬러와 골드 액센트를 더한 르네상스 레드는 디너, 티타임 어느 테이블 세팅에도 잘 어울리는 컬렉션으로 매일 저녁식사에 빠질 수 없는 테이블 웨어 입니다. 르네상스 레드의 상징적이 아카이브 패텅대접시에 레드 컬러 중접시를 레이어드 세팅하면 특별한 연출 없이 기품있는 완벽한 테이블을 완성할 수 있습니다..
@@ -450,9 +450,9 @@ const feedsList = [
       img:`${process.env.PUBLIC_URL}/img/cup/s-kic-10.jpg`, 
       price:'64900',
       category:'kitchendish',
-      subimg1:`${process.env.PUBLIC_URL}/img/cup/s-kic10-1.jpg`,
-      subimg2:`${process.env.PUBLIC_URL}/img/cup/s-kic10-2.jpg`,
-      subimg3:`${process.env.PUBLIC_URL}/img/cup/s-kic10-3.jpg`,
+      subimg1:`${process.env.PUBLIC_URL}/img/cup/s-kic-10-1.jpg`,
+      subimg2:`${process.env.PUBLIC_URL}/img/cup/s-kic-10-2.jpg`,
+      subimg3:`${process.env.PUBLIC_URL}/img/cup/s-kic-10-3JPG.jpg`,
       id:'cup10',
       made:'스웨덴'
      },
@@ -837,7 +837,7 @@ const feedsList = [
   
       `, 
       brand:'URBAN NATURE CULTURE', 
-      img:`${process.env.PUBLIC_URL}/img/homeacc/home15.jpg`, 
+      img:`${process.env.PUBLIC_URL}/img/homeacc/home16.jpg`, 
       price:'215000',
      category:'homeaccEtc',
      subimg1:`${process.env.PUBLIC_URL}/img/homeacc/home16-1.jpg`,
@@ -1034,7 +1034,7 @@ const feedsList = [
      category:'funishelf',
      subimg1:`${process.env.PUBLIC_URL}/img/funi/funi6-1.jpg`,
      subimg2:`${process.env.PUBLIC_URL}/img/funi/funi6-2.jpg`,
-     subimg3:`${process.env.PUBLIC_URL}/img/funi/funi6-3.jpg`,
+
       made:'독일 ',
       id:'funi6',
 
@@ -1081,9 +1081,9 @@ const feedsList = [
       img:`${process.env.PUBLIC_URL}/img/funi/funi9.jpg`, 
       price:'5158000',
      category:'funiChair',
-     subimg1:`${process.env.PUBLIC_URL}/img/funi/funi9-1.jpg`,
-     subimg2:`${process.env.PUBLIC_URL}/img/funi/funi9-2.jpg`,
-     subimg3:`${process.env.PUBLIC_URL}/img/funi/funi9-3.jpg`,
+     subimg1:`${process.env.PUBLIC_URL}/img/funi/funi-9-1.jpg`,
+     subimg2:`${process.env.PUBLIC_URL}/img/funi/funi-9-2.jpg`,
+     subimg3:`${process.env.PUBLIC_URL}/img/funi/funi-9-3.jpg`,
       made:'이탈리아 ',
       id:'funi9',
 
@@ -1097,9 +1097,9 @@ const feedsList = [
       img:`${process.env.PUBLIC_URL}/img/funi/funi10.jpg`, 
       price:'98000',
      category:'funishelf',
-     subimg1:`${process.env.PUBLIC_URL}/img/funi/funi10-1.jpg`,
-     subimg2:`${process.env.PUBLIC_URL}/img/funi/funi10-2.jpg`,
-     subimg3:`${process.env.PUBLIC_URL}/img/funi/funi10-3.jpg`,
+     subimg1:`${process.env.PUBLIC_URL}/img/funi/funi-10-1.jpg`,
+     subimg2:`${process.env.PUBLIC_URL}/img/funi/funi-10-2.jpg`,
+     subimg3:`${process.env.PUBLIC_URL}/img/funi/funi-10-3.jpg`,
       made:'한국 ',
       id:'funi10',
 

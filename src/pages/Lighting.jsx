@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Lighting.scss'
+
 import LightBanner from '../component/light/LightBanner';
 import LinghtMain from '../component/light/LinghtMain';
 import LightTop from '../component/light/LightTop';
@@ -9,7 +9,7 @@ import LightTab from '../component/light/LightTab';
 
 const Lighting = () => {
     return (
-        <main className='light-se'>
+        <main className='section'>
             
          <LightBanner></LightBanner>
          <LinghtMain></LinghtMain>
