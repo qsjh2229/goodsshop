@@ -612,9 +612,11 @@ const feedsList = [
       maindes:'고대 기술을 자연과 조화롭게 접목시키는 디자인을 선보이는 화병입니다',
       des:`고대 기술을 자연과 조화롭게 접목시키는 디자인을 선보이는 화병입니다. 입체적인 텍스처와 직관적인 디자인이 눈길을 끌며, 어느 공간도 모던한 인테리어로 탈바꿈 해줄 아이템입니다..`, 
       brand:'URBAN NATURE CULTURE', 
+      
       img:`${process.env.PUBLIC_URL}/img/homeacc/home3.jpg`, 
       price:'125000',
       category:'homeaccVase',
+
       subimg1:`${process.env.PUBLIC_URL}/img/homeacc/home3-1.jpg`,
       subimg2:`${process.env.PUBLIC_URL}/img/homeacc/home3-2.jpg`,
       subimg3:`${process.env.PUBLIC_URL}/img/homeacc/home3-3.jpg`,
