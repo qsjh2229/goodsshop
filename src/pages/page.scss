@@ -28,6 +28,7 @@ $moblie-min: 480px;
 * {
    margin: 0;
    padding: 0;
+   button{color: black;}
 }
 
 .section {
@@ -477,7 +478,7 @@ $moblie-min: 480px;
             box-sizing: border-box;
             position: absolute;
             bottom: 0;
-            button {
+            button { 
                width: 49%;
                border-radius: 5px;
                padding: 20px 0;
@@ -1448,17 +1449,17 @@ $moblie-min: 480px;
             }
             .item-count {
               margin-bottom: 80px;
-               width: 80px;
+               width: 100px;
                button {
-                  width: 25px;
-                  height: 25px;
+                  width: 40px;
+                  height: 40px;
                   font-size: 15px;
                }
             }
             .totoal-price {
                right: 5%;
                bottom: 24%;
-               width: 75%;
+               width: 65%;
                span {
                   &:first-child {
                      font-size: 1.1rem;
