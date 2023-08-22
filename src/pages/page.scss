@@ -31,6 +31,7 @@ $moblie-min: 480px;
 }
 
 .section {
+   color: black;
    width: 100%;
    height: fit-content;
    .page-banner {
@@ -819,11 +820,12 @@ $moblie-min: 480px;
                      .p-t-title {
                         font-size: 0.9rem;
                         font-weight: bolder;
+                        overflow: hidden;
                         display: -webkit-box;
                         word-wrap: break-word;
                         -webkit-line-clamp: 2;
                         -webkit-box-orient: vertical;
-                        overflow: hidden;
+                   
                         text-overflow: ellipsis;
                      }
                      .p-t-price {
@@ -833,10 +835,11 @@ $moblie-min: 480px;
                      .p-t-maindes {
                         font-size: 0.7rem;
                         display: -webkit-box;
+                        overflow: hidden;
                         word-wrap: break-word;
                         -webkit-line-clamp: 2;
                         -webkit-box-orient: vertical;
-                        overflow: hidden;
+                       
                         text-overflow: ellipsis;
                      }
                   }
@@ -1295,11 +1298,12 @@ $moblie-min: 480px;
                      }
                      .p-t-maindes {
                         font-size: 0.5rem;
+                        overflow: hidden;
                         display: -webkit-box;
                         word-wrap: break-word;
                         -webkit-line-clamp: 2;
                         -webkit-box-orient: vertical;
-                        overflow: hidden;
+                     
                         text-overflow: ellipsis;
                      }
                   }
