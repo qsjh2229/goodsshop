@@ -1,11 +1,12 @@
 import React from "react";
 
+import  dgs from'../../img/homeacc/main.jpg';
 const HomeMain = () => {
   return (
     <section className="page-main">
       <div className="pmain-img">
         <div className="pimgbox">
-          <img src="../../img/homeacc/main.jpg" alt="banner" />
+          <img src={dgs} alt="banner" />
         </div>
         <div className="ptbox">
           <span className="p-main-txt"> 더욱 안락한 대화의 공간 </span>
