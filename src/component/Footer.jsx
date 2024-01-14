@@ -11,52 +11,48 @@ const Footer = () => {
             <span>로고</span>
           </h3>
           <address>
-            서울 서초구 서초동 1153동 13654 채욱빌딩 10층 1005호
+            서울 서초구 서초동 1153동 13654 성암빌딩 10층 1005호
           </address>
           <div className="copy">&copy; 2023 ALL RIGHT hong</div>
         </div>
         <div className="footer-menu">
           <ul>
             <li>
-              <Link to="">About</Link>
+              <Link to="">CS INFO</Link>
               <ul>
                 <li>
-                  <Link to="">company</Link>
+                평일  &nbsp;&nbsp; 09:00 - 06:00
                 </li>
                 <li>
-                  <Link to="">company</Link>
+                주말  &nbsp;&nbsp; 10:00 - 15:00
                 </li>
                 <li>
-                  <Link to="">company</Link>
+                점심  &nbsp;&nbsp; 12:30 - 13:00
+                </li>
+             
+              </ul>
+            </li>
+            <li>
+              <Link to="">BANK INFO</Link>
+              <ul>
+                <li>
+                  <Link to="">국민은행</Link>
+                </li>
+                <li>
+                  <Link to="">신한은행</Link>
+                </li>
+                <li>
+                  <Link to="">농협은행</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link to="">blog</Link>
+              <Link to="">ODER TRACKING</Link>
               <ul>
                 <li>
-                  <Link to="">company</Link>
+                  CJ 대한통운
                 </li>
-                <li>
-                  <Link to="">company</Link>
-                </li>
-                <li>
-                  <Link to="">company</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="">product</Link>
-              <ul>
-                <li>
-                  <Link to="">company</Link>
-                </li>
-                <li>
-                  <Link to="">company</Link>
-                </li>
-                <li>
-                  <Link to="">company</Link>
-                </li>
+               
               </ul>
             </li>
           </ul>

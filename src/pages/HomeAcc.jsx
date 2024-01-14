@@ -4,6 +4,7 @@ import HomeBanner from '../component/homeacc/HomeBanner';
 import HomeMain from '../component/homeacc/HomeMain';
 import HomeTop from '../component/homeacc/HomeTop';
 import HomeTab from '../component/homeacc/HomeTab';
+import add from "../img/int.jpg"
 
 
 const Acc = () => {
@@ -17,7 +18,7 @@ const Acc = () => {
             <HomeTab></HomeTab>
             <div className='page-add'>
                <div className='page-add1'><img src="../img/cup/s-kic-10-1.jpg" alt="" /></div>
-               <div className='page-add2'></div>
+               <div className='page-add2'> <img src={add} alt="page-add1" /> </div>
             </div>
    
            

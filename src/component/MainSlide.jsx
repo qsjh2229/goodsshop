@@ -32,10 +32,10 @@ const MainSlide = () => {
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')
+      //   onSlideChange={() => console.log('slide change')
         
       
-      }
+      // }
       >
         <SwiperSlide className='mainSlide'><img src="img/mainslide/slide1.jpg" alt=" 슬라이드 이미지" /></SwiperSlide>
         <SwiperSlide className='mainSlide'><img src="img/mainslide/slide2.jpg" alt=" 슬라이드 이미지" /></SwiperSlide>

@@ -5,7 +5,7 @@ import LightBanner from '../component/light/LightBanner';
 import LinghtMain from '../component/light/LinghtMain';
 import LightTop from '../component/light/LightTop';
 import LightTab from '../component/light/LightTab';
-
+import add from "../img/int.jpg"
 
 const Lighting = () => {
     return (
@@ -17,7 +17,7 @@ const Lighting = () => {
          <LightTab></LightTab>
          <div className='light-add'>
             <div className='light-add1'><img src="../img/cup/s-kic-10-1.jpg" alt="" /></div>
-            <div className='light-add2'></div>
+            <div className='page-add2'> <img src={add} alt="page-add1" /> </div>
          </div>
 
         
