@@ -464,15 +464,17 @@ $moblie-min: 480px;
 
    .foot-bg {
       width: 100%;
-      height: 300px;
+      
       background: rgb(184, 182, 173);
       .container {
          max-width: 1400px;
+         width: 100%;
          box-sizing: border-box;
          margin: 0 auto;
          padding: 50px 0;
          display: flex;
-         .footer-addr {
+         justify-content: space-between;
+         .footer-addr { 
             .foot-logo {
                box-sizing: border-box;
                width: 40%;
@@ -486,16 +488,19 @@ $moblie-min: 480px;
                margin-right: 100px;
                width: 100%;
             }
-            .copy {
+            .copy { margin-top: 50px;
             }
          }
-         .footer-menu {
+         .footer-menu { padding-left: 10%; 
             width: 100%;  box-sizing: border-box;
             > ul {
                display: flex;
                width: 100%;
              
-               > li {
+               > li {text-align: center;
+                  div{
+                      font-weight: bold; color: #424242;
+                  }
                   list-style: none;
                   flex-basis: 33.3%;
                   > a {
@@ -503,15 +508,24 @@ $moblie-min: 480px;
                      color: black;
                      display: block;
                      margin-bottom: 20px;
+                     font-weight: bold;
                   }
                   ul {
                      padding: 0;
                      li {
                         list-style: none;
+                    div{
+                     margin-bottom: 4%;
+                     box-sizing: border-box;
+                    
+                    }
+                      
+                        
                         a {
                            text-decoration: none;
                            color: black;
                            font-size: 14px;
+                           
                         }
                      }
                   }
@@ -650,7 +664,48 @@ $moblie-min: 480px;
             width: 100%;
             padding: 50px 20px;
             box-sizing: border-box;
-          
+
+           .footer-addr { 
+            .foot-logo {
+              
+               span {
+               }
+            }
+            .address {
+             
+            }
+            .copy { margin-top: 40px;
+            }
+         }
+         .footer-menu { padding-left: 7%; 
+            width: 100%;  box-sizing: border-box;
+            > ul {
+               display: flex;
+               width: 100%;
+             
+               > li {
+                  list-style: none;
+                  flex-basis: 33.3%;
+                  > a {
+                     text-decoration: none;
+                     color: black;
+                     display: block;
+                     margin-bottom: 20px;
+                  }
+                  ul {
+                     padding: 0;
+                     li {
+                        list-style: none;
+                        a {
+                           text-decoration: none;
+                           color: black;
+                           font-size: 14px;
+                        }
+                     }
+                  }
+               }
+            }
+         }
          }
       }
    }
@@ -1066,6 +1121,53 @@ $moblie-min: 480px;
                }
             }
 
+         }
+      }
+      .foot-bg {
+         width: 100%;
+
+         .container {
+            margin: 0;
+            width: 100%;
+          
+            box-sizing: border-box;
+            font-size: .8rem;
+           .footer-addr { 
+            
+            .foot-logo {
+          
+              margin-bottom: 20px;
+               span {
+               }
+            }
+            .address {
+             font-size: .6rem;
+            }
+            .copy { margin-top: 40px;
+            }
+         }
+         .footer-menu { padding-left: 3%; 
+          
+            > ul {
+              
+             
+               > li {
+                
+                  > a {
+                    
+                  }
+                  ul {
+                    
+                     li {
+                  
+                        a {
+                         
+                        }
+                     }
+                  }
+               }
+            }
+         }
          }
       }
 
@@ -1493,61 +1595,35 @@ $moblie-min: 480px;
 
          }
       }
-      /*  .foot-bg {
+     .foot-bg {
          width: 100%;
-         height: 300px;
+        
          background: rgb(184, 182, 173);
          .container {
-            width: 1400px;
+           
             margin: 0 auto;
-            padding: 50px 0;
+            padding: 50px 20px;
             display: flex;
             .footer-addr {
                .foot-logo {
                   width: 40%;
-                  margin-bottom: 50px;
+                  margin-bottom: 20px;
                   margin-right: 100px;
                   span {
+                     font-size: 1.35rem;
                   }
                }
                address {
-                  font-style: normal;
-                  margin-right: 100px;
-                  width: 100%;
+                  font-size: .9rem;
                }
                .copy {
+                  margin-top: 30px;
                }
             }
             .footer-menu {
-               width: 100%;
-               > ul {
-                  display: flex;
-                  width: 100%;
-                  box-sizing: border-box;
-                  > li {
-                     list-style: none;
-                     flex-basis: 33.3%;
-                     > a {
-                        text-decoration: none;
-                        color: black;
-                        display: block;
-                        margin-bottom: 20px;
-                     }
-                     ul {
-                        padding: 0;
-                        li {
-                           list-style: none;
-                           a {
-                              text-decoration: none;
-                              color: black;
-                              font-size: 14px;
-                           }
-                        }
-                     }
-                  }
-               }
+             display: none;
             }
          }
-      } */
+      } 
    }
 }

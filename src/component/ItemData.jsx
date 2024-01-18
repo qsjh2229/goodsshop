@@ -895,7 +895,7 @@ const feedsList = [
   
       `, 
       brand:'BROSTE COPENHAGEN', 
-      img:`${process.env.PUBLIC_URL}/img/homeacc/home19.jpg`, 
+      img:`${process.env.PUBLIC_URL}/img/homeAcc/home19.jpg`, 
       price:'9000',
      category:'homeaccFab',
      subimg1:`${process.env.PUBLIC_URL}/img/homeAcc/home19-1.jpg`,

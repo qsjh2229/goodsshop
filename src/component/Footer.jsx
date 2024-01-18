@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer-addr">
           <h3 className="foot-logo">
-            {" "}
-            <span>로고</span>
+            
+            <span>MUE</span>
           </h3>
           <address>
             서울 서초구 서초동 1153동 13654 성암빌딩 10층 1005호
@@ -21,13 +21,13 @@ const Footer = () => {
               <Link to="">CS INFO</Link>
               <ul>
                 <li>
-                평일  &nbsp;&nbsp; 09:00 - 06:00
+                <div>평일</div>   09:00 - 06:00
                 </li>
                 <li>
-                주말  &nbsp;&nbsp; 10:00 - 15:00
+                <div>주말</div>   10:00 - 15:00
                 </li>
                 <li>
-                점심  &nbsp;&nbsp; 12:30 - 13:00
+                <div>점심</div>  12:30 - 13:00
                 </li>
              
               </ul>
@@ -58,6 +58,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+    
     </div>
   );
 };
