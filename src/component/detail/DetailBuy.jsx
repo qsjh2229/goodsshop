@@ -54,26 +54,28 @@ const DetailBuy = ({ findHandler }) => {
                   <strong>{arriveDay}</strong> 도착 확률 98%
                </span>
             </div>
-            <div className='item-count'>
-               <button
-                  onClick={() => {
-                     mCount()
-                  }}
-               >
-                  -
-               </button>
-               <span>{shopItem}</span>
-               <button
-                  onClick={() => {
-                     pCount()
-                  }}
-               >
-                  +
-               </button>
-            </div>
-            <div className='totoal-price'>
-               <span>총 금액</span> <span>{addCommasToNumber(tPrice)}</span>
-            </div>
+          <div className="pri-box">
+               <div className='item-count'>
+                  <button
+                     onClick={() => {
+                        mCount()
+                     }}
+                  >
+                     -
+                  </button>
+                  <span>{shopItem}</span>
+                  <button
+                     onClick={() => {
+                        pCount()
+                     }}
+                  >
+                     +
+                  </button>
+               </div>
+               <div className='totoal-price'>
+                  <span>총 금액</span> <span>{addCommasToNumber(tPrice)}</span>
+               </div>
+          </div>
             <div className='add-btnbox'>
                <button className='buy-btn'>바로구매</button>
                <button className='cart-btn'>장바구니</button>
