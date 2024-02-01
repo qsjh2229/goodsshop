@@ -304,8 +304,8 @@ const feedsList = [
       price:'280400',
       category:'kitchendish',
       subimg1:`${process.env.PUBLIC_URL}/img/cup/s-kic-1.jpg`,
-      subimg2:`${process.env.PUBLIC_URL}/img/cup/s-kic-2.jpg`,
-      subimg3:`${process.env.PUBLIC_URL}/img/cup/s-kic-3.jpg`,
+      subimg2:`${process.env.PUBLIC_URL}/img/cup/kic1-2.jpg`,
+   
       id:'cup1',
       made:'프랑스'
      },
@@ -413,7 +413,7 @@ const feedsList = [
       des:`BordFolk컬렉션은 독창적인 디자인과 새로운 패턴 및 색상으로 우리의 주방을 보다 감각적으로 변화시켜 줍니다.
       `, 
       brand:'루시카스', 
-      img:`${process.env.PUBLIC_URL}/img/cup/s-kic-8.JPG`, 
+      img:`${process.env.PUBLIC_URL}/img/cup/s-kic-8.jpg`, 
       price:'91900',
       category:'kitchendish',
       subimg1:`${process.env.PUBLIC_URL}/img/cup/s-kic-8-1.JPG`,
@@ -432,16 +432,16 @@ const feedsList = [
       img:`${process.env.PUBLIC_URL}/img/cup/s-kic-9.jpg`, 
       price:'234900',
       category:'kitchencup',
-      subimg1:`${process.env.PUBLIC_URL}/img/cup/s-kic-9-1.jpg`,
-      subimg2:`${process.env.PUBLIC_URL}/img/cup/s-kic-9-2.jpg`,
-      subimg3:`${process.env.PUBLIC_URL}/img/cup/s-kic-9-3.jpg`,
+      subimg1:`${process.env.PUBLIC_URL}/img/cup/s-kic-9-1.JPG`,
+      subimg2:`${process.env.PUBLIC_URL}/img/cup/s-kic-9-2.JPG`,
+      subimg3:`${process.env.PUBLIC_URL}/img/cup/s-kic-9-3.JPG`,
       sell:'top3',
       id:'cup9',
       made:'스웨덴'
      
      },
     {
-      title:'르네상스 레드 18츠 접시', 
+      title:'르네상스 레드 18cm 접시', 
       maindes:'우아한 레드와 골드 액센트의 기품',
        
       des:`고풍스런 타원형 링 모양의 카메오 쉐잎에 우아한 레드 컬러와 골드 액센트를 더한 르네상스 레드는 디너, 티타임 어느 테이블 세팅에도 잘 어울리는 컬렉션으로 매일 저녁식사에 빠질 수 없는 테이블 웨어 입니다. 르네상스 레드의 상징적이 아카이브 패텅대접시에 레드 컬러 중접시를 레이어드 세팅하면 특별한 연출 없이 기품있는 완벽한 테이블을 완성할 수 있습니다..
@@ -450,9 +450,9 @@ const feedsList = [
       img:`${process.env.PUBLIC_URL}/img/cup/s-kic-10.jpg`, 
       price:'64900',
       category:'kitchendish',
-      subimg1:`${process.env.PUBLIC_URL}/img/cup/s-kic10-1.jpg`,
-      subimg2:`${process.env.PUBLIC_URL}/img/cup/s-kic10-2.jpg`,
-      subimg3:`${process.env.PUBLIC_URL}/img/cup/s-kic10-3.jpg`,
+      subimg1:`${process.env.PUBLIC_URL}/img/cup/s-kic-10-1.jpg`,
+      subimg2:`${process.env.PUBLIC_URL}/img/cup/s-kic-10-2.jpg`,
+      subimg3:`${process.env.PUBLIC_URL}/img/cup/s-kic-10-3.jpg`,
       id:'cup10',
       made:'스웨덴'
      },
@@ -483,9 +483,9 @@ const feedsList = [
       img:`${process.env.PUBLIC_URL}/img/cup/s-kic-12.jpg`, 
       price:'64900',
       category:'kitchendish',
-      subimg1:`${process.env.PUBLIC_URL}/img/cup/s-kic-12-1.jpg`,
-      subimg2:`${process.env.PUBLIC_URL}/img/cup/s-kic-12-2.jpg`,
-      subimg3:`${process.env.PUBLIC_URL}/img/cup/s-kic-12-3.jpg`,
+      subimg1:`${process.env.PUBLIC_URL}/img/cup/s-kic-12-1.JPG`,
+      subimg2:`${process.env.PUBLIC_URL}/img/cup/s-kic-12-2.JPG`,
+      subimg3:`${process.env.PUBLIC_URL}/img/cup/s-kic-12-3.JPG`,
       id:'cup12',
       made:'스웨덴'
      },
